@@ -12,7 +12,7 @@ By the end of this project, students should feel comfortable utilizing GitHub as
 
 To better organize your issues, each student will need to create a Project Board. This will enable you to sort your tasks, plan your projects, automate your workflows, track your progress, share your status, and retire your work once complete. 
 
-1.  In the [Projects] (https://github.com/biocompute-objects/GW-SMHS-BIOC6223/projects) tab of this repository, [Create a Project](https://github.com/biocompute-objects/GW-SMHS-BIOC6223/projects/new)
+1.  In the [Projects](https://github.com/biocompute-objects/GW-SMHS-BIOC6223/projects) tab of this repository, [Create a Project](https://github.com/biocompute-objects/GW-SMHS-BIOC6223/projects/new)
 2.  Establish **Project board name** according to the template: "[fullname]_BCO" (Example: JanishaPatel_BCO)
 3.  Provide **Project description**
 4.  Select **Project Template**: "Basic kanban" (will establish columns for To do, In progress and Done)
