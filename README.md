@@ -24,7 +24,7 @@ Each student will need to:
 To better organize your issues, each student will need to create a Project Board. The project board will enable you to sort your tasks, plan your projects, automate your workflows, track your progress, share your status, and retire your work once complete. 
 
 1.  In the [Projects](https://github.com/biocompute-objects/GW-SMHS-BIOC6223/projects) tab of this repository, [Create a Project](https://github.com/biocompute-objects/GW-SMHS-BIOC6223/projects/new)
-2.  Establish **Project board name** according to the template: "[fullname]_BCO" (Example: JanishaPatel_BCO)
+2.  Establish **Project board name** according to the template: "[fullname]" (Example: JanishaPatel)
 3.  Provide **Project description**
 4.  Select **Project Template**: "Basic kanban" (This template will establish columns for To do, In progress and Done. More documentation on project boards can be found [here](https://codeburst.io/an-introduction-to-github-project-boards-2944e6ffbf3c) and [here](https://help.github.com/en/articles/about-project-boards#templates-for-project-boards))
 5.  In the "Student-BCO" folder, upload your BCO.json (downloaded from BCO Editor) by the provided deadline
