@@ -15,7 +15,7 @@ To better organize your issues, each student will need to create a Project Board
 1.  In the [Projects](https://github.com/biocompute-objects/GW-SMHS-BIOC6223/projects) tab of this repository, [Create a Project](https://github.com/biocompute-objects/GW-SMHS-BIOC6223/projects/new)
 2.  Establish **Project board name** according to the template: "[fullname]_BCO" (Example: JanishaPatel_BCO)
 3.  Provide **Project description**
-4.  Select **Project Template**: "Basic kanban" (This template will establish columns for To do, In progress and Done. More documentation on project boards can be found [here](https://codeburst.io/an-introduction-to-github-project-boards-2944e6ffbf3c))
+4.  Select **Project Template**: "Basic kanban" (This template will establish columns for To do, In progress and Done. More documentation on project boards can be found [here](https://codeburst.io/an-introduction-to-github-project-boards-2944e6ffbf3c) and [here](https://help.github.com/en/articles/about-project-boards#templates-for-project-boards))
 5.  In the "Student-BCO" folder, upload your BCO.json (downloaded from BCO Editor) by the provided deadline
 6.  Once uploaded, your reviewer will be providing feedback in the form of **issues**, which you will have acccess to on your newly created Project Board.
 7.  You will be asked to resolve these issues **prior to the 10/18**, as the corrected BCOs will be your submission to the pFDA challenge. You can reply to the feedback for clarification or further discussion- however provide your reviewer at least 48 hours to respond. Meaning: the latest we can guarantee your comment will be addressed/answered in time for your submission will be 10/16.
