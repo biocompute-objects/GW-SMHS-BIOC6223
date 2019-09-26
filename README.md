@@ -10,7 +10,18 @@ By the end of this project, students should feel comfortable utilizing GitHub as
 
 ## Getting Started
 
-To better organize your issues, each student will need to create a Project Board. This will enable you to sort your tasks, plan your projects, automate your workflows, track your progress, share your status, and retire your work once complete. 
+### BCO 
+
+Each student will need to:
+1. Download their BCO from the BioCompute Editor onto their local machine
+2. Rename it "Firstname_Lastname_BCO Number" (ex: Janisha_Patel_BCO_000010)
+3. In the [Student_BCOs folder](https://github.com/biocompute-objects/GW-SMHS-BIOC6223/tree/master/Student_BCOs), click [Upload Files](https://github.com/biocompute-objects/GW-SMHS-BIOC6223/upload/master/Student_BCOs) and select your saved BCO. 
+4. In the **Commit changes** section, please add a commit note("Upload J.Patel BCO") and in the description box indicate if your BCO is ready for review ("ready for review"). **Your BCO will not be reviewed unless this is clearly stated**
+5. Confirm your BCO was uploaded by returning to the [Student_BCOs folder](https://github.com/biocompute-objects/GW-SMHS-BIOC6223/tree/master/Student_BCOs) and refreshing.
+
+
+### Project Board / Issue Resolution
+To better organize your issues, each student will need to create a Project Board. The project board will enable you to sort your tasks, plan your projects, automate your workflows, track your progress, share your status, and retire your work once complete. 
 
 1.  In the [Projects](https://github.com/biocompute-objects/GW-SMHS-BIOC6223/projects) tab of this repository, [Create a Project](https://github.com/biocompute-objects/GW-SMHS-BIOC6223/projects/new)
 2.  Establish **Project board name** according to the template: "[fullname]_BCO" (Example: JanishaPatel_BCO)
