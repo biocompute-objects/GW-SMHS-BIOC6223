@@ -1,0 +1,43 @@
+{
+	"Things": [{
+			"weight": 150.06,
+			"date": "2015-04-01"
+		},
+		{
+			"weight": 150.24,
+			"date": "April 2, 2015"
+		},
+		{
+			"weight": 148.99,
+			"date": "April 3, 2015"
+		},
+		{
+			"weight": 149.40,
+			"date": "April 4, 2015"
+		},
+		{
+			"weight": 149.32,
+			"date": "April 5, 2015"
+		},
+		{
+			"weight": 151.08,
+			"date": "April 6, 2015"
+		},
+		{
+			"weight": 149.36,
+			"date": "April 7, 2015"
+		},
+		{
+			"weight": 150.41,
+			"date": "April 8, 2015"
+		},
+		{
+			"weight": 150.17,
+			"date": "April 9, 2015"
+		},
+		{
+			"weight": 150.68,
+			"date": "April 10, 2015"
+		}
+	]
+}
