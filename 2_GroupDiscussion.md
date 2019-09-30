@@ -1,6 +1,6 @@
 In-depth research on selected publication 
 ===================================
-9/24/19
+9/30/19
 
 ## Instructions
 1. Your selected publication will either be approved or you will be asked to choose from a list of pre-selected publications.
@@ -10,4 +10,4 @@ In-depth research on selected publication
     - [Specification document](https://github.com/biocompute-objects/BCO_Specification)
     - [User guide](https://github.com/biocompute-objects/BCO_Specification/blob/master/user_guide.md)
   
-Due: 10/1 on Blackboard
+Due: 10/3 on Blackboard
