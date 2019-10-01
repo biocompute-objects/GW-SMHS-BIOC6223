@@ -12,18 +12,11 @@ In-depth research on selected publication
     - If your pipeline has made input and output data available, list those locations. Otherwise, use an example, like http://example.com/data/514769/dnaAccessionBased.csv
  
 ### Due: 10/3 on Blackboard
- 
- 
- 
- 
- 
- 
- 
- BCO lecture materials and domain specific information can be found below:
- 
-    - BIOC6223 Lecture #1 BioCompute Introduction for help
-    - [Specification document](https://github.com/biocompute-objects/BCO_Specification)
-    - [User guide](https://github.com/biocompute-objects/BCO_Specification/blob/master/user_guide.md)
 
 
 
+BCO lecture materials and domain specific information can be found below:
+- BIOC6223 Lecture #1 BioCompute Introduction for help
+- [Specificaiton document](https://github.com/biocompute-objects/BCO_Specification)
+- [User guide](https://github.com/biocompute-objects/BCO_Specification/blob/master/user_guide.md)
+ 
