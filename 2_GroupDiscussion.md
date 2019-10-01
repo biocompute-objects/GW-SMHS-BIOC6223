@@ -17,6 +17,6 @@ In-depth research on selected publication
 
 BCO lecture materials and domain specific information can be found below:
 - BIOC6223 Lecture #1 BioCompute Introduction for help
-- [Specificaiton document](https://github.com/biocompute-objects/BCO_Specification)
+- [Specification document](https://github.com/biocompute-objects/BCO_Specification)
 - [User guide](https://github.com/biocompute-objects/BCO_Specification/blob/master/user_guide.md)
  
