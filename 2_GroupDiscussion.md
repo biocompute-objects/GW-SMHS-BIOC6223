@@ -20,3 +20,4 @@ BCO lecture materials and domain specific information can be found below:
 - [Specification document](https://github.com/biocompute-objects/BCO_Specification)
 - [User guide](https://github.com/biocompute-objects/BCO_Specification/blob/master/user_guide.md)
  
+Each group should come to office hours to check in for 10 minutes for progress and questions          
