@@ -1,6 +1,6 @@
 Create first BCO draft
 ===================================
-10/1/19
+10/3/19
 
 ## Instructions
 1. Create the  BCO draft #1 using the BioCompute Editor and [Specification document](https://github.com/biocompute-objects/BCO_Specification) for reference. **Note:** While this is a primary draft, part of your score comes from this initial submission- the other portion will be from the pFDA submission.
