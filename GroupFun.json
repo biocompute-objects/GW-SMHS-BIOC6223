@@ -1,9 +1,8 @@
 {
-	"weights" : [
-		{ "April 1, 2015" : 150.06 },
-		{ "April 2, 2015" : 150.24 },
-		{ "April 3, 2015" : 148.99 },
-		{ "April 4, 2015" : 149.40 }
-	]
+	"Holiday Weight Gain" :{ "Date": "April 1, 2015", "Weight" : 150.06 },
+		{"Date": "April 2, 2015", "Weight" : 150.24 },
+		{"Date": "April 3, 2015", "Weight" : 158.99 },
+		{"Date": "April 4, 2015", "Weight" : 159.40 }
+	
 }
 
