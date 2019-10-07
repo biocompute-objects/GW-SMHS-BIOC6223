@@ -8,7 +8,7 @@ Create first BCO draft
 2. Download your BCO from the BCO Editor, submit  BCO to Blackboard in .txt format and to "Student_BCOs" folder in GitHub [repository](https://github.com/biocompute-objects/GW-SMHS-BIOC6223). The pull request should have the appropriate:
   * **label** : "midterm: BCO Submission"
   * **assignee**: "Jonathon Keeney"
-  * **project**: Your project name
+  * **project**: Your project name, according to the [README](https://github.com/biocompute-objects/GW-SMHS-BIOC6223/blob/master/README.md)
   * **milestone**: "BCO draft"
 
 
