@@ -36,7 +36,7 @@ To better organize your issues, each student will need to create a Project Board
 Create a GitHub [issue](https://github.com/biocompute-objects/GW-SMHS-BIOC6223/issues/new), and select appropriate:
   * **label** : "midterm: BCO editor" , "midterm: pipeline" , "midterm: pFDA challenge", or if unsure of where your question falls: "midterm: general"
   * **assignee**: "Jonathon Keeney", "Janisha Patel", or "Helen Ibeawuchi"
-  * **project**: "[fullname_BCO]"
+  * **project**: "[fullname]"
   * **milestone**: "BCO draft" , "Further Research", "Final BCO"
   
 
