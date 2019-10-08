@@ -23,4 +23,6 @@ HIVE Sign-up
 ***Times***    
 Wednesday 10/9 1-5pm    
 Thursday 10/10 9-5pm    
-Fridsy 10/11 9-4pm
+Friday 10/11 9-4pm      
+
+please email janishapatel@gwu.edu to reserver your time. Thank you!
