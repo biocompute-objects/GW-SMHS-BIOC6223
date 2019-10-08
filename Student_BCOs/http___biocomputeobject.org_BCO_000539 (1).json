@@ -1,0 +1,50 @@
+{
+    "bco_id": "http://biocomputeobject.org/BCO_000539",
+    "checksum": "0aa92e90d9c79d85ef09e36e7337cfbf11ef54184be6443fd6eaf0aadf0ea920",
+    "bco_spec_version": "1.3.0",
+    "provenance_domain": {
+        "name": "Title: RNA-seq data of invasive ductal carcinoma and adjacent normal tissues from a Korean patient with breast cancer",
+        "version": "1.0.0",
+        "license": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "created": "2019-10-08T21:57:16.864889",
+        "modified": "",
+        "contributors": [
+            {
+                "name": "",
+                "orcid": "",
+                "affiliation": "",
+                "contribution": [
+                    "createdBy"
+                ],
+                "email": "nainiwan72@gwu.edu"
+            }
+        ]
+    },
+    "usability_domain": [
+        ""
+    ],
+    "extension_domain": {},
+    "description_domain": {
+        "keywords": [],
+        "pipeline_steps": []
+    },
+    "execution_domain": {
+        "external_data_endpoints": [],
+        "environment_variables": {},
+        "script_driver": "",
+        "software_prerequisites": [],
+        "script": []
+    },
+    "parametric_domain": [
+        {
+            "step": "",
+            "param": "",
+            "value": ""
+        }
+    ],
+    "io_domain": {
+        "input_subdomain": [],
+        "output_subdomain": []
+    },
+    "error_domain": {}
+}
