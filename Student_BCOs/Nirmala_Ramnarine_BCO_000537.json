@@ -1,0 +1,48 @@
+{
+    "bco_id": "http://biocomputeobject.org/BCO_000537",
+    "checksum": "55858f83c823cf8fa089fc45565ab103acd31913954fee7c00064ce4fd2e763a",
+    "bco_spec_version": "1.3.0",
+    "provenance_domain": {
+        "name": "",
+        "version": "1.0.0",
+        "license": "",
+        "created": "2019-10-08T21:22:14.871482",
+        "modified": "",
+        "contributors": [
+            {
+                "name": "",
+                "orcid": "",
+                "affiliation": "",
+                "contribution": [
+                    "createdBy"
+                ],
+                "email": "nramnarine13@gwu.edu"
+            }
+        ]
+    },
+    "usability_domain": [],
+    "extension_domain": {},
+    "description_domain": {
+        "keywords": [],
+        "pipeline_steps": []
+    },
+    "execution_domain": {
+        "external_data_endpoints": [],
+        "environment_variables": {},
+        "script_driver": "",
+        "software_prerequisites": [],
+        "script": []
+    },
+    "parametric_domain": [
+        {
+            "step": "",
+            "param": "",
+            "value": ""
+        }
+    ],
+    "io_domain": {
+        "input_subdomain": [],
+        "output_subdomain": []
+    },
+    "error_domain": {}
+}
