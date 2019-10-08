@@ -1,0 +1,185 @@
+{
+    "bco_id": "http://biocomputeobject.org/BCO_000529",
+    "checksum": "cc4911fbcae951ad5189c72ef3c32eb00fde0f847d4ae4f684dcdd80cd7e4458",
+    "bco_spec_version": "1.3.0",
+    "provenance_domain": {
+        "name": "Correlating miRNA and gene expression data in 34 cancer phenotypes",
+        "version": "1.0",
+        "license": "Creative Commons Attribution 4.0 International License",
+        "created": "2019-10-08T02:27:36.285940",
+        "modified": "",
+        "contributors": [
+            {
+                "name": "",
+                "orcid": "",
+                "affiliation": "",
+                "contribution": [
+                    "createdBy"
+                ],
+                "email": "loh_ling_sheng@hotmail.com"
+            }
+        ]
+    },
+    "usability_domain": [
+        "This workflow serves to integrate TCGA expression data of mRNAs/proteins and miRNAs in cancer, thereafter calculate the correlations between miRNA and features/protein expressions in several cancer studies to better understand the roles of miRNA in target feature expression profiles under cancer conditions. This example pipeline was created based on the work of Ahmed et al. doi: 10.1186/s13104-018-3160-9"
+    ],
+    "extension_domain": {},
+    "description_domain": {
+        "keywords": [
+            "cancer",
+            "microRNA",
+            "TCGA",
+            "miRCancerdb",
+            "RNA sequencing"
+        ],
+        "pipeline_steps": [
+            {
+                "name": "Data input and tidying",
+                "version": "3.6.1",
+                "step_number": 0,
+                "input_list": [
+                    {
+                        "access_time": "R Package RTCGA",
+                        "uri": "http://example.com/data/514869/genome.fasta",
+                        "sha1_checksum": "2019-09-12T19:11:18.369303",
+                        "filename": "TCGA.miRNA.sh"
+                    },
+                    {
+                        "access_time": "R package Bioconductor targets-can.Hs.eg. ",
+                        "uri": "http://example.com/data/514769/genome.fasta",
+                        "sha1_checksum": "2019-09-12T19:11:18.369303",
+                        "filename": "feature.sh"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "access_time": "2019-09-12T19:11:18.369303",
+                        "uri": "http://example.com/data/514769/simulated.fasta",
+                        "sha1_checksum": "2019-09-12T19:11:18.369303",
+                        "filename": "0_preprocessed.TCGA.sh"
+                    }
+                ],
+                "prerequisite": [],
+                "description": "This output removes data points with expression values less than 1"
+            },
+            {
+                "name": "Compare miRNA to human miRNA annotations",
+                "version": "3.6.1",
+                "step_number": 1,
+                "input_list": [
+                    {
+                        "access_time": "2019-09-12T19:11:18.369303",
+                        "uri": "http://example.com/data/514769/genome.fasta",
+                        "sha1_checksum": "2019-09-12T19:11:18.369303",
+                        "filename": "0_preprocessed.TCGA.sh"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "access_time": "2019-09-12T19:11:18.369303",
+                        "uri": "http://example.com/data/514769/correlated.fasta",
+                        "sha1_checksum": "2019-09-12T19:11:18.369303",
+                        "filename": "1_Correlated.sh"
+                    }
+                ],
+                "prerequisite": [],
+                "description": "Calculate Pearson’s correlations of miRNA expression matrix and gene/protein expression matrices for each cancer type"
+            },
+            {
+                "name": "Remove missing values (NA) and insignificant correlation values ",
+                "version": "3.6.1",
+                "step_number": 2,
+                "input_list": [
+                    {
+                        "access_time": "2019-09-12T19:11:18.369303",
+                        "uri": "http://example.com/data/514769/correlated.fasta",
+                        "sha1_checksum": "2019-09-12T19:11:18.369303",
+                        "filename": "1_Correlated.sh"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "access_time": "2019-09-12T19:11:18.369303",
+                        "uri": "http://example.com/data/514769/trimmed.fasta",
+                        "sha1_checksum": "2019-09-12T19:11:18.369303",
+                        "filename": "2_Trimmedcorrelation.sh"
+                    }
+                ],
+                "prerequisite": [],
+                "description": "Removing insignificant correlation values less than 0.1"
+            },
+            {
+                "name": "Merge correlation data for all cancer types",
+                "version": "3.6.1",
+                "step_number": 3,
+                "input_list": [
+                    {
+                        "access_time": "2019-09-12T19:11:18.369303",
+                        "uri": "http://example.com/data/514769/trimmed.fasta",
+                        "sha1_checksum": "2019-09-12T19:11:18.369303",
+                        "filename": "2_Trimmedcorrelation.sh"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "access_time": "2019-09-12T19:11:18.369303",
+                        "uri": "http://example.com/data/514769/mergedtrimmed.fasta",
+                        "sha1_checksum": "2019-09-12T19:11:18.369303",
+                        "filename": "3_Mergedtrimmed.sh"
+                    }
+                ],
+                "prerequisite": [],
+                "description": "Merge correlation data for all 34 cancer types into a single table "
+            }
+        ]
+    },
+    "execution_domain": {
+        "external_data_endpoints": [],
+        "environment_variables": {},
+        "script_driver": "Host type - x86_64-linux",
+        "software_prerequisites": [
+            {
+                "name": "R ",
+                "version": "3.6.1",
+                "uri": {
+                    "access_time": "2019-10-07T21:40:17-0500",
+                    "uri": "",
+                    "sha1_checksum": "2019-10-07T21:40:17-0500",
+                    "filename": ""
+                }
+            }
+        ],
+        "script": []
+    },
+    "parametric_domain": [
+        {
+            "step": "2",
+            "param": "minimum",
+            "value": "0.1"
+        }
+    ],
+    "io_domain": {
+        "input_subdomain": [
+            {
+                "uri": {
+                    "access_time": "2019-10-07T21:40:17-0500",
+                    "uri": "https://bioconductor.org/packages/release/bioc/html/RTCGA.html",
+                    "sha1_checksum": "2019-10-07T21:40:17-0500",
+                    "filename": ""
+                }
+            }
+        ],
+        "output_subdomain": [
+            {
+                "mediatype": "",
+                "uri": {
+                    "access_time": "2019-10-07T21:40:17-0500",
+                    "uri": "http://example.com/data/514769/analyzed.csv",
+                    "sha1_checksum": "2019-10-07T21:40:17-0500",
+                    "filename": ""
+                }
+            }
+        ]
+    },
+    "error_domain": {}
+}
