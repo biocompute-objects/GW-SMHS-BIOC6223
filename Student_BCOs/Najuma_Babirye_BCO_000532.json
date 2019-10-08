@@ -1,0 +1,60 @@
+{
+    "bco_id": "http://biocomputeobject.org/BCO_000532",
+    "checksum": "7c2e421dae392a14a4753c09bd5b5dc46d91725fe98815751852bdd4f1875e55",
+    "bco_spec_version": "1.3.0",
+    "provenance_domain": {
+        "name": "",
+        "version": "2.0.0",
+        "license": "http://spdx.org/liscenses/CC-BY-4.0.html",
+        "created": "2019-10-08T21:19:52.713920",
+        "modified": "",
+        "contributors": [
+            {
+                "name": "",
+                "orcid": "",
+                "affiliation": "",
+                "contribution": [
+                    "createdBy"
+                ],
+                "email": "nsbabirye@gwu.edu"
+            }
+        ]
+    },
+    "usability_domain": [
+        "Biological Question: What is the enriched analysis of circulating tumor cell (CTC) populations, and how is the (up or down) state of CTC gene differential expression related to meta-static precursors in pancreatic cancer?",
+        "After being shed from primary tumors, CTCs mediate the spread of cancer to distant organs by the mechanism of traveling in the bloodstream to other organs. A comparison of genome-wide expression profiles of CTCs with matched primary tumors is assessed in the project. Pancreatic CTC data is obtained. Individual CTCs are isolated from cells through purification and selection methods. Single cell RNA sequencing is performed on the CTCs to create a CTC library. CTC gene set processing and enrichment is done accessing and using various metadata, databases and tools. The overall achievement in the research project was the observation of high expression of stromal-derived extracellular matrix proteins in mouse and human pancreatic CTCs; thus, docking CTC expression to cancerous cell migration and invasiveness."
+    ],
+    "extension_domain": {},
+    "description_domain": {
+        "keywords": [
+            "Single-cell RNA sequencing",
+            "Pancreatic CTCs",
+            "Extracellular Matrix",
+            "Gene Expression",
+            "Metastatic",
+            "classical Circulating Tumor Cells",
+            "Cell Migration",
+            "Stromal"
+        ],
+        "pipeline_steps": []
+    },
+    "execution_domain": {
+        "external_data_endpoints": [],
+        "environment_variables": {},
+        "script_driver": "",
+        "software_prerequisites": [],
+        "script": []
+    },
+    "parametric_domain": [
+        {
+            "step": "",
+            "param": "",
+            "value": ""
+        }
+    ],
+    "io_domain": {
+        "input_subdomain": [],
+        "output_subdomain": []
+    },
+    "error_domain": {}
+}
