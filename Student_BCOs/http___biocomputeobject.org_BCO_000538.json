@@ -1,0 +1,54 @@
+{
+    "bco_id": "http://biocomputeobject.org/BCO_000538",
+    "checksum": "68948b6fc1683296fc1ee74bfbe3f255c5b4e6b949efd316ab501c62266a171e",
+    "bco_spec_version": "1.3.0",
+    "provenance_domain": {
+        "name": "RNA-seq data of invasive ductal carcinoma and adjacent normal tissues from a Korean patient with breast cancer",
+        "version": "1.0.0",
+        "license": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "created": "2019-10-08T21:52:02.253754",
+        "modified": "",
+        "contributors": [
+            {
+                "name": "",
+                "orcid": "",
+                "affiliation": "",
+                "contribution": [
+                    "createdBy"
+                ],
+                "email": "wshao04@gmail.com"
+            }
+        ]
+    },
+    "usability_domain": [
+        " Total RNA was extracted from ten samples of cancer tissue(invasive ductal carcinoma; luminal B subtype) and three samples of adjacent normal tissue from a Korean patient with invasive ductal carcinoma. Transcriptomes of breast cancer and normal samples were profiled  via RNA-seq. Differentially expressed genes were identified with an FDR-adjusted p-value cutoff of 0.55. Gene ontology analysis indicated that several pathways are associated with the onset and progression of invasive ductal carcinoma. "
+    ],
+    "extension_domain": {},
+    "description_domain": {
+        "keywords": [
+            "Invasive ductal carcinoma",
+            "breast cancer",
+            "Korean"
+        ],
+        "pipeline_steps": []
+    },
+    "execution_domain": {
+        "external_data_endpoints": [],
+        "environment_variables": {},
+        "script_driver": "",
+        "software_prerequisites": [],
+        "script": []
+    },
+    "parametric_domain": [
+        {
+            "step": "",
+            "param": "",
+            "value": ""
+        }
+    ],
+    "io_domain": {
+        "input_subdomain": [],
+        "output_subdomain": []
+    },
+    "error_domain": {}
+}
