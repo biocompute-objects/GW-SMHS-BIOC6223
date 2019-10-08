@@ -49,5 +49,9 @@ Ling Sheng Loh (@lingsloh - member)
 ***June Beshea (jbeshea@gwu.edu- invitation sent)***    
 ***Publication: _____________________________________***
 
+Group 8
+Zuleima Munoz (zmunoz09@gwu.edu - member )
+Lindsay Hopson (lhopson15@gwu.edu - member)
+
 
 
