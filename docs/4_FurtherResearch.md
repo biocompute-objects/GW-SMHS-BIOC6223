@@ -32,7 +32,7 @@ Group2 Wednesday 10/9 1-5pm  (tentative- will provide a more accurate time)
 Group3 Thursday 10/10 @3pm    
 **Group4**      
 **Group5**      
-**Group6**     
+**Group6** Friday 10/11 2-6pm    
 Group7 Wednesday 10/9 1pm     
 **Group8**      
 
