@@ -25,12 +25,12 @@ Wednesday 10/9 1-5pm
 Thursday 10/10 9-5pm    
 Friday 10/11 9-4pm      
 
-please email janishapatel@gwu.edu to reserver your time. Thank you!
+please email janishapatel@gwu.edu to reserve your time. Thank you!
 
-**Group1**      
+Group1 Friday 10/11 @11am      
 Group2 Wednesday 10/9 1-5pm  (tentative- will provide a more accurate time)    
 Group3 Thursday 10/10 @3pm    
-**Group4**      
+Group4 Wednesday 10/9 @4pm    
 **Group5**      
 **Group6**     
 Group7 Wednesday 10/9 1pm     
