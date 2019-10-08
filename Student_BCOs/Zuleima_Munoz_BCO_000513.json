@@ -1,0 +1,166 @@
+{
+    "bco_id": "http://biocomputeobject.org/BCO_000513",
+    "checksum": "498097b78fe8a97df62b26a8ed9d2b261196e7bed395f18c0a6f378e01e2f415",
+    "bco_spec_version": "1.3.0",
+    "provenance_domain": {
+        "name": "RNA sequencing identifies specific PIWI-interacting small non-coding RNA expression patterns in breast cancer",
+        "version": "2.9.0",
+        "license": "",
+        "created": "2019-10-02T03:18:24.739033",
+        "modified": "2019-10-08T15:56:27.060627",
+        "contributors": [
+            {
+                "name": "Zuleima Munoz",
+                "orcid": "",
+                "affiliation": "The George Washington University ",
+                "contribution": [
+                    "createdBy"
+                ],
+                "email": "zmunoz09@gwu.edu"
+            }
+        ]
+    },
+    "usability_domain": [
+        " SmallRNA-Seq data from breast cancer cell lines (BC) and tumor biopsies showed more than 100 BC piRNAs molecules. piRNAs are known to be involved in RNA silencing and regulation of gene expression. This pipeline intents to investigate the role of piRNA in the transcription and post-transcription of gene regulation in cancer cells. "
+    ],
+    "extension_domain": {},
+    "description_domain": {
+        "keywords": [
+            "Breast cancer",
+            "piRNAs",
+            "PIWI",
+            "Small non-coding RNA",
+            "RNA-sequencing",
+            "Estrogen receptor"
+        ],
+        "platform": [
+            "",
+            ""
+        ],
+        "pipeline_steps": [
+            {
+                "name": "CellMiner",
+                "version": "2.2",
+                "step_number": 1,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Identify expression level of transcripts encoding components of the piRNA biogenesis pathway in breast cancer cell lines. "
+            },
+            {
+                "name": "iMir ",
+                "version": "2",
+                "step_number": 2,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Identify the sncRNA families analyzed."
+            },
+            {
+                "name": "DESeq bioconductor package",
+                "version": "1.14.0",
+                "step_number": 3,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Differential expression analysis of piRNA and Biclustering and Principal Component Analysis (PCA) of sncRNA expression profiles were done in this step."
+            },
+            {
+                "name": "IntersectBed",
+                "version": "2.18",
+                "step_number": 4,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Identify genomic piRNA loci within repeat regions."
+            },
+            {
+                "name": "MiRanda",
+                "version": "3.3a",
+                "step_number": 5,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "piRNA target RNAs were identified by sequence complementarity between each piRNA and the 5′-UTRs, CDSs or 3′-UTRs of all known human RNAs or RNAs expressed in breast invasive carcinomas. "
+            },
+            {
+                "name": "Ingenuity Pathway Analysis ",
+                "version": "",
+                "step_number": 6,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Identify biological processes significantly associated to piRNA-targeted mRNAs."
+            }
+        ]
+    },
+    "execution_domain": {
+        "external_data_endpoints": [
+            {
+                "name": "CellMiner",
+                "url": "https://discover.nci.nih.gov/cellminer/"
+            },
+            {
+                "name": " iMir ",
+                "url": "http://www.labmedmolge.unisa.it/inglese/research/imir."
+            },
+            {
+                "name": "DESeq bioconductor package",
+                "url": "https://www.huber.embl.de/users/anders/DESeq"
+            },
+            {
+                "name": "IntersectBed",
+                "url": "https://github.com/arq5x/bedtools2"
+            },
+            {
+                "name": "MiRanda",
+                "url": "https://bioweb.pasteur.fr/packages/pack@miRanda@3.3a "
+            },
+            {
+                "name": "Ingenuity Pathway Analysis ",
+                "url": "https://www.qiagen.com/us/products/discovery-and-translational-research/next-generation-sequencing/informatics-and-data/interpretation-content-databases/ingenuity-pathway-analysis/#orderinginformation "
+            }
+        ],
+        "environment_variables": {},
+        "script_driver": "",
+        "software_prerequisites": [],
+        "script": []
+    },
+    "parametric_domain": [
+        {
+            "step": "2",
+            "param": "Minimum Read Count",
+            "value": "3"
+        },
+        {
+            "step": "2",
+            "param": "Minimum Read Length ",
+            "value": "17"
+        },
+        {
+            "step": "2",
+            "param": "minReadlengthTrans",
+            "value": "32"
+        },
+        {
+            "step": "2",
+            "param": "maxReadLength ",
+            "value": "32"
+        },
+        {
+            "step": "5",
+            "param": "alignment score ",
+            "value": "≥170"
+        },
+        {
+            "step": "5",
+            "param": "Energy threshold ",
+            "value": "≤-20.0 kcal/mol"
+        }
+    ],
+    "io_domain": {
+        "input_subdomain": [],
+        "output_subdomain": []
+    },
+    "error_domain": {}
+}
