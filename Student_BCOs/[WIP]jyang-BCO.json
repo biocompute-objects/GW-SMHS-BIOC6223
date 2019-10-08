@@ -1,0 +1,155 @@
+{
+    "bco_id": "http://biocomputeobject.org/BCO_000530",
+    "checksum": "6b8a80afd1cf35d27f88a97418960fcc4fdd073698f9fc8808ef4ed488dc7e95",
+    "bco_spec_version": "1.3.0",
+    "provenance_domain": {
+        "name": "TAP pipline",
+        "version": "1.0",
+        "license": "BCCA (academic use)",
+        "created": "2019-10-08T20:15:08.906896",
+        "modified": "2019-10-08T21:41:17.282233",
+        "contributors": [
+            {
+                "name": "",
+                "orcid": "",
+                "affiliation": "",
+                "contribution": [
+                    "createdBy"
+                ],
+                "email": "jiugeyang@gwu.edu"
+            }
+        ]
+    },
+    "usability_domain": [
+        ""
+    ],
+    "extension_domain": {},
+    "description_domain": {
+        "keywords": [
+            "RNA-seq",
+            "Transcriptome assembly",
+            "Clinical genomics",
+            "Gene fusion",
+            "Aliternative splicing",
+            "Internal tandem duplication",
+            "Partial tandem duplication",
+            "Acute myeloid leukemia"
+        ],
+        "pipeline_steps": [
+            {
+                "name": "BioBloomTools",
+                "version": "2.1.0",
+                "step_number": 1,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Classify and segregate whole-sample RNA-seq reads into bins corresponding to specific gene targets."
+            },
+            {
+                "name": "Trans-ABySS",
+                "version": "1.5.4",
+                "step_number": 2,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Bins of read pairs belonging to individual genes are assembled independently in parallel. Reconstruct transcripts with a range of expression levels and sequence complexity."
+            },
+            {
+                "name": "GMAP",
+                "version": "2014-12-28",
+                "step_number": 3,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Assembled contig sequences are aligned to the reference genome and the reference transcriptome. Concurrently, extracted reads are aligned to the assembled contigs to provide support evidence and read counts of single variant (SV) calls."
+            },
+            {
+                "name": "BWA-MEM",
+                "version": "0.7.12",
+                "step_number": 3,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Assembled contig sequences are aligned to the reference genome and the reference transcriptome. Concurrently, extracted reads are aligned to the assembled contigs to provide support evidence and read counts of single variant (SV) calls."
+            },
+            {
+                "name": "PAVFinder",
+                "version": "0.4.2",
+                "step_number": 4,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Deduce variants from the split or gapped alignments of contigs to the references. Reports novel splicing events, such as exon skipping, novel exons, novel introns, retained introns, and novel splice donor and acceptor sites by comparing contig-to-genome alignments to reference gene models."
+            }
+        ]
+    },
+    "execution_domain": {
+        "external_data_endpoints": [],
+        "environment_variables": {},
+        "script_driver": "Python 2.7",
+        "software_prerequisites": [],
+        "script": [
+            {
+                "uri": {
+                    "access_time": "2018-09-10",
+                    "uri": " https://github.com/bcgsc/biobloom",
+                    "sha1_checksum": "BCO_000530checksum",
+                    "filename": ""
+                }
+            },
+            {
+                "uri": {
+                    "access_time": "2018-09-10",
+                    "uri": " https://github.com/bcgsc/transabyss",
+                    "sha1_checksum": "BCO_000530checksum",
+                    "filename": ""
+                }
+            },
+            {
+                "uri": {
+                    "access_time": "2018-09-10",
+                    "uri": "http://research-pub.gene.com/gmap/",
+                    "sha1_checksum": "BCO_000530checksum",
+                    "filename": ""
+                }
+            },
+            {
+                "uri": {
+                    "access_time": "2018-09-10",
+                    "uri": "https://github.com/lh3/bwa",
+                    "sha1_checksum": "BCO_000530checksum",
+                    "filename": ""
+                }
+            },
+            {
+                "uri": {
+                    "access_time": "2018-09-10",
+                    "uri": "http://www.bcgsc.ca/platform/bioinfo/software/pavfinder",
+                    "sha1_checksum": "BCO_000530checksum",
+                    "filename": ""
+                }
+            }
+        ]
+    },
+    "parametric_domain": [
+        {
+            "step": "",
+            "param": "",
+            "value": ""
+        }
+    ],
+    "io_domain": {
+        "input_subdomain": [
+            {
+                "uri": {
+                    "access_time": "2018-09-10",
+                    "uri": "https://www.ncbi.nlm.nih.gov/geoprofiles/49642",
+                    "sha1_checksum": "BCO_000530checksum",
+                    "filename": ""
+                }
+            }
+        ],
+        "output_subdomain": []
+    },
+    "error_domain": {}
+}
