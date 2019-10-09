@@ -1,0 +1,489 @@
+{
+    "bco_id": "http://biocomputeobject.org/BCO_000514",
+    "checksum": "277d7104cfff934671901f289bf08b62512a0d936a69642dfe480a69242afd6a",
+    "bco_spec_version": "1.3.0",
+    "provenance_domain": {
+        "name": "iMir: An integrated pipeline for high-throughput analysis of small non-coding RNA data obtained by smallRNA-Seq",
+        "version": "1.0.0",
+        "license": "https://spdx.org/licenses/CC-BY-4.0.html",
+        "created": "2019-10-04T14:31:57.321761",
+        "modified": "2019-10-07T20:51:42.135185",
+        "contributors": [
+            {
+                "name": "Tomas Kanholm",
+                "orcid": "https://orcid.org/0000-0001-6894-8875",
+                "affiliation": "George Washington University",
+                "contribution": [
+                    "createdBy"
+                ],
+                "email": "tkanholm@gwu.edu"
+            }
+        ]
+    },
+    "usability_domain": [
+        "Pipeline for hight-throughput analysis of small non-coding RNA data obtained by smallRNA-seq",
+        "Adapted from Giurato, Giorgio, Maria Rosaria De Filippo, Antonio Rinaldi, Adnan Hashim, Giovanni Nassa, Maria Ravo, Francesca Rizzo, Roberta Tarallo, and Alessandro Weisz. “IMir: An Integrated Pipeline for High-Throughput Analysis of Small Non-Coding RNA Data Obtained by SmallRNA-Seq.” BMC Bioinformatics 14 (December 13, 2013): 362. https://doi.org/10.1186/1471-2105-14-362."
+    ],
+    "extension_domain": {},
+    "description_domain": {
+        "keywords": [
+            "RNA",
+            "RNA-seq",
+            "sncRNA",
+            "miRNA",
+            "miRNA target prediction",
+            "PCA analysis"
+        ],
+        "xref": [],
+        "pipeline_steps": [
+            {
+                "name": "Remove Adapter",
+                "version": "1.0.0",
+                "step_number": 1,
+                "input_list": [
+                    {
+                        "access_time": "2013-12-13T00:00:00-08:00",
+                        "uri": "www.example.com/iMir/iMirInputFiles/exampleRNAData.fastq",
+                        "sha1_checksum": "000154checksum",
+                        "filename": "exampleRNAData.fastq"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "access_time": "2013-12-13T00:00:00-08:00",
+                        "uri": "www.example.com/iMir/iMirOutputFiles/exampleRNAData_converted.rc",
+                        "sha1_checksum": "000154checksum",
+                        "filename": "exampleRNAData.fa"
+                    },
+                    {
+                        "access_time": "2013-12-13T00:00:00-08:00",
+                        "uri": "www.example.com/iMir/iMirOutputFiles/exampleRNAData.fa",
+                        "sha1_checksum": "000154checksum",
+                        "filename": "exampleRNAData.fa"
+                    },
+                    {
+                        "access_time": "2013-12-13T00:00:00-08:00",
+                        "uri": "www.example.com/iMir/iMirOutputFiles/exampleRNAData_LengthDistribution.png",
+                        "sha1_checksum": "000154checksum",
+                        "filename": "exampleRNAData_LengthDistribution.png"
+                    },
+                    {
+                        "access_time": "2013-12-13T00:00:00-08:00",
+                        "uri": "www.example.com/iMir/iMirOutputFiles/exampleRNAData_LengthDistribution.txt",
+                        "sha1_checksum": "000154checksum",
+                        "filename": "exampleRNAData_LengthDistribution.txt"
+                    }
+                ],
+                "prerequisite": [
+                    {
+                        "name": "iMir_DB folder",
+                        "uri": {
+                            "access_time": "2013-12-13T00:00:00-08:00",
+                            "uri": "www.example.com/iMir/iMir_DB",
+                            "sha1_checksum": "000154checksum",
+                            "filename": "iMir_DB"
+                        }
+                    }
+                ],
+                "description": "remove adapter sequences from the original RNA-seq FASTQ file(s)"
+            },
+            {
+                "name": "Identification of sncRNAs/ Novel miRNAs Prediction",
+                "version": "1.0.0",
+                "step_number": 2,
+                "input_list": [
+                    {
+                        "access_time": "2013-12-13T00:00:00-08:00",
+                        "uri": "www.example.com/iMir/iMirInputFiles/exampleRNAData_converted.rc",
+                        "sha1_checksum": "000154checksum",
+                        "filename": "exampleRNAData_converted.rc"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "access_time": "2013-12-13T00:00:00-08:00",
+                        "uri": "www.example.com/iMirOutputFiles/exampleRNAData_sncRNA_result/",
+                        "sha1_checksum": "000154checksum",
+                        "filename": "RNAData_sncRNA_result (folder)"
+                    },
+                    {
+                        "access_time": "2013-12-13T00:00:00-08:00",
+                        "uri": "www.example.com/iMirOutputFiles/Cluster_Table_Raw_Data.txt",
+                        "sha1_checksum": "000154checksum",
+                        "filename": "Cluster_Table_Raw_Data.txt"
+                    }
+                ],
+                "prerequisite": [
+                    {
+                        "name": "iMir_DB folder",
+                        "uri": {
+                            "access_time": "2013-12-13T00:00:00-08:00",
+                            "uri": "www.example.com/iMir/iMir_DB",
+                            "sha1_checksum": "000154checksum",
+                            "filename": "iMir_DB"
+                        }
+                    }
+                ],
+                "description": " identification of known small non coding RNA (sncRNAs) and novel miRNAs prediction. The input must be given in readscount format (\"read sequence\" \"read frequency\")."
+            },
+            {
+                "name": "Diff Exp Analysis",
+                "version": "1.0.0",
+                "step_number": 3,
+                "input_list": [
+                    {
+                        "access_time": "2013-12-13T00:00:00-08:00",
+                        "uri": "www.example.com/iMirOutputFiles/Cluster_Table_Raw_Data.txt",
+                        "sha1_checksum": "000154checksum",
+                        "filename": "Cluster_Table_Raw_Data.txt"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "access_time": "2013-12-13T00:00:00-08:00",
+                        "uri": "www.example.com/iMirOutputFiles/DESeq_Analysis/Case_exampleRNAData_vs_Control_exampleRNAData/Case_exampleRNAData_vs_Control_exampleRNAData.dat",
+                        "sha1_checksum": "000154checksum",
+                        "filename": "Case_exampleRNAData_vs_Control_exampleRNAData.dat"
+                    },
+                    {
+                        "access_time": "2013-12-13T00:00:00-08:00",
+                        "uri": "www.example.com/iMirOutputFiles/DESeq_Analysis/Case_exampleRNAData_vs_Control_exampleRNAData/DESeq_Case_exampleRNAData_vs_Control_exampleRNAData.txt",
+                        "sha1_checksum": "000154checksum",
+                        "filename": "DESeq_Case_exampleRNAData_vs_Control_exampleRNAData.txt"
+                    },
+                    {
+                        "access_time": "2013-12-13T00:00:00-08:00",
+                        "uri": "www.example.com/iMirOutputFiles/DESeq_Analysis/Case_exampleRNAData_vs_Control_exampleRNAData/miRDiffList_for_Target.txt",
+                        "sha1_checksum": "000154checksum",
+                        "filename": "miRDiffList_for_Target.txt"
+                    },
+                    {
+                        "access_time": "2013-12-13T00:00:00-08:00",
+                        "uri": "www.example.com/iMirOutputFiles/DESeq_Analysis/Case_exampleRNAData_vs_Control_exampleRNAData/Result_Conversion_20_15.txt",
+                        "sha1_checksum": "000154checksum",
+                        "filename": "Result_Conversion_20_15.txt"
+                    },
+                    {
+                        "access_time": "2013-12-13T00:00:00-08:00",
+                        "uri": "www.example.com/iMirOutputFiles/DESeq_Analysis/Case_exampleRNAData_vs_Control_exampleRNAData/Result_Conversion_20_17.txt",
+                        "sha1_checksum": "000154checksum",
+                        "filename": "Result_Conversion_20_17.txt"
+                    }
+                ],
+                "prerequisite": [
+                    {
+                        "name": "iMir_DB folder",
+                        "uri": {
+                            "access_time": "2013-12-13T00:00:00-08:00",
+                            "uri": "www.example.com/iMir/iMir_DB",
+                            "sha1_checksum": "000154checksum",
+                            "filename": "iMir_DB"
+                        }
+                    }
+                ],
+                "description": "Run differential expression analysis starting from a tab-delimitated input file containing the read-counts for control and test samples respectively"
+            },
+            {
+                "name": "Target Prediction",
+                "version": "1.0.0",
+                "step_number": 4,
+                "input_list": [
+                    {
+                        "access_time": "2013-12-13T00:00:00-08:00",
+                        "uri": "www.example.com/iMirOutputFiles/DESeq_Analysis/Case_exampleRNAData_vs_Control_exampleRNAData/miRDiffList_for_Target.txt",
+                        "sha1_checksum": "000154checksum",
+                        "filename": "miRDiffList_for_Target.txt"
+                    },
+                    {
+                        "access_time": "2013-12-13T00:00:00-08:00",
+                        "uri": "www.example.com/iMirOutputFiles/DESeq_Analysis/Case_exampleRNAData_vs_Control_exampleRNAData/Result_Conversion_20_15.txt",
+                        "sha1_checksum": "000154checksum",
+                        "filename": "Result_Conversion_20_15.txt"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "access_time": "2013-12-13T00:00:00-08:00",
+                        "uri": "www.example.com/iMirOutputFiles/DESeq_Analysis/Case_exampleRNAData_vs_Control_exampleRNAData/Miranda/",
+                        "sha1_checksum": "000154checksum",
+                        "filename": "Miranda (folder)"
+                    },
+                    {
+                        "access_time": "2013-12-13T00:00:00-08:00",
+                        "uri": "www.example.com/iMirOutputFiles/DESeq_Analysis/Case_exampleRNAData_vs_Control_exampleRNAData/TargetScan",
+                        "sha1_checksum": "000154checksum",
+                        "filename": "TargetScan (folder)"
+                    }
+                ],
+                "prerequisite": [
+                    {
+                        "name": "iMir_DB folder",
+                        "uri": {
+                            "access_time": "2013-12-13T00:00:00-08:00",
+                            "uri": "www.example.com/iMir/iMir_DB",
+                            "sha1_checksum": "000154checksum",
+                            "filename": "iMir_DB"
+                        }
+                    }
+                ],
+                "description": "given a list of miRNAs, allows the identification of mRNA targets. The miRNA name must be written in inverted commas (“ ”)"
+            }
+        ]
+    },
+    "execution_domain": {
+        "external_data_endpoints": [
+            {
+                "name": "MiRanda",
+                "url": "http://www.microrna.org/microrna/home.do"
+            }
+        ],
+        "environment_variables": {},
+        "script_driver": "> python iMir.py",
+        "software_prerequisites": [
+            {
+                "name": "CutAdapt",
+                "version": "1.3",
+                "uri": {
+                    "access_time": "2013-12-13T00:00:00-08:00",
+                    "uri": "https://cutadapt.readthedocs.io/en/stable/installation.html",
+                    "sha1_checksum": "000154checksum",
+                    "filename": "cutadapt"
+                }
+            },
+            {
+                "name": "bowtie",
+                "version": "0.12.8",
+                "uri": {
+                    "access_time": "2013-12-13T00:00:00-08:00",
+                    "uri": "https://sourceforge.net/projects/bowtie-bio/files/bowtie/0.12.8/",
+                    "sha1_checksum": "000154checksum",
+                    "filename": "bowtie-0.12.8-linux-x86_64.zip"
+                }
+            },
+            {
+                "name": "Vienna RNA Secondary Structure packge",
+                "version": "1.8.5",
+                "uri": {
+                    "access_time": "2013-12-13T00:00:00-08:00",
+                    "uri": "https://www.tbi.univie.ac.at/RNA/download/sourcecode/1_8_x/ViennaRNA-1.8.5.tar.gz",
+                    "sha1_checksum": "000154checksum",
+                    "filename": "ViennaRNA-1.8.5.tar.gz"
+                }
+            },
+            {
+                "name": "Weka",
+                "version": "3.5.3",
+                "uri": {
+                    "access_time": "2013-12-13T00:00:00-08:00",
+                    "uri": "https://sourceforge.net/projects/weka/files/weka-3-5/3.5.3/",
+                    "sha1_checksum": "000154checksum",
+                    "filename": "weka-3-5-3.zip"
+                }
+            },
+            {
+                "name": "SQUID",
+                "version": "1.0.0",
+                "uri": {
+                    "access_time": "2013-12-13T00:00:00-08:00",
+                    "uri": "http://eddylab.org/software.html",
+                    "sha1_checksum": "000154checksum",
+                    "filename": "squid.tar.gz"
+                }
+            },
+            {
+                "name": "randfold",
+                "version": "1.0.0",
+                "uri": {
+                    "access_time": "2013-12-13T00:00:00-08:00",
+                    "uri": "https://github.com/eb00/randfold",
+                    "sha1_checksum": "000154checksum",
+                    "filename": "randfold_src"
+                }
+            },
+            {
+                "name": "PDF::AP12",
+                "version": "2.020",
+                "uri": {
+                    "access_time": "2013-12-13T00:00:00-08:00",
+                    "uri": "https://metacpan.org/pod/PDF::API2",
+                    "sha1_checksum": "000154checksum",
+                    "filename": "PDF-API2-2.036.tar.gz"
+                }
+            },
+            {
+                "name": "limma",
+                "version": "3.14.4",
+                "uri": {
+                    "access_time": "2013-12-13T00:00:00-08:00",
+                    "uri": "http://www.bioconductor.org/packages/2.11/bioc/html/limma.html",
+                    "sha1_checksum": "000154checksum",
+                    "filename": "limma_3.14.4.tar.gz"
+                }
+            },
+            {
+                "name": "Python",
+                "version": "2.7",
+                "uri": {
+                    "access_time": "2013-12-13T00:00:00-08:00",
+                    "uri": "https://www.python.org/download/releases/2.7/",
+                    "sha1_checksum": "000154checksum",
+                    "filename": "python-2.7.tgz"
+                }
+            },
+            {
+                "name": "Perl",
+                "version": "5.0",
+                "uri": {
+                    "access_time": "2013-12-13T00:00:00-08:00",
+                    "uri": "https://www.cpan.org/src/5.0/",
+                    "sha1_checksum": "000154checksum",
+                    "filename": "perl_5.0.0.tar.gz"
+                }
+            },
+            {
+                "name": "Java",
+                "version": "1.6",
+                "uri": {
+                    "access_time": "2013-12-13T00:00:00-08:00",
+                    "uri": "https://www.oracle.com/java/technologies/javase-java-archive-javase6-downloads.html",
+                    "sha1_checksum": "000154checksum",
+                    "filename": "jdk-6u45-linux-i586-rpm.bin"
+                }
+            }
+        ],
+        "script": []
+    },
+    "parametric_domain": [],
+    "io_domain": {
+        "input_subdomain": [
+            {
+                "uri": {
+                    "access_time": "2013-12-13T00:00:00-08:00",
+                    "uri": "www.example.com/iMir/iMirInputFiles/exampleRNAData.fastq",
+                    "sha1_checksum": "000154checksum",
+                    "filename": "exampleRNAData.fastq"
+                }
+            }
+        ],
+        "output_subdomain": [
+            {
+                "mediatype": "text/csv",
+                "uri": {
+                    "access_time": "2013-12-13T00:00:00-08:00",
+                    "uri": "www.example.com/iMir/iMirOutputFiles/exampleRNAData_converted.rc",
+                    "sha1_checksum": "000154checksum",
+                    "filename": "exampleRNAData.fa"
+                }
+            },
+            {
+                "mediatype": "text/csv",
+                "uri": {
+                    "access_time": "2013-12-13T00:00:00-08:00",
+                    "uri": "www.example.com/iMir/iMirOutputFiles/exampleRNAData.fa",
+                    "sha1_checksum": "000154checksum",
+                    "filename": "exampleRNAData.fa"
+                }
+            },
+            {
+                "mediatype": "text/csv",
+                "uri": {
+                    "access_time": "2013-12-13T00:00:00-08:00",
+                    "uri": "www.example.com/iMir/iMirOutputFiles/exampleRNAData_LengthDistribution.png",
+                    "sha1_checksum": "000154checksum",
+                    "filename": "exampleRNAData_LengthDistribution.png"
+                }
+            },
+            {
+                "mediatype": "text/csv",
+                "uri": {
+                    "access_time": "2013-12-13T00:00:00-08:00",
+                    "uri": "www.example.com/iMir/iMirOutputFiles/exampleRNAData_LengthDistribution.txt",
+                    "sha1_checksum": "000154checksum",
+                    "filename": "exampleRNAData_LengthDistribution.txt"
+                }
+            },
+            {
+                "mediatype": "text/csv",
+                "uri": {
+                    "access_time": "2013-12-13T00:00:00-08:00",
+                    "uri": "www.example.com/iMirOutputFiles/exampleRNAData_sncRNA_result/",
+                    "sha1_checksum": "000154checksum",
+                    "filename": "RNAData_sncRNA_result (folder)"
+                }
+            },
+            {
+                "mediatype": "text/csv",
+                "uri": {
+                    "access_time": "2013-12-13T00:00:00-08:00",
+                    "uri": "www.example.com/iMirOutputFiles/Cluster_Table_Raw_Data.txt",
+                    "sha1_checksum": "000154checksum",
+                    "filename": "Cluster_Table_Raw_Data.txt"
+                }
+            },
+            {
+                "mediatype": "text/csv",
+                "uri": {
+                    "access_time": "2013-12-13T00:00:00-08:00",
+                    "uri": "www.example.com/iMirOutputFiles/DESeq_Analysis/Case_exampleRNAData_vs_Control_exampleRNAData/Case_exampleRNAData_vs_Control_exampleRNAData.dat",
+                    "sha1_checksum": "000154checksum",
+                    "filename": "Case_exampleRNAData_vs_Control_exampleRNAData.dat"
+                }
+            },
+            {
+                "mediatype": "text/csv",
+                "uri": {
+                    "access_time": "2013-12-13T00:00:00-08:00",
+                    "uri": "www.example.com/iMirOutputFiles/DESeq_Analysis/Case_exampleRNAData_vs_Control_exampleRNAData/DESeq_Case_exampleRNAData_vs_Control_exampleRNAData.txt",
+                    "sha1_checksum": "000154checksum",
+                    "filename": "DESeq_Case_exampleRNAData_vs_Control_exampleRNAData.txt"
+                }
+            },
+            {
+                "mediatype": "text/csv",
+                "uri": {
+                    "access_time": "2013-12-13T00:00:00-08:00",
+                    "uri": "www.example.com/iMirOutputFiles/DESeq_Analysis/Case_exampleRNAData_vs_Control_exampleRNAData/miRDiffList_for_Target.txt",
+                    "sha1_checksum": "000154checksum",
+                    "filename": "miRDiffList_for_Target.txt"
+                }
+            },
+            {
+                "mediatype": "text/csv",
+                "uri": {
+                    "access_time": "2013-12-13T00:00:00-08:00",
+                    "uri": "www.example.com/iMirOutputFiles/DESeq_Analysis/Case_exampleRNAData_vs_Control_exampleRNAData/Result_Conversion_20_15.txt",
+                    "sha1_checksum": "000154checksum",
+                    "filename": "Result_Conversion_20_15.txt"
+                }
+            },
+            {
+                "mediatype": "text/csv",
+                "uri": {
+                    "access_time": "2013-12-13T00:00:00-08:00",
+                    "uri": "www.example.com/iMirOutputFiles/DESeq_Analysis/Case_exampleRNAData_vs_Control_exampleRNAData/Result_Conversion_20_17.txt",
+                    "sha1_checksum": "000154checksum",
+                    "filename": "Result_Conversion_20_17.txt"
+                }
+            },
+            {
+                "mediatype": "text/csv",
+                "uri": {
+                    "access_time": "2013-12-13T00:00:00-08:00",
+                    "uri": "www.example.com/iMirOutputFiles/DESeq_Analysis/Case_exampleRNAData_vs_Control_exampleRNAData/Miranda/",
+                    "sha1_checksum": "000154checksum",
+                    "filename": "Miranda (folder)"
+                }
+            },
+            {
+                "mediatype": "text/csv",
+                "uri": {
+                    "access_time": "2013-12-13T00:00:00-08:00",
+                    "uri": "www.example.com/iMirOutputFiles/DESeq_Analysis/Case_exampleRNAData_vs_Control_exampleRNAData/TargetScan",
+                    "sha1_checksum": "000154checksum",
+                    "filename": "TargetScan (folder)"
+                }
+            }
+        ]
+    },
+    "error_domain": {}
+}
