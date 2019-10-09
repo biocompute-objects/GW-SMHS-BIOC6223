@@ -20,6 +20,8 @@ Due: 10/13
 HIVE Sign-up
 *Only one individual per group needs to come for the HIVE portion of this assignment. It will not take more than 20 minutes.
 
+Please email janishapatel@gwu.edu to reserve your time and please state your [group #](https://github.com/biocompute-objects/GW-SMHS-BIOC6223/blob/master/docs/Group_members.md)  Thank you!
+
 **Times**    
 Wednesday 10/9 1-5pm    
 Thursday 10/10 9-5pm    
@@ -27,7 +29,7 @@ Friday 10/11 9-4pm
 
 **Location**    
 Ross Hall Rm559
-please email janishapatel@gwu.edu to reserve your time. Thank you!
+
 
 Group1 Friday 10/11 @11am      
 Group2 Wednesday 10/9 @2:15pm (will give more accurate time) - COMPLETED    
