@@ -1,0 +1,264 @@
+{
+    "bco_id": "http://biocomputeobject.org/BCO_000541",
+    "checksum": "745c1e6c07f3cc5909669ea990c9b72e1c55bd1acdf31230a6042eaf1c902b5f",
+    "bco_spec_version": "1.3.0",
+    "provenance_domain": {
+        "name": "RNA-seq data of invasive ductal carcinoma and adjacent normal tissues from a Korean patient with breast cancer",
+        "version": "1.0.0",
+        "license": "http://creativecommons.org/licenses/by/4.0/",
+        "created": "2019-10-08T22:44:51.859208",
+        "modified": "2019-10-09T02:36:02.520644",
+        "contributors": [
+            {
+                "name": "Nikhita Gogate",
+                "orcid": "https://orcid.org/0000-0003-2050-5084",
+                "affiliation": "The George Washington University",
+                "contribution": [
+                    "createdBy"
+                ],
+                "email": "nikigogate@gwu.edu"
+            }
+        ]
+    },
+    "usability_domain": [
+        "10 samples of IDC from a Korean patient exhibiting luminal B subtype of breast cancer were compared to 3 samples of matched normal tissue to perform an RNA-seq experiment, the results of which identified several pathways associated with onset or progression of breast cancer"
+    ],
+    "extension_domain": {},
+    "description_domain": {
+        "keywords": [
+            "Breast cancer ",
+            "Luminal B subtype ",
+            "Invasive ductal carcinoma ",
+            "RNA-seq ",
+            "Korean"
+        ],
+        "pipeline_steps": [
+            {
+                "name": "Trim Galore",
+                "version": "0.4.2 ",
+                "step_number": 1,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [
+                    {
+                        "name": "Cutadapt version 1.1.2 ",
+                        "uri": {
+                            "access_time": "2018-03-21",
+                            "uri": "https://github.com/marcelm/cutadapt/",
+                            "sha1_checksum": "BCO_000541checksum",
+                            "filename": "cutadapt"
+                        }
+                    }
+                ],
+                "description": "It is a wrapper tool around Cutadapt and FastQC to apply adapter trimming and quality to Fastq files conjointly. "
+            },
+            {
+                "name": "Star",
+                "version": "2.5.2.b",
+                "step_number": 2,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "It is a tool used to map sequencing reads to the reference genome"
+            },
+            {
+                "name": "Sambamba",
+                "version": "0.6.5",
+                "step_number": 3,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "It is a tool used to remove PCR-duplicates of mapped reads. "
+            },
+            {
+                "name": "RSeQC",
+                "version": "2.6.4",
+                "step_number": 4,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "It is a tool that evaluates the quality of the sequence data based on sequence saturation, mapped read distribution, converge uniformity, strand specificity, and transcript level RNA integrity. It outputs a transcript integrity number score.  "
+            },
+            {
+                "name": "Cufflinks",
+                "version": "2.2.1",
+                "step_number": 5,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [
+                    {
+                        "name": "Cuffnorm function of the Cufflinks package. ",
+                        "uri": {
+                            "access_time": "2018-03-21",
+                            "uri": "http://cole-trapnell-lab.github.io/cufflinks/cuffnorm/",
+                            "sha1_checksum": "BCO_000541checksum",
+                            "filename": "cuffnorm"
+                        }
+                    }
+                ],
+                "description": "It is a tool that generates abundances of expression levels and normalized fragment counts based on library size. "
+            },
+            {
+                "name": "Cufflinks",
+                "version": "2.2.1",
+                "step_number": 6,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [
+                    {
+                        "name": "Cuffdiff function of the Cufflinks package",
+                        "uri": {
+                            "access_time": "2018-03-21",
+                            "uri": "http://cole-trapnell-lab.github.io/cufflinks/cuffdiff/",
+                            "sha1_checksum": "BCO_000541checksum",
+                            "filename": "cuffdiff"
+                        }
+                    }
+                ],
+                "description": "It is a tool used to identify transcript expression levels and differential expressed genes between cancer and healthy samples."
+            },
+            {
+                "name": "Metascape",
+                "version": "3.0",
+                "step_number": 7,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "It is a web-based tool used to perform gene ontology analysis to identify key pathways with the differentially expressed genes. "
+            }
+        ]
+    },
+    "execution_domain": {
+        "external_data_endpoints": [
+            {
+                "name": "BioProjectID_PRJNA432903",
+                "url": "https:// www.ncbi.nlm.nih.gov/bioproject/PRJNA432903"
+            }
+        ],
+        "environment_variables": {},
+        "script_driver": "",
+        "software_prerequisites": [
+            {
+                "name": "Trim Galore",
+                "version": "0.4.2 ",
+                "uri": {
+                    "access_time": "2018-03-21",
+                    "uri": "https://www.bioinformatics. babraham.ac.uk/projects/trim_galore/ ",
+                    "sha1_checksum": "BCO_000541checksum",
+                    "filename": "TrimGalore"
+                }
+            },
+            {
+                "name": "Star",
+                "version": "2.5.2.b",
+                "uri": {
+                    "access_time": "2018-03-21",
+                    "uri": "http://code.google.com/p/rna-star/",
+                    "sha1_checksum": "BCO_000541checksum",
+                    "filename": "Star"
+                }
+            },
+            {
+                "name": "Sambamba ",
+                "version": "0.6.5",
+                "uri": {
+                    "access_time": "2018-03-21",
+                    "uri": "https://github.com/lomereiter/sambamba",
+                    "sha1_checksum": "BCO_000541checksum",
+                    "filename": "Sambamba"
+                }
+            },
+            {
+                "name": "RSeQC",
+                "version": "2.6.4",
+                "uri": {
+                    "access_time": "2018-03-21",
+                    "uri": "http://code.google.com/p/rseqc/",
+                    "sha1_checksum": "BCO_000541checksum",
+                    "filename": "RSeQc"
+                }
+            },
+            {
+                "name": "Cufflinks",
+                "version": "2.2.1",
+                "uri": {
+                    "access_time": "2018-03-21",
+                    "uri": "http://cole-trapnell-lab.github.io/cufflinks/cuffnorm/",
+                    "sha1_checksum": "BCO_000541checksum",
+                    "filename": "Cuffnorm"
+                }
+            },
+            {
+                "name": "Cufflinks",
+                "version": "2.2.1",
+                "uri": {
+                    "access_time": "2018-03-21",
+                    "uri": "http://cole-trapnell-lab.github.io/cufflinks/cuffdiff/",
+                    "sha1_checksum": "BCO_000541checksum",
+                    "filename": "Cuffdiff"
+                }
+            },
+            {
+                "name": "Metascape",
+                "version": "3.0",
+                "uri": {
+                    "access_time": "2018-03-21",
+                    "uri": "http://metascape.org",
+                    "sha1_checksum": "BCO_000541checksum",
+                    "filename": "Metascape"
+                }
+            }
+        ],
+        "script": []
+    },
+    "parametric_domain": [
+        {
+            "step": "2",
+            "param": "Human reference genome hg38",
+            "value": "Human reference genome hg38"
+        },
+        {
+            "step": "6",
+            "param": "Diferentially expressed genes",
+            "value": "FDR-adjusted p-values <0.05"
+        },
+        {
+            "step": "7",
+            "param": "Analysis of top 100 up-regulated and down-regulated genes that were highly expressed",
+            "value": ">10 average FPKM values"
+        }
+    ],
+    "io_domain": {
+        "input_subdomain": [
+            {
+                "uri": {
+                    "access_time": "2018-03-21",
+                    "uri": "PRJNA432903)(https:// www.ncbi.nlm.nih.gov/bioproject/PRJNA432903",
+                    "sha1_checksum": "BCO_000541checksum",
+                    "filename": "PRJNA432903"
+                }
+            }
+        ],
+        "output_subdomain": [
+            {
+                "mediatype": "https://doi. org/10.1016/j.dib.2018.03.079",
+                "uri": {
+                    "access_time": "2018-03-21",
+                    "uri": "https://doi. org/10.1016/j.dib.2018.03.079",
+                    "sha1_checksum": "BCO_000541checksum",
+                    "filename": "Supplementary Table1 Abundance of RefSeq genes"
+                }
+            },
+            {
+                "mediatype": "https://doi. org/10.1016/j.dib.2018.03.079",
+                "uri": {
+                    "access_time": "2018-03-21",
+                    "uri": "https://doi. org/10.1016/j.dib.2018.03.079",
+                    "sha1_checksum": "BCO_000541checksum",
+                    "filename": "Supplementary Table2 DEG in Cancer and Normal samples"
+                }
+            }
+        ]
+    },
+    "error_domain": {}
+}
