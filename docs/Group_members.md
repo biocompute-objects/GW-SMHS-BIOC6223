@@ -14,8 +14,8 @@ Publication: _____________________________________
 Group 2   
 Javid Ghaemmaghami (@javidgmh - member) 
 Yuan Gao (@ShyanneG - member)    
-Canyuan Yang (@CanyuanYang - member)
-Publication: _____________________________________
+Canyuan Yang (@CanyuanYang - member)    
+***Publication: _____________________________________***
 
 Group 3   
 April Yang (@jiugeyang - member)   
@@ -27,7 +27,7 @@ Group 4
 Nikhita Gogate (@nikigogate -  member)  
 Nuerye Ainiwan (@nurya-anwer - member)    
 Christian Zevallos Delgado (@czd18 - member)   
-Wei Shao (@Albert-Shao - member) 
+Wei Shao (@Albert-Shao - member)      
 ***Publication: _____________________________________***    
 
 
@@ -40,7 +40,7 @@ Publication: Single-Cell RNA Sequencing Identifies Extracellular Matrix Gene Exp
 Group 6   
 Derek Cao (@cderek7 - member)
 Evan Littleton (@evanlittleton - member)    
-Erin Bonner (@ebonner13 - member)
+Erin Bonner (@ebonner13 - member)     
 Publication: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6735387/    
 
 Group 7   
