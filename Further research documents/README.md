@@ -27,14 +27,22 @@ Once the assigment (with both parts- HIVE and CGC is complete), submit this to [
    
  
 
-#Two deliverables for this assignment: 1 paragraph document + 2 separate emails to the HIVE and CGC contact.
+# Deliverables
+Two deliverables for this assignment: 1 paragraph document + 2 separate emails to the HIVE and CGC contact.
 Due: 10/13
 
-------
+------      
+
+### Details for paragraph:     
+
 Note: Since only one individual is required to come in and search HIVE for the tools, I highly recommend that individual comes with the list of tools in your pipeline. Next to each tool, indicate whether or not the tool was found in HIVE. If not, write an equivalent tool that was found in HIVE. 
 
-As a group, follow the same steps for HIVE and create 1 paragraph. A template would be:
+As a group, follow the same steps for CGC and create 1 paragraph. A template would be:
   " Our publication utilized 6 tools:  TopHat in Step 1,  [Tool2] in Step 2, [Tool3] in Step 3, [Tool4] in Step 4, [Tool5]in Step 5, [Tool6]in Step 6. Tool 1's purpose was to align [X] reads to [X] genomes. Tool 1 was found in the CGC, but was not found in the HIVE Platform. An equivalent tool found in the HIVE platform was HIVE Hexagon..... Tool 2's purpose was ____ ....not found either CGC or HIVE.... 
   ... .. 
 An email will be sent to the point of contact HIVE Platform and CGC for the respective tools not found in their platform."
   
+### Details for email:
+
+"I am a graduate student in George Washington University.......I have created a BCO for x publication (cite appropriately), and the following tools in the workflow were not found in the platform."
+   
