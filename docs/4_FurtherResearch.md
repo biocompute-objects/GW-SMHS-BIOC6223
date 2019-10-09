@@ -28,7 +28,7 @@ Friday 10/11 9-4pm
 please email janishapatel@gwu.edu to reserve your time. Thank you!
 
 Group1 Friday 10/11 @11am      
-Group2 Wednesday 10/9 1-5pm  (tentative- will provide a more accurate time)    
+Group2 Wednesday 10/9 @1:30pm  
 Group3 Thursday 10/10 @3pm    
 Group4 Wednesday 10/9 @4pm    
 **Group5**      
