@@ -10,10 +10,10 @@ TOOL: Bioconductor Rankprod
        This tool is not in HIVE, but there is an alternatie tool called BioXpress for DESeq within HIVE.  
 TOOL: Gene Ontology Biological Process(GO_BP)   
     This tool is controlled vocabulary for classification of gene function and is used to perfom enrichment analysis for an independent biological process with a defined beginning and end.    
-    This tool is not in HIVE, there is no alternative in HIVE.
+    This tool is not in HIVE, there is no alternative in HIVE.      
 TOOL: Gene Ontology Cellular Component (GO_CC)    
     This tool contains controlled vocabulary for the classification of gene functions, and is used to perfom enrichment analysis for a cellular structure.    
-    This tool is not in HIVE, there is no alternative in HIVE.
+    This tool is not in HIVE, there is no alternative in HIVE.      
 TOOL: KEGGpathway   
     This tool is an integrated database used for biological interpretation of genome sequences and other high-throughput data.    
     This tool is not in HIVE, there is no alternative in HIVE.
