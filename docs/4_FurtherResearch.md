@@ -30,11 +30,11 @@ Ross Hall Rm559
 please email janishapatel@gwu.edu to reserve your time. Thank you!
 
 Group1 Friday 10/11 @11am      
-Group2 Wednesday 10/9 @1-5pm (will give more accurate time)    
+Group2 Wednesday 10/9 @2:15pm (will give more accurate time) - COMPLETED    
 Group3 Thursday 10/10 @3pm        
 Group4 Wednesday 10/9 @4pm          
-**Group5**           
-Group6 Wednesday 10/9 @3pm      
-Group7 Wednesday 10/9 1:30pm          
+Group5 Wednesday 10/9 @3pm          
+**Group6**      
+Group7 Wednesday 10/9 @1pm - COMPLETED          
 Group8 Thursday 10/10 @11am            
 
