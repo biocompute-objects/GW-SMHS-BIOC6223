@@ -8,12 +8,12 @@
 Group 1   
 Tomas Kanholm (@tkanholm - member)    
 Juntian Wei (@jwei2019 - member)      
-Turkey Alsaeedy (Turkey@gwu.edu- invitation sent)    
+Turkey Alsaeedy (@Turkeyalsaeedy - member)    
 Publication: _____________________________________
 
 Group 2   
-***Javid Ghaemmaghami (javidmaghami@gwu.edu - invitation sent)***    
-***Yuan Gao (ygao61@gwu.edu  github: ShyanneG - invitation sent)***    
+Javid Ghaemmaghami (@javidgmh - member) 
+Yuan Gao (@ShyanneG - member)    
 Canyuan Yang (@CanyuanYang - member)
 Publication: _____________________________________
 
@@ -25,29 +25,29 @@ Xiying Ding (@xzd5071 - member)
 
 Group 4   
 Nikhita Gogate (@nikigogate -  member)  
-***Nuerye Ainiwan (Github:nurya-anwer-  invitation sent)***    
-Christian Zevallos Delgado (@czd18- member)   
-***Wei Shao (wshao97@gwmail.gwu.edu)(Github:Albert-Shao- invitation sent)***    
+Nuerye Ainiwan (@nurya-anwer - member)    
+Christian Zevallos Delgado (@czd18 - member)   
+Wei Shao (@Albert-Shao - member) 
 ***Publication: _____________________________________***    
 
 
 Group 5   
 Elizabeth C. Lee (@ECL314 -  member)    
 Nirmala Ramnarine (@nramnarine - member)   
-***Najuma Babirye (nsbabirye@gwu.edu)( Github: nbabirye- invitation sent)***    
+Najuma Babirye (@nbabirye - member)    
 Publication: Single-Cell RNA Sequencing Identifies Extracellular Matrix Gene Expression by Pancreatic Circulating Tumor Cells.    
 
 Group 6   
-***Derek Cao (github: cderek7 - invitation sent)***  
+Derek Cao (@cderek7 - member)
 Evan Littleton (@evanlittleton - member)    
-***Erin Bonner (github: ebonner13 - invitation sent)***
+Erin Bonner (@ebonner13 - member)
 Publication: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6735387/    
 
 Group 7   
 Micah Madrid (@mkmadrid - member)    
 Ling Sheng Loh (@lingsloh - member)    
 ***June Beshea (jbeshea@gwu.edu- invitation sent)***    
-***Publication: _____________________________________***
+Publication: miRCancerdb: a database for correlation analysis between microRNA and gene expression in cancer
 
 
 
