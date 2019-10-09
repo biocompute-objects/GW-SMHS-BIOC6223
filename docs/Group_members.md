@@ -49,9 +49,9 @@ Ling Sheng Loh (@lingsloh - member)
 ***June Beshea (jbeshea@gwu.edu- invitation sent)***    
 Publication: miRCancerdb: a database for correlation analysis between microRNA and gene expression in cancer
 
-Group 8
+Group 8   
 Zuleima Munoz (zmunoz09@gwu.edu - member )    
 Lindsay Hopson (lhopson15@gwu.edu - member)
-
+***Publication: ____________________________***
 
 
