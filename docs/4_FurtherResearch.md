@@ -18,7 +18,7 @@ Due: 10/13
 
 
 HIVE Sign-up
-*Only one individual per group needs to come for the HIVE portion of this assignment. It will not take more than 15 minutes.
+*Only one individual per group needs to come for the HIVE portion of this assignment. It will not take more than 20 minutes.
 
 **Times**    
 Wednesday 10/9 1-5pm    
