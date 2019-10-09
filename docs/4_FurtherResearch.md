@@ -25,6 +25,8 @@ Wednesday 10/9 1-5pm
 Thursday 10/10 9-5pm    
 Friday 10/11 9-4pm      
 
+**Location**    
+Ross Hall Rm559
 please email janishapatel@gwu.edu to reserve your time. Thank you!
 
 Group1 Friday 10/11 @11am      
