@@ -23,7 +23,7 @@ Once the assigment (with both parts- HIVE and CGC is complete), submit this to [
   * **assignee**: "Janisha Patel"
   * **milestone**: "Further Research"
   
-  2. If there were tools not found in HIVE or CGC, draft individual emails to them respectively with this information. In the format of "I am a graduate  student in George Washington University taking x class.......I have created a BCO for x publication, and the following tools in the workflow were not found in the platform. My instructor, via Dennis has instructed me to provide this feedback. Thank you"
+  2. If there were tools not found in HIVE or CGC, draft individual emails to them respectively with this information. In the format of "I am a graduate  student in George Washington University taking x class.......I have created a BCO for x publication, and the following tools in the workflow were not found in the platform. My instructor, via Dr. Dennis Dean, has instructed me to provide this feedback. Thank you"
  
 
 # Deliverables
