@@ -51,7 +51,7 @@ Publication: miRCancerdb: a database for correlation analysis between microRNA a
 
 Group 8   
 Zuleima Munoz (zmunoz09@gwu.edu - member )    
-Lindsay Hopson (lhopson15@gwu.edu - member)
+Lindsay Hopson (lhopson15@gwu.edu - member)     
 ***Publication: ____________________________***
 
 
