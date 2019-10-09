@@ -1,0 +1,314 @@
+{
+    "bco_id": "http://biocomputeobject.org/BCO_000532",
+    "checksum": "e1236a35764f029bb3ba7b475fb79f192df26b6536fccecc9b319408c1ea50f4",
+    "bco_spec_version": "1.3.0",
+    "provenance_domain": {
+        "name": "RNA sequencing and gene enrichment of Pancreatic CTCs",
+        "version": "1.0.0",
+        "license": "https://spdx.org/licenses/CC-BY-4.0.html",
+        "created": "2019-10-08T21:19:52.713920",
+        "modified": "2019-10-09T02:50:38.318710",
+        "contributors": [
+            {
+                "name": "Najuma Babirye",
+                "orcid": "https://orcid.org/0000-0001-6951-9167",
+                "affiliation": "The George Washington University",
+                "contribution": [
+                    "createdBy"
+                ],
+                "email": "nsbabirye@gwu.edu"
+            }
+        ]
+    },
+    "usability_domain": [
+        "A comparison of genome-wide expression profiles of Circulating Tumor Cells (CTCs) with matched primary tumors is assessed in the project. ",
+        "Individual CTC genes are isolated from pancreatic CTCs through purification and selection methods.",
+        "Single cell RNA sequencing is performed on the CTC genes to create a CTC gene library. ",
+        "CTC gene set processing and enrichment is done accessing and using various databases and tools.",
+        "This BCO pipeline was created based on the work of Ting et al. 10.1016/j.celrep.2014.08.029"
+    ],
+    "extension_domain": {},
+    "description_domain": {
+        "keywords": [
+            "Single-cell RNA sequencing",
+            "Pancreatic CTCs",
+            "Extracellular Matrix",
+            "Gene Expression",
+            "Metastatic",
+            "classical Circulating Tumor Cells",
+            "Cell Migration",
+            "Stromal"
+        ],
+        "xref": [
+            {
+                "name": "PubMedCentralReferenceNumber",
+                "access_time": "2019-09-24T18:37:17",
+                "namespace": "pubmedcentral",
+                "ids": [
+                    "PMC4230325"
+                ]
+            },
+            {
+                "name": "PubMed",
+                "access_time": "2019-09-24T18:37:17",
+                "namespace": "pubmed",
+                "ids": [
+                    "25242334"
+                ]
+            }
+        ],
+        "pipeline_steps": [
+            {
+                "name": "RNA Sequencing",
+                "output_list": [
+                    {
+                        "access_time": "2019-09-24T18:37:17",
+                        "uri": "https://github.com/nbabirye/okey/blob/master/AlignmentDataTable.txt.gz",
+                        "sha1_checksum": "6d21dcdb04268e5cb3ad992958535a0e0697149ee687c4f9eb96ac4e7850c2eb",
+                        "filename": "AlignmentDataTable"
+                    },
+                    {
+                        "access_time": "2019-09-24T18:37:17",
+                        "uri": "https://github.com/nbabirye/okey/blob/master/DataTableforMappingAlignedReads.txt.gz",
+                        "sha1_checksum": "10d0d8374ac52166ee3392014fb12d8b3b6962eb79d1dc65c1a75595b4d97536",
+                        "filename": "MappingAlignedReadstable"
+                    }
+                ],
+                "step_number": 0,
+                "description": "This step provides alignment data for when no-novel-juncs argument is set with mouse genome mm9 and transcriptome defined by mm9 KnownGene Table. Top Hat uses the Bowtie tool to look at unmapped reads and align them according to splicing junctions. Bowtie was used in coordination with TopHat in order to align color space reads.",
+                "input_list": [
+                    {
+                        "access_time": "2019-09-24T18:37:17",
+                        "uri": "http://genome.ucsc.edu/cgi-bin/hgTables",
+                        "sha1_checksum": "6d38d0d9a1e6d2433d99e232eb1bba31296c5b5151ab1d39027d750f19da87b7",
+                        "filename": "UCSC genome table"
+                    },
+                    {
+                        "access_time": "2019-09-24T18:37:17",
+                        "uri": "http://genome.ucsc.edu/cgi-bin/hgTables",
+                        "sha1_checksum": "6d38d0d9a1e6d2433d99e232eb1bba31296c5b5151ab1d39027d750f19da87b7",
+                        "filename": "UCSC genome table"
+                    }
+                ]
+            },
+            {
+                "name": "Gene Expression Heat Map Generation using Grid Graphics in R",
+                "output_list": [
+                    {
+                        "access_time": "2019-09-24T18:37:17",
+                        "uri": "https://github.com/nbabirye/okey/blob/master/FigS6-HeatmapexpressionofEMT%26STEMCellgenesincCTCs.png",
+                        "sha1_checksum": "58bb2ecb30e1936af1c791f5b3cac317f69ebb665ceba41703c7f129fac6adb3",
+                        "filename": "HeatmapexpressionofEMTandSTEMCellgenesinCTCs"
+                    }
+                ],
+                "step_number": 1,
+                "description": "This step is designed for the selection of desired genes for visualization, and for the assembly of the gene expression heatmap.",
+                "input_list": [
+                    {
+                        "access_time": "2019-09-24T18:37:17",
+                        "uri": "http://www.bdbiosciences.com/documents/cd_marker_handbook.pdf",
+                        "sha1_checksum": "http://www.bdbiosciences.com/documents/cd_marker_handbook.pdf",
+                        "filename": "BD biosciences handbook"
+                    }
+                ]
+            },
+            {
+                "name": "Differential Gene Expression",
+                "step_number": 2,
+                "input_list": [],
+                "output_list": [
+                    {
+                        "access_time": "2019-09-24T18:37:17",
+                        "uri": "URI: https://github.com/nbabirye/okey/blob/master/Table1-differentiallyexpressedgenesbtwngroupsviarankprod.xlsx",
+                        "sha1_checksum": "611424c831e084b11f4454f39bd4aaab1931146fc250122a8c05703b2033a965",
+                        "filename": "Differentiallyexpressedgenesbetweengroups"
+                    }
+                ],
+                "prerequisite": [],
+                "description": "This step is for the determination of false discovery rate (FDR) estimates for up and down differential expression of sequenced genes."
+            },
+            {
+                "name": "Gene Set Enrichment",
+                "step_number": 3,
+                "input_list": [
+                    {
+                        "access_time": "2019-09-24T18:37:17",
+                        "uri": "https://david-d.ncifcrf.gov/summary.jsp",
+                        "sha1_checksum": "178f8a3899dbd7673786c4e0a1568af7bfbced43cf49f710b24a795ce9064b00",
+                        "filename": "DAVID tool constructed with data from KEGG pathway, Gene Ontology Biological Process (GO_BP), Gene Ontology Cellular Component (GO_CC)"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "access_time": "2019-09-24T18:37:17",
+                        "uri": "https://github.com/nbabirye/okey/blob/master/Table3-KEGGanalysisofCTC-c.enrichedgenesvsprimarytumor.xlsx",
+                        "sha1_checksum": "393804133291308dda4fab6662602bda28e075658d1b9c12952ff653cbd3b34a",
+                        "filename": "KEGGanalysisofCTC-c enrichedgenesvsprimarytumor"
+                    },
+                    {
+                        "access_time": "2019-09-24T18:37:17",
+                        "uri": "https://github.com/nbabirye/okey/blob/master/Table2-GOanalysisofCTC-c.enrichedgenesvsprimarytumor.xlsx",
+                        "sha1_checksum": "fea15ac09394ffec9dc085f366d65a8ef973996bc6a07b53f2a293cc0c8657d4",
+                        "filename": "GO_BP analysis of CTC-c.enrichedgenesvsprimarytumor"
+                    },
+                    {
+                        "access_time": "2019-09-24T18:37:17",
+                        "uri": "https://github.com/nbabirye/okey/blob/master/Table4-enrichedgenesetforCTC-plt.vs.CTC-c.xlsx",
+                        "sha1_checksum": "7e3c680239f03530c2f0b2dacdc5609266579af382a555fe8a36cf3604821a85",
+                        "filename": "GO_BP analysis of enrichedgenesetforCTC-plt.vs.CTC-c"
+                    },
+                    {
+                        "access_time": "2019-09-24T18:37:17",
+                        "uri": "https://github.com/nbabirye/okey/blob/master/Table5-enrichedgenesetforCTC-pro.vs.CTC-c.xlsx",
+                        "sha1_checksum": "c2d3f7ec6b213185bfe608c703fafd8265e9fa119b68fa311783fcded4bb595a",
+                        "filename": "GO_BP analysis enrichedgenesetforCTC-pro.vs.CTC-c"
+                    },
+                    {
+                        "access_time": "2019-09-24T18:37:17",
+                        "uri": "https://github.com/nbabirye/okey/blob/master/Table2-GOanalysisofCTC-c.enrichedgenesvsprimarytumor.xlsx",
+                        "sha1_checksum": "fea15ac09394ffec9dc085f366d65a8ef973996bc6a07b53f2a293cc0c8657d4",
+                        "filename": "GO_CC analysis of CTC-c.enrichedgenesetforCTC-pro.vs.CTC-c"
+                    }
+                ],
+                "prerequisite": [
+                    {
+                        "version": "6.7",
+                        "name": "DAVID",
+                        "uri": {
+                            "access_time": "2019-09-24T18:37:17",
+                            "uri": "https://david-d.ncifcrf.gov/summary.jsp",
+                            "sha1_checksum": "178f8a3899dbd7673786c4e0a1568af7bfbced43cf49f710b24a795ce9064b00",
+                            "filename": "Database for Annotation, Visualization, and Integrated, Discovery"
+                        }
+                    }
+                ],
+                "description": "Provides a comprehensive set of annotation tools for functional interpretation of large lists of genes. The KEGG Pathway Integrated database used for biological interpretation of genome sequences and other high-throughput data. GO_BP is a Controlled vocabulary for classification of gene function and used to perform enrichment analysis for an independent biological process with a defined beginning and end. GO_CC is a Controlled vocabulary for classification of gene function and used to perform enrichment analysis for a cellular structure."
+            }
+        ]
+    },
+    "execution_domain": {
+        "external_data_endpoints": [
+            {
+                "name": "Gene Expression Omnibus - provides deposited high throughput sequencing data obtained in the experiment using AB 5500xl Genetic Analyzer (Mus musculus). There are 853 GSM files and 61 series of GSE.",
+                "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GPL15907"
+            }
+        ],
+        "environment_variables": {},
+        "script_driver": "",
+        "software_prerequisites": [
+            {
+                "name": "Top Hat",
+                "version": "2.0.4",
+                "uri": {
+                    "access_time": "2019-09-24T18:37:17",
+                    "uri": "https://ccb.jhu.edu/software/tophat/downloads/",
+                    "sha1_checksum": "1477c3e0221647824e6ed6fed341628e362e1115bbfb46ee5f3f4340387d43cc",
+                    "filename": "Tophatdownloads"
+                }
+            },
+            {
+                "name": "bowtie 1",
+                "version": "0.12.7",
+                "uri": {
+                    "access_time": "2019-09-24T18:37:17",
+                    "uri": "https://sourceforge.net/projects/bowtie-bio/files/bowtie/0.12.7/",
+                    "sha1_checksum": "c1dc3fc1be311ec3a34620cbf5086cd3b4aeecec1c26f028436ced3f31578c5e",
+                    "filename": "bowtieversion0.12.7"
+                }
+            }
+        ],
+        "script": []
+    },
+    "parametric_domain": [
+        {
+            "step": "0",
+            "param": "Form expression units in reads per million (rpm) count",
+            "value": "divide gene count reads mapped to the gene by the total number of reads mapped at any gene, and multiply answer by one million."
+        },
+        {
+            "step": "0",
+            "param": "at the UCSC uri, adjust field's dropdown menus to match below",
+            "value": "Clade=Mammal, Genome=Mouse, Assembly=NCBI37/mm9, Table=KnownGene"
+        },
+        {
+            "step": "0",
+            "param": "at the UCSC uri, adjust field's dropdown menus to match below",
+            "value": "Clade=Mammal, Genome=Mouse, Assembly=NCBI37/mm9, Table=KnownToLocusLink"
+        },
+        {
+            "step": "1",
+            "param": "select these established epithelial markers",
+            "value": "Krt7, Krt8, Krt18, Krt19, Epcam, Egfr, Cdh1"
+        },
+        {
+            "step": "1",
+            "param": "select these established endothelial markers",
+            "value": "Cdh5/Cd144, Vwf, Thbd/Cd141, Pecam1/Cd31, Mcam/Cd146, Sele/E-selectin, Cd34"
+        },
+        {
+            "step": "1",
+            "param": "select these established hematopoietic markers from these publications (Bertolini et al., 2006; Strijbos et al., 2008)",
+            "value": "Ptprc/Cd45, Csf3r/Cd114, Cd14, Fcgr3/Cd16, Itga2b/Cd41, Itgb3/Cd61"
+        },
+        {
+            "step": "2",
+            "param": "select for significantly expressed genes between groups",
+            "value": "FDR < 0.01"
+        },
+        {
+            "step": "2",
+            "param": "use following groups of genes for comparison",
+            "value": "CTC-c vs Primary Tumor Enriched Gene, Primary Tumor vs CTC-c Enriched Gene, CTC-plt vs CTC-c, CTC-pro vs CTC-c, Primary Tumor vs WBC, WBC vs Primary Tumor, CTC-c vs WBC, WBC vs CTC"
+        },
+        {
+            "step": "3",
+            "param": "for KEGG analysis select terms with this q-value",
+            "value": "q-value < 0.25"
+        },
+        {
+            "step": "3",
+            "param": "for GO_BP and GO_CC analysis select terms with following q-value",
+            "value": "q-value < 0.01"
+        }
+    ],
+    "io_domain": {
+        "input_subdomain": [
+            {
+                "uri": {
+                    "access_time": "2019-09-24T18:37:17",
+                    "uri": "https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE51372&format=file&file=GSE51372%5FreadCounts%2Etxt%2Egz",
+                    "sha1_checksum": "7802cf22afd863c809a320cde1de22a18812e24072091b1a0fb673c658c8def5",
+                    "filename": "GSE51372 - read counts for the RNA-sequenced pancreatic circulating tumor cells (CTCs) in mice"
+                }
+            },
+            {
+                "uri": {
+                    "access_time": "2019-09-24T18:37:17",
+                    "uri": "https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE51827&format=file&file=GSE51827%5Fplatform%2Exls%2Egz",
+                    "sha1_checksum": "2d928129eaf3a6425ec3a1070833014b99634972844d5c910b72bace7342f9e8",
+                    "filename": "GSE51827 - Provides the raw data for breast cancer CTCs in humans"
+                }
+            },
+            {
+                "uri": {
+                    "access_time": "2019-09-24T18:37:17",
+                    "uri": "https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE51827&format=file&file=GSE51827%5FreadCounts%2Exls%2Egz",
+                    "sha1_checksum": "fb8024f629a7439e98c9cb2e6d54ccc39359b4be806c41b6c0e9005d9fa76542",
+                    "filename": "GSE51827 - read counts for the RNA-sequenced breast cancer CTCs in humans."
+                }
+            }
+        ],
+        "output_subdomain": [
+            {
+                "mediatype": "ms-excel spreadsheet",
+                "uri": {
+                    "access_time": "2019-09-24T18:37:17",
+                    "uri": "https://github.com/nbabirye/okey/blob/master/Table6-highlyexpressedECMgenesinhumanCTCs.xlsx",
+                    "sha1_checksum": "b920114543b26258c84146914507e272b9eeda5eff206a75166efbb2be985d8d",
+                    "filename": "TableofhighlyexpressedECMgenesinhumanCTCs"
+                }
+            }
+        ]
+    },
+    "error_domain": {}
+}
