@@ -1,0 +1,99 @@
+{
+    "bco_id": "http://biocomputeobject.org/BCO_000525",
+    "checksum": "a71fafeb45cc1f8d60cd80c4ce0f576bcf6338675cd36facfda2c505b6bd8d70",
+    "bco_spec_version": "1.3.0",
+    "provenance_domain": {
+        "name": "TAP: a targeted clinical genomics pipeline for detecting transcript variants using RNA- seq data",
+        "version": "0.4.2",
+        "license": "http://creativecommons.org/licenses/by/4.0/",
+        "created": "2019-10-07T22:30:36.405354",
+        "modified": "2019-10-08T21:58:34.013743",
+        "contributors": [
+            {
+                "name": "",
+                "orcid": "",
+                "affiliation": "",
+                "contribution": [
+                    "createdBy"
+                ],
+                "email": "492398990@qq.com"
+            }
+        ]
+    },
+    "usability_domain": [
+        "Targeted Assembly Pipeline (TAP) is a fast and powerful RNA-seq mutation detection pipeline. TAP uses the Leucegene acute myeloid leukemia (AML) RNA-seq data and a set of 580 COSMIC target genes to identify a wide range of hallmark molecular anomalies including gene fusions, tandem duplications, insertions and deletions in agreement with published literature results. In addition, TAP captured AML specific splicing variants, such as skipped exons and new splicing sites reported elsewhere in the data set. TAP spends 2 hours on a 48-core machine running on 100–150 million read pairs and a 580-gene set. "
+    ],
+    "extension_domain": {},
+    "description_domain": {
+        "keywords": [
+            "RNA-seq",
+            "Transcriptome assembly",
+            "Clinical genomics",
+            "Gene fusion",
+            "Alternative splicing",
+            "Internal tandem duplication",
+            "Partial tandem duplication",
+            "Acute myeloid leukemia"
+        ],
+        "pipeline_steps": [
+            {
+                "name": "BioBloomTools",
+                "version": "2.1.0",
+                "step_number": 1,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "the entire sample rna-seq reading segment is classified and isolated into boxes corresponding to specific gene targets by using BioBloomTools"
+            },
+            {
+                "name": "Trans-ABySS ",
+                "version": "1.5.4",
+                "step_number": 2,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "use Trans-ABySS to assemble reading pairs belonging to individual genes in parallel"
+            },
+            {
+                "name": "Genomic Mapping and Alignment Program for mRNA and EST Sequences ",
+                "version": "",
+                "step_number": 3,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "the GMAP and BWA match the assembled overlapping groups with reference genomes and transcriptomes"
+            },
+            {
+                "name": "Burrow-Wheeler Aligner for short-read alignment ",
+                "version": "0.7.12",
+                "step_number": 3,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "the GMAP and BWA match the assembled overlapping groups with reference genomes and transcriptomes"
+            },
+            {
+                "name": "Post Assembly Variant Finder ",
+                "version": "0.4.2",
+                "step_number": 4,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "use PAVFinder to structure and splice variant detection"
+            }
+        ]
+    },
+    "execution_domain": {
+        "external_data_endpoints": [],
+        "environment_variables": {},
+        "script_driver": "",
+        "software_prerequisites": [],
+        "script": []
+    },
+    "parametric_domain": [],
+    "io_domain": {
+        "input_subdomain": [],
+        "output_subdomain": []
+    },
+    "error_domain": {}
+}
