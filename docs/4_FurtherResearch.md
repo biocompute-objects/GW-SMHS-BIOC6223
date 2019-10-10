@@ -45,4 +45,4 @@ Group4 Wednesday 10/9 @4pm  - IN PROGRESS.
 Group5 Wednesday 10/9 @3pm  - COMPLETED      
 **Group6 - Please email Janisha Patel to schedule**    
 Group7 Wednesday 10/9 @1pm - COMPLETED    
-**Group8 Thursday 10/10 @11am - no show. Please email Janisha Patel to reschedule **
+**Group8 Thursday 10/10 @11am - no show. Please email Janisha Patel to reschedule**
