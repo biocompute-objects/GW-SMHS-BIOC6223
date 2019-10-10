@@ -17,13 +17,13 @@ Location
 Ross Hall Rm559
 
 Group1 Friday 10/11 @11am     
-Group2 Wednesday 10/9 @2:15pm (will give more accurate time) - COMPLETED      
+Group2 Wednesday 10/9 @2:15pm - COMPLETED      
 Group3 Thursday 10/10 @3pm    
-Group4 Wednesday 10/9 @4pm  - IN PROGRESS    
-Group5 Wednesday 10/9 @3pm  - COMPLETED
-**Group6**    
+Group4 Wednesday 10/9 @4pm  - IN PROGRESS.  
+Group5 Wednesday 10/9 @3pm  - COMPLETED      
+**Group6** - Not yet scheduled. Please email Janisha Patel.    
 Group7 Wednesday 10/9 @1pm - COMPLETED    
-Group8 Thursday 10/10 @11am - no show
+Group8 Thursday 10/10 @11am - no show 
 
 ## Instructions
 
