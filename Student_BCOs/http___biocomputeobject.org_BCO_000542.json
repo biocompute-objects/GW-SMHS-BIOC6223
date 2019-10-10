@@ -1,0 +1,251 @@
+{
+    "bco_id": "http://biocomputeobject.org/BCO_000542",
+    "checksum": "dd638a7889d7c00028955b4273b15f623b38fd4aa7993058ba1b446a7cc094b3",
+    "bco_spec_version": "1.3.0",
+    "provenance_domain": {
+        "name": "RNA-seq data of invasive ductal carcinoma and adjacent normal tissues from a Korean patient with breast cancer",
+        "version": "1.0.0",
+        "license": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "created": "2019-10-09T01:12:11.449999",
+        "modified": "2019-10-09T01:40:55.677521",
+        "contributors": [
+            {
+                "name": "",
+                "orcid": "",
+                "affiliation": "",
+                "contribution": [
+                    "createdBy"
+                ],
+                "email": "wshao04@gmail.com"
+            }
+        ]
+    },
+    "usability_domain": [
+        " Total RNA was extracted from ten samples of cancer tissue(invasive ductal carcinoma; luminal B subtype) and three samples of adjacent normal tissue from a Korean patient with invasive ductal carcinoma. Transcriptomes of breast cancer and normal samples were profiled  via RNA-seq. Differentially expressed genes were identified with an FDR-adjusted p-value cutoff of 0.55. Gene ontology analysis indicated that several pathways are associated with the onset and progression of invasive ductal carcinoma. "
+    ],
+    "extension_domain": {},
+    "description_domain": {
+        "keywords": [
+            "Invasive ductal carcinoma",
+            "breast cancer",
+            "Korean",
+            " Luminal B subtype",
+            "RNA-seq",
+            "DEGs",
+            "Key Pathways"
+        ],
+        "pipeline_steps": [
+            {
+                "name": "Trim Galore  with Cutadapt(version 1.1.2)",
+                "version": "0.4.2",
+                "step_number": 1,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Sequence reads are trimmed"
+            },
+            {
+                "name": "STAR",
+                "version": " 2.5.2b",
+                "step_number": 2,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Trimmed reads were mapped to the reference human genome (hg38)"
+            },
+            {
+                "name": "Sambamba",
+                "version": "0.6.5",
+                "step_number": 3,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "The PCR-duplicate removal of mapped reads is performed"
+            },
+            {
+                "name": "RSeQC",
+                "version": "2.6.4",
+                "step_number": 4,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "The quality of RNA-seq data was determined with the transcript integrity number (TIN) score (Table 1)"
+            },
+            {
+                "name": "Cufflinks  with the Cuffnorm function",
+                "version": "2.2.1",
+                "step_number": 5,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "The abundances of RefSeq genes are estimated using Cufflinks with the Cuffnorm function"
+            },
+            {
+                "name": "Cufflinks with the Cuffdiff function",
+                "version": "2.2.1",
+                "step_number": 6,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Differentially expressed genes(DEGs) between cancer and normal samples are identified using Cufflinks with the Cuffdiff function"
+            },
+            {
+                "name": "Metascape",
+                "version": "3.0",
+                "step_number": 7,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Gene ontology(GO) analysis is performed to identify key pathways regarding the DEGs that were identified without the C3 sample."
+            }
+        ]
+    },
+    "execution_domain": {
+        "external_data_endpoints": [
+            {
+                "name": "BioProject ID: PRJNA432903",
+                "url": "https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA432903"
+            }
+        ],
+        "environment_variables": {},
+        "script_driver": "",
+        "software_prerequisites": [
+            {
+                "name": "Trim Galore",
+                "version": "0.4.2",
+                "uri": {
+                    "access_time": "2018-03-21",
+                    "uri": "https://www.bioinformatics. babraham.ac.uk/projects/trim_galore/",
+                    "sha1_checksum": "4dbace01e516788a53fc37fc6e6cd4b562b2db3a",
+                    "filename": "TrimGalore-0.6.4.tar.gz"
+                }
+            },
+            {
+                "name": "Cutadapt",
+                "version": "1.1.2",
+                "uri": {
+                    "access_time": "2018-03-21",
+                    "uri": "http://code.google.com/p/cutadapt/",
+                    "sha1_checksum": "bc92e43825d5d10892b69cdbd21448f17353c477",
+                    "filename": "cutadapt-2.5.tar.gz"
+                }
+            },
+            {
+                "name": "STAR",
+                "version": "2.5.2.b",
+                "uri": {
+                    "access_time": "2018-03-21",
+                    "uri": "http://code.google.com/p/rna-star/",
+                    "sha1_checksum": "6ad9dc4f6eae8ade00f063f632e7cf9bd074e52d",
+                    "filename": "STAR-2.7.2d.tar.gz"
+                }
+            },
+            {
+                "name": "Sambamba",
+                "version": "0.6.5",
+                "uri": {
+                    "access_time": "2018-03-21",
+                    "uri": "https://github.com/lomereiter/sambamba",
+                    "sha1_checksum": "2dff374474d2f47ac1d92c8c906e7e0f5ab8f1ee",
+                    "filename": "sambamba-0.7.0.tar.gz"
+                }
+            },
+            {
+                "name": "RSeQC",
+                "version": "2.6.4",
+                "uri": {
+                    "access_time": "2018-03-21",
+                    "uri": "http://rseqc.sourceforge.net/",
+                    "sha1_checksum": "1ec84a2357dc80c9cdfcab32b7c6c2a8c022ad74",
+                    "filename": "RSeQC-2.6.4.tar.gz"
+                }
+            },
+            {
+                "name": "Cufflinks used with Cuffnorm function",
+                "version": "2.2.1",
+                "uri": {
+                    "access_time": "2018-03-21",
+                    "uri": "http://cole-trapnell-lab.github.io/cufflinks/install/",
+                    "sha1_checksum": "2b1b3a8f12cd2821ffc74ffbdd55cb329f37cbbb",
+                    "filename": "cufflinks-2.2.1.tar.gz"
+                }
+            },
+            {
+                "name": "Cufflinks used with Cuffdiff function",
+                "version": "2.2.1",
+                "uri": {
+                    "access_time": "2018-03-21",
+                    "uri": "http://cole-trapnell-lab.github.io/cufflinks/",
+                    "sha1_checksum": "2b1b3a8f12cd2821ffc74ffbdd55cb329f37cbbb",
+                    "filename": "cufflinks-2.2.1.tar.gz"
+                }
+            },
+            {
+                "name": "Metascape",
+                "version": "3.0",
+                "uri": {
+                    "access_time": "2018-03-21",
+                    "uri": "http://metascape.org",
+                    "sha1_checksum": "b29ae4022584c07408c5bd0f32dae8e08148afc5",
+                    "filename": "http://metascape.org/gp/index.html#/main/step1"
+                }
+            }
+        ],
+        "script": []
+    },
+    "parametric_domain": [
+        {
+            "step": "2",
+            "param": "Human reference genome hg38",
+            "value": "Human reference genome hg38"
+        },
+        {
+            "step": "4",
+            "param": "transcript integrity number (TIN) score",
+            "value": "Table1 in the data article:RNA-seq data of invasive ductal carcinoma and adjacent normal tissues from a Korean patient with breast cancer"
+        },
+        {
+            "step": "6",
+            "param": "Diferentially expressed genes",
+            "value": "FDR-adjusted p-values <0.05."
+        },
+        {
+            "step": "7",
+            "param": "The top 100 up-regulated and down-regulated genes that were highly expressed",
+            "value": ">10 average FPKM values"
+        }
+    ],
+    "io_domain": {
+        "input_subdomain": [
+            {
+                "uri": {
+                    "access_time": "2018-03-21",
+                    "uri": "https:// www.ncbi.nlm.nih.gov/bioproject/PRJNA432903",
+                    "sha1_checksum": "BCO_000541checksum",
+                    "filename": "PRJNA432903"
+                }
+            }
+        ],
+        "output_subdomain": [
+            {
+                "mediatype": "https://doi. org/10.1016/j.dib.2018.03.079",
+                "uri": {
+                    "access_time": "2018-03-21",
+                    "uri": "https://doi. org/10.1016/j.dib.2018.03.079",
+                    "sha1_checksum": "BCO_000541checksum",
+                    "filename": "Supplementary Table1 Abundance of RefSeq genes"
+                }
+            },
+            {
+                "mediatype": "https://doi. org/10.1016/j.dib.2018.03.079",
+                "uri": {
+                    "access_time": "2018-03-21",
+                    "uri": "https://doi. org/10.1016/j.dib.2018.03.079",
+                    "sha1_checksum": "BCO_000541checksum",
+                    "filename": "Supplementary Figure2 DEG in Cancer and Normal samples"
+                }
+            }
+        ]
+    },
+    "error_domain": {}
+}
