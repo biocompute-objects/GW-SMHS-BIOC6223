@@ -1,0 +1,284 @@
+{
+    "bco_id": "http://biocomputeobject.org/BCO_000528",
+    "checksum": "c04c24a2584af50805f4cba08da12c60ca1cc276725bd26d860a613751ef8a1b",
+    "bco_spec_version": "1.3.0",
+    "provenance_domain": {
+        "name": "iMir: An integrated pipeline for high-throughput analysis of small non-coding RNA data obtained by smallRNA-Seq",
+        "version": "1.3",
+        "license": "",
+        "created": "2019-10-08T00:04:46.370776",
+        "modified": "2019-10-08T21:40:44.475711",
+        "contributors": [
+            {
+                "name": "Juntian Wei",
+                "orcid": "",
+                "affiliation": "George Washington University",
+                "contribution": [
+                    "importedBy"
+                ],
+                "email": "jwei48@gwmail.gwu.edu"
+            }
+        ]
+    },
+    "usability_domain": [
+        "This pipeline is well suited to analyze the small non-coding RNAs obtained from smallRNA-Seq, which enables the future researchers to understand the biological role of sncRNAs better. The pipeline integrates different modules and sources together, and is used to identify different types of sncRNAs, as well as predicting its biological roles and mRNA targets. ",
+        "External reference: Giurato, G., Filippo, M. D., Rinaldi, A., Hashim, A., Nassa, G., Ravo, M., … Weisz, A. (2013). iMir: An integrated pipeline for high-throughput analysis of small non-coding RNA data obtained by smallRNA-Seq. BMC Bioinformatics, 14(1), 362. doi: 10.1186/1471-2105-14-362",
+        "Gcc, g++ and make are used for the up-to-date version"
+    ],
+    "extension_domain": {},
+    "description_domain": {
+        "keywords": [
+            "Next Generation Sequencing",
+            "SmallRNA-Seq",
+            "data analysis pipeline",
+            "small non-coding RNA",
+            "microRNA",
+            "Piwi-interacting RNA"
+        ],
+        "pipeline_steps": [
+            {
+                "name": "Cutadapt",
+                "version": "1.2.1",
+                "step_number": 1,
+                "input_list": [
+                    {
+                        "access_time": "2013-12-13T00:00:00-0500",
+                        "uri": "www.example.com/iMirFiles/RNAinput.fastq",
+                        "sha1_checksum": "000528checksum",
+                        "filename": "RNA_input.fastq"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "access_time": "2013-12-13T00:05:00-0500",
+                        "uri": "www.example.com/iMirFiles/RNAinput.fa",
+                        "sha1_checksum": "000528checksum",
+                        "filename": "RNA_input_trimmed.fa"
+                    }
+                ],
+                "prerequisite": [
+                    {
+                        "name": "Python2.7_or_higher",
+                        "uri": {
+                            "access_time": "",
+                            "uri": "https://www.python.org/getit/",
+                            "sha1_checksum": "000528checksum",
+                            "filename": ""
+                        }
+                    }
+                ],
+                "description": "This is used for the pre-process analysis of the FASTQ files. The step is to remove duplicated RNA sequences in the library, and for quality filter analysis. Python is the pre-requisite to run this procedure"
+            },
+            {
+                "name": "miRanalyzer",
+                "version": "1.0",
+                "step_number": 2,
+                "input_list": [
+                    {
+                        "access_time": "2013-12-13T00:05:00-0500",
+                        "uri": "www.example.com/iMirFiles/miRNA.rc",
+                        "sha1_checksum": "000528checksum",
+                        "filename": "miRNA.rc"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "access_time": "2013-12-13T00:05:00-0500",
+                        "uri": "www.example.com/iMirFiles/Sample_name_sncRNA_results/",
+                        "sha1_checksum": "000528checksum",
+                        "filename": "Sample_name_sncRNA_results (folder)"
+                    }
+                ],
+                "prerequisite": [
+                    {
+                        "name": "Bowtie",
+                        "uri": {
+                            "access_time": "",
+                            "uri": "https://sourceforge.net/projects/bowtie-bio/files/bowtie/0.12.8/",
+                            "sha1_checksum": "000528checksum",
+                            "filename": ""
+                        }
+                    },
+                    {
+                        "name": "Vienna RNA Secondary Structure Package 1.8.5 or higher",
+                        "uri": {
+                            "access_time": "",
+                            "uri": "https://www.tbi.univie.ac.at/RNA/",
+                            "sha1_checksum": "000528checksum",
+                            "filename": ""
+                        }
+                    },
+                    {
+                        "name": "Weka 3.5.3 or higher",
+                        "uri": {
+                            "access_time": "",
+                            "uri": "https://sourceforge.net/projects/weka/files/weka-3-5/3.5.3/",
+                            "sha1_checksum": "000528checksum",
+                            "filename": ""
+                        }
+                    }
+                ],
+                "description": "This step uses miRAnalyzer to map out inputs against known miRNA sequences. The goal is to detect the known miRNAs. "
+            },
+            {
+                "name": "DESeq",
+                "version": "2.11",
+                "step_number": 3,
+                "input_list": [
+                    {
+                        "access_time": "2013-12-13T00:05:00-0500",
+                        "uri": "http://www.example.com/Case_Sample_vs_Control_Sample.dat",
+                        "sha1_checksum": "000528checksum",
+                        "filename": "Case_Sample_vs_control_Sample.dat"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "access_time": "2013-12-13T00:05:00-0500",
+                        "uri": "http://www.example.com/DESeq_comparison_results.txt",
+                        "sha1_checksum": "000528checksum",
+                        "filename": "DeSeq_comparison_results.txt"
+                    }
+                ],
+                "prerequisite": [
+                    {
+                        "name": "R 3.0.1 or higher",
+                        "uri": {
+                            "access_time": "",
+                            "uri": "http://mirror.fcaglp.unlp.edu.ar/CRAN/",
+                            "sha1_checksum": "000528checksum",
+                            "filename": ""
+                        }
+                    }
+                ],
+                "description": "This step is for differential expression analysis"
+            },
+            {
+                "name": "gplots",
+                "version": "3.0.1.1",
+                "step_number": 3,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "gplots is used to generate plot for differential analysis and cluster analysis"
+            },
+            {
+                "name": "limma",
+                "version": "3.14.4",
+                "step_number": 3,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Limma is used to perform quantile normalization for differential expression analysis. "
+            },
+            {
+                "name": "No dependencies",
+                "version": "",
+                "step_number": 4,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "The final step has no dependencies. TargetScan and miRanda are used, which are two steps. "
+            }
+        ]
+    },
+    "execution_domain": {
+        "external_data_endpoints": [
+            {
+                "name": "MiRanda",
+                "url": "http://www.microrna.org/microrna/home.do"
+            },
+            {
+                "name": "miRanalyzer subsection 3.1",
+                "url": "https://bioinfo2.ugr.es/miRanalyzer/standalone.html#toc-Subsection-3.1"
+            }
+        ],
+        "environment_variables": {},
+        "script_driver": "",
+        "software_prerequisites": [
+            {
+                "name": "Python",
+                "version": "2.7 or higher",
+                "uri": {
+                    "access_time": "",
+                    "uri": "https://www.python.org/getit/",
+                    "sha1_checksum": "000528checksum",
+                    "filename": ""
+                }
+            },
+            {
+                "name": "PERL",
+                "version": "5.0 or higher",
+                "uri": {
+                    "access_time": "",
+                    "uri": "http://www.perl.org/get.html",
+                    "sha1_checksum": "000528checksum",
+                    "filename": ""
+                }
+            },
+            {
+                "name": "Java",
+                "version": "1.6 or higher",
+                "uri": {
+                    "access_time": "",
+                    "uri": "http://www.java.com/en/download/",
+                    "sha1_checksum": "000528checksum",
+                    "filename": ""
+                }
+            },
+            {
+                "name": "R",
+                "version": "3.0.1 or higher",
+                "uri": {
+                    "access_time": "",
+                    "uri": "http://mirror.fcaglp.unlp.edu.ar/CRAN/",
+                    "sha1_checksum": "000528checksum",
+                    "filename": ""
+                }
+            },
+            {
+                "name": "gcc",
+                "version": "9.2",
+                "uri": {
+                    "access_time": "",
+                    "uri": "https://gcc.gnu.org/",
+                    "sha1_checksum": "000528checksum",
+                    "filename": ""
+                }
+            },
+            {
+                "name": "make",
+                "version": "4.2",
+                "uri": {
+                    "access_time": "",
+                    "uri": "http://ftp.gnu.org/gnu/make/",
+                    "sha1_checksum": "000528checksum",
+                    "filename": ""
+                }
+            },
+            {
+                "name": "g++",
+                "version": "2.69",
+                "uri": {
+                    "access_time": "",
+                    "uri": "https://launchpad.net/~ubuntu-toolchain-r/+archive/ubuntu/test",
+                    "sha1_checksum": "000528checksum",
+                    "filename": ""
+                }
+            }
+        ],
+        "script": []
+    },
+    "parametric_domain": [
+        {
+            "step": "",
+            "param": "",
+            "value": ""
+        }
+    ],
+    "io_domain": {
+        "input_subdomain": [],
+        "output_subdomain": []
+    },
+    "error_domain": {}
+}
