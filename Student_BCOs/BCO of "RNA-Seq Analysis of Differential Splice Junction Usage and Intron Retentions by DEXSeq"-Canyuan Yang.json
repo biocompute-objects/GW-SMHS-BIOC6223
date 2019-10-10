@@ -1,0 +1,172 @@
+{
+    "bco_id": "http://biocomputeobject.org/BCO_000543",
+    "checksum": "e02b3bdb3112c1ed3f9e4db43c949249ca57fe0ec0616c2a48d34e29e6d06fec",
+    "bco_spec_version": "1.3.0",
+    "provenance_domain": {
+        "name": "Use DEXSeq to study SJs and IRs",
+        "version": "2.0.0",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "created": "2019-10-09T01:55:40.046696",
+        "modified": "",
+        "contributors": [
+            {
+                "name": "",
+                "orcid": "",
+                "affiliation": "",
+                "contribution": [
+                    "createdBy"
+                ],
+                "email": "canyuanyang@gwu.edu"
+            }
+        ]
+    },
+    "usability_domain": [
+        "In this publication, researchers tried to study alternative splicing. Hence, data about splice junctions and intro retentions were needed. As a result, scientists used DEXseq to do differential analysis. Finally, this method was proved to be helpful in studying this field."
+    ],
+    "extension_domain": {},
+    "description_domain": {
+        "keywords": [
+            "SJs",
+            "IRs",
+            "DEXSeq"
+        ],
+        "pipeline_steps": [
+            {
+                "name": "RNAseq reads mapping",
+                "version": "2.0.4",
+                "step_number": 1,
+                "input_list": [
+                    {
+                        "access_time": "2015-09-01",
+                        "uri": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE18508",
+                        "sha1_checksum": "[A-Za-z0-9]+",
+                        "filename": "GSE18508"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "access_time": "2015-09-01",
+                        "uri": "",
+                        "sha1_checksum": "[A-Za-z0-9]+",
+                        "filename": "Possible SJs' start and end positions"
+                    }
+                ],
+                "prerequisite": [],
+                "description": "To forecast SJs' start and end positions"
+            },
+            {
+                "name": "Identification and quantification",
+                "version": "",
+                "step_number": 2,
+                "input_list": [],
+                "output_list": [
+                    {
+                        "access_time": "2015-09-01",
+                        "uri": "",
+                        "sha1_checksum": "[A-Za-z0-9]+",
+                        "filename": "Count tables and references of SJs and IRs"
+                    }
+                ],
+                "prerequisite": [],
+                "description": "Preparation of differential analysis"
+            },
+            {
+                "name": "Differential analysis",
+                "version": "",
+                "step_number": 3,
+                "input_list": [
+                    {
+                        "access_time": "2015-09-01",
+                        "uri": "",
+                        "sha1_checksum": "[A-Za-z0-9]+",
+                        "filename": "Count tables and references of SJs and IRs"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "access_time": "2015-09-01",
+                        "uri": "",
+                        "sha1_checksum": "[A-Za-z0-9]+",
+                        "filename": "Information which contains the location of SJs"
+                    }
+                ],
+                "prerequisite": [],
+                "description": "The last step to analyze SJs and IRs and get data about alternative splicing"
+            }
+        ]
+    },
+    "execution_domain": {
+        "external_data_endpoints": [
+            {
+                "name": "",
+                "url": ""
+            }
+        ],
+        "environment_variables": {},
+        "script_driver": "",
+        "software_prerequisites": [
+            {
+                "name": "TopHat",
+                "version": "2.0.4",
+                "uri": {
+                    "access_time": "2015-09-01",
+                    "uri": "",
+                    "sha1_checksum": "[A-Za-z0-9]+",
+                    "filename": ""
+                }
+            },
+            {
+                "name": "Bowtie",
+                "version": "2.0.0.7",
+                "uri": {
+                    "access_time": "2015-09-01",
+                    "uri": "",
+                    "sha1_checksum": "[A-Za-z0-9]+",
+                    "filename": ""
+                }
+            },
+            {
+                "name": "SAM tools",
+                "version": "0.1.18.0",
+                "uri": {
+                    "access_time": "2015-09-01",
+                    "uri": "",
+                    "sha1_checksum": "[A-Za-z0-9]+",
+                    "filename": ""
+                }
+            }
+        ],
+        "script": []
+    },
+    "parametric_domain": [
+        {
+            "step": "1",
+            "param": "–min-segment–intron 2",
+            "value": "2"
+        },
+        {
+            "step": "1",
+            "param": "–a/--min-anchor-length",
+            "value": "8"
+        },
+        {
+            "step": "3",
+            "param": "sliding",
+            "value": "5-bp"
+        }
+    ],
+    "io_domain": {
+        "input_subdomain": [
+            {
+                "uri": {
+                    "access_time": "2015-09-01",
+                    "uri": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE18508",
+                    "sha1_checksum": "[A-Za-z0-9]+",
+                    "filename": "GSE18508"
+                }
+            }
+        ],
+        "output_subdomain": []
+    },
+    "error_domain": {}
+}
