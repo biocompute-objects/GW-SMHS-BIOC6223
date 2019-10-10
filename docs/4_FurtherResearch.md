@@ -43,6 +43,6 @@ Group2 Wednesday 10/9 @2:15pm - COMPLETED
 Group3 Thursday 10/10 @3pm    
 Group4 Wednesday 10/9 @4pm  - IN PROGRESS.  
 Group5 Wednesday 10/9 @3pm  - COMPLETED      
-**Group6** - Not yet scheduled. Please email Janisha Patel.    
+**Group6 - Not yet scheduled. Please email Janisha Patel**    
 Group7 Wednesday 10/9 @1pm - COMPLETED    
 **Group8 Thursday 10/10 @11am - no show**
