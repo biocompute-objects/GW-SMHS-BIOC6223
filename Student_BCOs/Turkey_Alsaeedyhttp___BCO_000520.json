@@ -1,0 +1,351 @@
+{
+    "bco_id": "http://biocomputeobject.org/BCO_000520",
+    "checksum": "f674d9431bc91296db544912a0012cd7a481a1f143b0dded2f81a7024b989d6c",
+    "bco_spec_version": "1.3.0",
+    "provenance_domain": {
+        "name": "iMir: An integrated pipeline for high-throughput analysis of small non-coding RNA data obtained by smallRNA-Seq",
+        "version": "1.3",
+        "license": "GNU GPL v3",
+        "created": "2019-10-07T20:33:10.584446",
+        "modified": "2019-10-08T22:35:14.400168",
+        "contributors": [
+            {
+                "name": "Turkey Alsaeedy",
+                "orcid": "",
+                "affiliation": "George Washington University  ",
+                "contribution": [
+                    "createdBy"
+                ],
+                "email": "Turkey@gwu.edu"
+            }
+        ]
+    },
+    "usability_domain": [
+        "Small non-coding RNA is a highly sensitive and specificity which comprises microRNA and small transcripts. The aim of the pipeline, mainly, focused on the assessment of small RNA-Seq integrating several open source modules and resources for the differential expression of genes and prediction of biological targets. The result were presented and obtained by applying this pipeline to analyze simultaneously 6 smallRNASeq datasets from either exponentially growing or growth-arrested human breast cancer MCF-7 cells, that led to the rapid and accurate identification, quantitation and differential expression analysis of ~450 miRNAs, including several novel miRNAs and isomiRs, as well as identification of the putative mRNA targets of differentially expressed miRNAs. In addition, iMir allowed also the identification of ~70 piRNAs",
+        "Gcc, g++ and make are used for the up-to-date version"
+    ],
+    "extension_domain": {},
+    "description_domain": {
+        "keywords": [
+            "Next generation sequencing",
+            " SmallRNA-Seq",
+            "Data analysis pipeline",
+            "Breast cancer",
+            "Small non-coding RNA",
+            "microRNA",
+            "Piwi-interacting RNA"
+        ],
+        "pipeline_steps": [
+            {
+                "name": "Cutadapt",
+                "version": "1.3.1",
+                "step_number": 1,
+                "input_list": [
+                    {
+                        "access_time": "2013-12-13T00:00:00-08:00",
+                        "uri": "www.example.com/iMirFiles/iMirInputFiles.FASTQ",
+                        "sha1_checksum": "000520checksum",
+                        "filename": "CutadaptFile"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "access_time": "2013-12-13T00:00:00-08:00",
+                        "uri": "www.example.com/iMirFiles/Sample_name.fa",
+                        "sha1_checksum": "000520checksum",
+                        "filename": "CutadaptFile"
+                    }
+                ],
+                "prerequisite": [
+                    {
+                        "name": "Python 2.7",
+                        "uri": {
+                            "access_time": "2013-12-13T00:00:00-08:00",
+                            "uri": "http://python.org/getit/",
+                            "sha1_checksum": "000520checksum",
+                            "filename": "PythonFile"
+                        }
+                    }
+                ],
+                "description": "Pre-process analysis"
+            },
+            {
+                "name": "Bowtie",
+                "version": "0.12.8",
+                "step_number": 2,
+                "input_list": [
+                    {
+                        "access_time": "2013-12-13T00:00:00-08:00",
+                        "uri": "www.example.com/iMirFiles/iMirInputFiles2.rc",
+                        "sha1_checksum": "000520checksum",
+                        "filename": "BowtieFile"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "access_time": "2013-12-13T00:00:00-08:00",
+                        "uri": "www.example.com/iMirFiles/Sample_name_converted.rc",
+                        "sha1_checksum": "000520checksum",
+                        "filename": "BowtieFile"
+                    }
+                ],
+                "prerequisite": [],
+                "description": "Detection of known miRNAs"
+            },
+            {
+                "name": "Vienna RNA Secondary Structure package",
+                "version": "1.8.5 or earlier",
+                "step_number": 2,
+                "input_list": [
+                    {
+                        "access_time": "2013-12-13T00:00:00-08:00",
+                        "uri": "www.example.com/iMirFiles/iMirInputFiles2.rc",
+                        "sha1_checksum": "000520checksum",
+                        "filename": "ViennaRNASecondaryStructurepackageFile"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "access_time": "2013-12-13T00:00:00-08:00",
+                        "uri": "www.example.com/iMirFiles/Sample_name_converted.rc",
+                        "sha1_checksum": "000520checksum",
+                        "filename": "ViennaRNASecondaryStructurepackageFile"
+                    }
+                ],
+                "prerequisite": [],
+                "description": "Detection of known miRNAs"
+            },
+            {
+                "name": "Weka",
+                "version": "3.5.3",
+                "step_number": 2,
+                "input_list": [
+                    {
+                        "access_time": "2013-12-13T00:00:00-08:00",
+                        "uri": "www.example.com/iMirFiles/iMirInputFiles2.rc",
+                        "sha1_checksum": "000520checksum",
+                        "filename": "WekaFile"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "access_time": "2013-12-13T00:00:00-08:00",
+                        "uri": "www.example.com/iMirFiles/Sample_name_converted.rc",
+                        "sha1_checksum": "000520checksum",
+                        "filename": "WekaFile"
+                    }
+                ],
+                "prerequisite": [],
+                "description": "Detection of known miRNAs"
+            },
+            {
+                "name": "miRanalyzer",
+                "version": "1.0.0",
+                "step_number": 2,
+                "input_list": [
+                    {
+                        "access_time": "2013-12-13T00:00:00-08:00",
+                        "uri": "www.example.com/iMirFiles/iMirInputFiles2.rc",
+                        "sha1_checksum": "000520checksum",
+                        "filename": "miRanalyzerFile"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "access_time": "2013-12-13T00:00:00-08:00",
+                        "uri": "www.example.com/iMirFiles/Sample_name_converted.rc",
+                        "sha1_checksum": "000520checksum",
+                        "filename": "miRanalyzerFile"
+                    }
+                ],
+                "prerequisite": [],
+                "description": "Detection of known miRNAs"
+            },
+            {
+                "name": "Deseq",
+                "version": "1.9 or earlier",
+                "step_number": 3,
+                "input_list": [
+                    {
+                        "access_time": "2013-12-13T00:00:00-08:00",
+                        "uri": "www.example.com/iMirFiles/iMirInputFiles3.txt",
+                        "sha1_checksum": "000520checksum",
+                        "filename": "DeseqFile"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "access_time": "2013-12-13T00:00:00-08:00",
+                        "uri": "www.example.com/iMirFiles/Sample_name_LengthDistribution.txt",
+                        "sha1_checksum": "000520checksum",
+                        "filename": "DeseqFile"
+                    }
+                ],
+                "prerequisite": [],
+                "description": "Differential expression analysis"
+            },
+            {
+                "name": "gplots",
+                "version": "1.0.0",
+                "step_number": 3,
+                "input_list": [
+                    {
+                        "access_time": "2013-12-13T00:00:00-08:00",
+                        "uri": "www.example.com/iMirFiles/iMirInputFiles5.txt",
+                        "sha1_checksum": "000520checksum",
+                        "filename": "gplotsFile"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "access_time": "2013-12-13T00:00:00-08:00",
+                        "uri": "www.example.com/iMirFiles/Sample_name_LengthDistribution.txt",
+                        "sha1_checksum": "000520checksum",
+                        "filename": "gplotsFile"
+                    }
+                ],
+                "prerequisite": [],
+                "description": "Differential expression analysis"
+            },
+            {
+                "name": "limma",
+                "version": "1.0.0",
+                "step_number": 3,
+                "input_list": [
+                    {
+                        "access_time": "2013-12-13T00:00:00-08:00",
+                        "uri": "www.example.com/iMirFiles/iMirInputFiles5.txt",
+                        "sha1_checksum": "000520checksum",
+                        "filename": "limmaFile"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "access_time": "2013-12-13T00:00:00-08:00",
+                        "uri": "www.example.com/iMirFiles/Sample_name_LengthDistribution.txt",
+                        "sha1_checksum": "000520checksum",
+                        "filename": "limmaFile"
+                    }
+                ],
+                "prerequisite": [],
+                "description": "Differential expression analysis"
+            },
+            {
+                "name": "No dependencies",
+                "version": "",
+                "step_number": 4,
+                "input_list": [
+                    {
+                        "access_time": "2013-12-13T00:00:00-08:00",
+                        "uri": "www.example.com/iMirFiles/iMirInputFiles4.results",
+                        "sha1_checksum": "000520checksum",
+                        "filename": "TargetpredictionFile"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "access_time": "2013-12-13T00:00:00-08:00",
+                        "uri": "www.example.com/iMirFiles/Sample_name_sncRNA_results/",
+                        "sha1_checksum": "000520checksum",
+                        "filename": "TargetpredictionFile"
+                    }
+                ],
+                "prerequisite": [],
+                "description": "Target prediction"
+            }
+        ]
+    },
+    "execution_domain": {
+        "external_data_endpoints": [
+            {
+                "name": "Miranda",
+                "url": "http://www.microrna.org/microrna/home.do"
+            },
+            {
+                "name": "miRanalyzer Subsection 3.1",
+                "url": "https://bioinfo2.ugr.es/miRanalyzer/standalone.html#toc-Subsection-3.1"
+            }
+        ],
+        "environment_variables": {},
+        "script_driver": "",
+        "software_prerequisites": [
+            {
+                "name": "Python",
+                "version": "2.7",
+                "uri": {
+                    "access_time": "2013-12-13T00:00:00-08:00",
+                    "uri": "http://python.org/getit/",
+                    "sha1_checksum": "000520checksum",
+                    "filename": "iMirFilesPython"
+                }
+            },
+            {
+                "name": "Perl ",
+                "version": "5.0",
+                "uri": {
+                    "access_time": "2013-12-13T00:00:00-08:00",
+                    "uri": "http://www.perl.org/get.html",
+                    "sha1_checksum": "000520checksum",
+                    "filename": "iMirFilesPerl"
+                }
+            },
+            {
+                "name": "Java ",
+                "version": "1.6",
+                "uri": {
+                    "access_time": "2013-12-13T00:00:00-08:00",
+                    "uri": "http://www.java.com/en/download/",
+                    "sha1_checksum": "000520checksum",
+                    "filename": "iMirFilesJava"
+                }
+            },
+            {
+                "name": "R",
+                "version": "3.0.1",
+                "uri": {
+                    "access_time": "2013-12-13T00:00:00-08:00",
+                    "uri": "http://mirror.fcaglp.unlp.edu.ar/CRAN/",
+                    "sha1_checksum": "000520checksum",
+                    "filename": "iMirFilesR"
+                }
+            },
+            {
+                "name": "gcc",
+                "version": "9.2",
+                "uri": {
+                    "access_time": "2013-12-13T00:00:00-08:00",
+                    "uri": "https://gcc.gnu.org/",
+                    "sha1_checksum": "000520checksum",
+                    "filename": "iMirFileR"
+                }
+            },
+            {
+                "name": "make",
+                "version": "4.2",
+                "uri": {
+                    "access_time": "2013-12-13T00:00:00-08:00",
+                    "uri": "http://ftp.gnu.org/gnu/make/",
+                    "sha1_checksum": "000528checksum",
+                    "filename": "iMirFileMake"
+                }
+            },
+            {
+                "name": "g++",
+                "version": "2.69",
+                "uri": {
+                    "access_time": "2013-12-13T00:00:00-08:00",
+                    "uri": "https://launchpad.net/~ubuntu-toolchain-r/+archive/ubuntu/test",
+                    "sha1_checksum": "000528checksum",
+                    "filename": "iMirFileG++"
+                }
+            }
+        ],
+        "script": []
+    },
+    "parametric_domain": [],
+    "io_domain": {
+        "input_subdomain": [],
+        "output_subdomain": []
+    },
+    "error_domain": {}
+}
