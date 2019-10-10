@@ -1,8 +1,29 @@
-These instructions can be found in [4_FurtherResearch.md](https://github.com/biocompute-objects/GW-SMHS-BIOC6223/blob/master/docs/4_FurtherResearch.md)
-
 Further Research: Connecting platforms, pipelines, and tools
 ===================================
 10/8-10/13
+
+The group and times for this assignment are below. These instructions can be found in [4_FurtherResearch.md](https://github.com/biocompute-objects/GW-SMHS-BIOC6223/blob/master/docs/4_FurtherResearch.md)
+
+HIVE Sign-up *Only one individual per group needs to come for the HIVE portion of this assignment. It will not take more than 20 minutes.
+
+Please email janishapatel@gwu.edu to reserve your time and please state your group # Thank you!
+
+Times
+Wednesday 10/9 1-5pm
+Thursday 10/10 9-5pm
+Friday 10/11 9-4pm
+
+Location
+Ross Hall Rm559
+
+Group1 Friday 10/11 @11am
+Group2 Wednesday 10/9 @2:15pm (will give more accurate time) - COMPLETED
+Group3 Thursday 10/10 @3pm
+Group4 Wednesday 10/9 @4pm
+Group5 Wednesday 10/9 @3pm
+Group6
+Group7 Wednesday 10/9 @1pm - COMPLETED
+Group8 Thursday 10/10 @11am
 
 ## Instructions
 
