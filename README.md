@@ -32,9 +32,9 @@ To better organize your issues, each student will need to create a Project Board
 7.  You will be asked to resolve these issues **prior to the 10/18**, as the corrected BCOs will be your submission to the pFDA challenge. You can reply to the feedback for clarification or further discussion- however provide your reviewer at least 48 hours to respond. Meaning: the latest we can guarantee your comment will be addressed/answered in time for your submission will be 10/16.
 
 
-### **Hit a blocker?** 
+### **Hit a blocker? Want to provide feedback** 
 Create a GitHub [issue](https://github.com/biocompute-objects/GW-SMHS-BIOC6223/issues/new), and select appropriate:
-  * **label** : "midterm: BCO editor" , "midterm: pipeline" , "midterm: pFDA challenge", or if unsure of where your question falls: "midterm: general"
+  * **label** : "midterm: BCO editor" , "midterm: pipeline" , "midterm: pFDA challenge", "feedback" or if unsure of where your question falls: "midterm: general"
   * **assignee**: "Jonathon Keeney", "Janisha Patel", or "Helen Ibeawuchi"
   * **project**: "[fullname]"
   * **milestone**: "BCO draft" , "Further Research", "Final BCO"
