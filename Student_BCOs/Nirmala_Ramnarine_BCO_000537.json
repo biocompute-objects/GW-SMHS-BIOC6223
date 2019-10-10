@@ -1,0 +1,248 @@
+{
+    "bco_id": "http://biocomputeobject.org/BCO_000537",
+    "checksum": "f3dbcdf7963a8505a964a3cc710ecabb1063affeac03a4be2690395654294d0e",
+    "bco_spec_version": "1.3.0",
+    "provenance_domain": {
+        "name": "Single-cell RNA sequencing identifies extracellular matrix gene expression by pancreatic circulating tumor cells",
+        "version": "1.0.0",
+        "license": "",
+        "created": "2019-10-08T21:22:14.871482",
+        "modified": "2019-10-09T03:18:36.236967",
+        "contributors": [
+            {
+                "name": "Nirmala Ramnarine",
+                "orcid": "",
+                "affiliation": "George Washington University",
+                "contribution": [
+                    "createdBy"
+                ],
+                "email": "nramnarine13@gwu.edu"
+            }
+        ]
+    },
+    "usability_domain": [
+        "To identified the expression of extracellular matrix genes in mouse pancreatic circulating tumor cells and across human CTCs of pancreatic, breast, and prostate origin.",
+        "PMID: 25242334 PMCID: PMC4230325 DOI: 10.1016/j.celrep.2014.08.029"
+    ],
+    "extension_domain": {},
+    "description_domain": {
+        "keywords": [
+            "Circulating Tumor Cells ",
+            "Pancreatic Ductal Adenocarcinoma",
+            "RNA Sequencing",
+            "Extracellular Matrix Genes"
+        ],
+        "pipeline_steps": [
+            {
+                "name": "RNA Sequencing Analysis ",
+                "version": "TopHat 2.0.4, Bowtie 1 0.12.7",
+                "step_number": 1,
+                "input_list": [
+                    {
+                        "access_time": "2019-09-24T18:37:17",
+                        "uri": "https://ccb.jhu.edu/software/tophat/downloads/",
+                        "sha1_checksum": "1477c3e0221647824e6ed6fed341628e362e1115bbfb46ee5f3f4340387d43cc",
+                        "filename": "TopHat"
+                    },
+                    {
+                        "access_time": "2019-09-24T18:37:17",
+                        "uri": " https://sourceforge.net/projects/bowtie-bio/files/bowtie/0.12.7/",
+                        "sha1_checksum": "500d3f56a400fd78cb94e5530d31eb15996f9741de119220bb272f07f0e0d508",
+                        "filename": "Bowtie 1"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "access_time": "2019-09-24T18:37:17",
+                        "uri": "https://github.com/nbabirye/okey/blob/master/AlignmentDataTable.txt.gz",
+                        "sha1_checksum": "6d21dcdb04268e5cb3ad992958535a0e0697149ee687c4f9eb96ac4e7850c2eb",
+                        "filename": "KnownGene Table"
+                    },
+                    {
+                        "access_time": "2019-09-24T18:37:17",
+                        "uri": "https://github.com/nbabirye/okey/blob/master/DataTableforMappingAlignedReads.txt.gz",
+                        "sha1_checksum": "10d0d8374ac52166ee3392014fb12d8b3b6962eb79d1dc65c1a75595b4d97536",
+                        "filename": "Alignment Data Table"
+                    },
+                    {
+                        "access_time": "2019-09-24T18:37:17",
+                        "uri": "https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE51372&format=file&file=GSE51372%5FreadCounts%2Etxt%2Egz",
+                        "sha1_checksum": "7802cf22afd863c809a320cde1de22a18812e24072091b1a0fb673c658c8def5",
+                        "filename": "Accession GSE51372"
+                    },
+                    {
+                        "access_time": "2019-09-24T18:37:17",
+                        "uri": "https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE51827&format=file&file=GSE51827%5Fplatform%2Exls%2Egz",
+                        "sha1_checksum": "2d928129eaf3a6425ec3a1070833014b99634972844d5c910b72bace7342f9e8",
+                        "filename": "Accession GSE51827"
+                    }
+                ],
+                "prerequisite": [
+                    {
+                        "name": "UCSC Genome Browser ",
+                        "uri": {
+                            "access_time": "2019-09-24T18:37:17",
+                            "uri": "http://genome.ucsc.edu/cgi-bin/hgTables",
+                            "sha1_checksum": "6d38d0d9a1e6d2433d99e232eb1bba31296c5b5151ab1d39027d750f19da87b7",
+                            "filename": "KnownGene"
+                        }
+                    },
+                    {
+                        "name": "UCSC Genome Browser",
+                        "uri": {
+                            "access_time": "2019-09-24T18:37:17",
+                            "uri": "http://genome.ucsc.edu/cgi-bin/hgTables",
+                            "sha1_checksum": "6d38d0d9a1e6d2433d99e232eb1bba31296c5b5151ab1d39027d750f19da87b7",
+                            "filename": "KnownToLocusLink"
+                        }
+                    }
+                ],
+                "description": "Top Hat uses the Bowtie tool to look at unmapped reads and align them according to splicing junctions. Bowtie was used in coordination with TopHat in order to align color space reads."
+            },
+            {
+                "name": "Gene Expression Heat Map Generation",
+                "step_number": 2,
+                "input_list": [],
+                "output_list": [
+                    {
+                        "access_time": "2019-09-24T18:37:17",
+                        "uri": "https://github.com/nbabirye/okey/blob/master/FigS6-HeatmapexpressionofEMT%26STEMCellgenesincCTCs.png",
+                        "sha1_checksum": "58bb2ecb30e1936af1c791f5b3cac317f69ebb665ceba41703c7f129fac6adb3",
+                        "filename": "Heatmap expression of EMT and stem cell genes in classical CTCs"
+                    }
+                ],
+                "prerequisite": [
+                    {
+                        "name": "Grid Graphics in R",
+                        "uri": {
+                            "access_time": "2019-09-24T18:37:17",
+                            "uri": "http://www.bdbiosciences.com/documents/cd_marker_handbook.pdf",
+                            "sha1_checksum": "10e0a671444499d9593ac57d3d4f356edb7df8a647a9061db82eedde929f4e5d",
+                            "filename": "BD biosciences handbook"
+                        }
+                    },
+                    {
+                        "name": "Grid Graphics in R",
+                        "uri": {
+                            "access_time": "2019-09-24T18:37:17",
+                            "uri": "http://www.bdbiosciences.com/documents/cd_marker_handbook.pdf",
+                            "sha1_checksum": "10e0a671444499d9593ac57d3d4f356edb7df8a647a9061db82eedde929f4e5d",
+                            "filename": "BD biosciences handbook"
+                        }
+                    }
+                ],
+                "description": "Used for the selection of desired genes for visualization."
+            },
+            {
+                "name": "Differential Gene Expression",
+                "version": "Bioconductor RankProd package 2.28.0",
+                "step_number": 3,
+                "input_list": [
+                    {
+                        "access_time": "2019-09-24T18:37:17",
+                        "uri": "http://bioconductor.org/packages/release/bioc/src/contrib/RankProd_2.28.0.tar.gz",
+                        "sha1_checksum": "4929c112bdbecac6aebd513c7bb173c6857c24abc12462b902825153443e785d",
+                        "filename": "Bioconductor RankProd package"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "access_time": "2019-09-24T18:37:17",
+                        "uri": " https://github.com/nbabirye/okey/blob/master/Table1-differentiallyexpressedgenesbtwngroupsviarankprod.xlsx   ",
+                        "sha1_checksum": "502d10b66d1b75da2600e209616fee3c1878cc35407e43468bc728419c6298ca",
+                        "filename": "RankProd (RP) function "
+                    }
+                ],
+                "prerequisite": [],
+                "description": "Used for the determination of false discovery rate (FDR) estimates for up and down differential expression of sequenced genes"
+            },
+            {
+                "name": "Gene Set Enrichment",
+                "version": "DAVID 6.7",
+                "step_number": 4,
+                "input_list": [
+                    {
+                        "access_time": "2019-09-24T18:37:17",
+                        "uri": "https://david-d.ncifcrf.gov/summary.jsp",
+                        "sha1_checksum": "42e82c9da5c318a8ead66c7d994d1b44d285c91e9197912934550fcfdc567d3d",
+                        "filename": "DAVID"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "access_time": "2019-09-24T18:37:17",
+                        "uri": " https://github.com/nbabirye/okey/blob/master/Table3-KEGGanalysisofCTC-c.enrichedgenesvsprimarytumor.xlsx",
+                        "sha1_checksum": "320fd16a1bb4319f3f7ae27e3b145be8f3156dc9239ad2e2a30df52bca20a47e",
+                        "filename": "KEGG"
+                    },
+                    {
+                        "access_time": "2019-09-24T18:37:17",
+                        "uri": "https://github.com/nbabirye/okey/blob/master/Table2-GOanalysisofCTC-c.enrichedgenesvsprimarytumor.xlsx",
+                        "sha1_checksum": "fea15ac09394ffec9dc085f366d65a8ef973996bc6a07b53f2a293cc0c8657d4",
+                        "filename": "Gene Ontology Biological Process (GO_BP)"
+                    },
+                    {
+                        "access_time": "2019-09-24T18:37:17",
+                        "uri": "https://github.com/nbabirye/okey/blob/master/Table4-enrichedgenesetforCTC-plt.vs.CTC-c.xlsx",
+                        "sha1_checksum": "7e3c680239f03530c2f0b2dacdc5609266579af382a555fe8a36cf3604821a85",
+                        "filename": "Gene Ontology Biological Process (GO_BP)"
+                    },
+                    {
+                        "access_time": "2019-09-24T18:37:17",
+                        "uri": "https://github.com/nbabirye/okey/blob/master/Table5-enrichedgenesetforCTC-pro.vs.CTC-c.xlsx",
+                        "sha1_checksum": "c2d3f7ec6b213185bfe608c703fafd8265e9fa119b68fa311783fcded4bb595a",
+                        "filename": "Gene Ontology Biological Process (GO_BP)"
+                    },
+                    {
+                        "access_time": "2019-09-24T18:37:17",
+                        "uri": "URI: https://github.com/nbabirye/okey/blob/master/Table2-GOanalysisofCTC-c.enrichedgenesvsprimarytumor.xlsx",
+                        "sha1_checksum": "321e18245f3525ba1d813cacbed76da277bf5066d541102823e1568110952e08",
+                        "filename": "Gene Ontology Cellular Component "
+                    }
+                ],
+                "prerequisite": [],
+                "description": "Provides a comprehensive set of annotation tools for functional interpretation of large lists of genes."
+            }
+        ]
+    },
+    "execution_domain": {
+        "external_data_endpoints": [],
+        "environment_variables": {},
+        "script_driver": "GEO Platform",
+        "software_prerequisites": [
+            {
+                "name": "GEO Platform",
+                "version": "",
+                "uri": {
+                    "access_time": "2019-09-24T18:37:17",
+                    "uri": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GPL15907",
+                    "sha1_checksum": "45eea625c9986cfc0423dd83efc00a2210d672b4e464572bce600a9ea30ffd93",
+                    "filename": "GEO Platform"
+                }
+            }
+        ],
+        "script": []
+    },
+    "parametric_domain": [
+        {
+            "step": "1",
+            "param": "reads per million",
+            "value": "Gene count reads mapped to the gene divided by the total number of reads mapped at any gene, all multiplied by one million"
+        }
+    ],
+    "io_domain": {
+        "input_subdomain": [],
+        "output_subdomain": [
+            {
+                "mediatype": "https://github.com/nbabirye/okey/blob/master/Table6-highlyexpressedECMgenesinhumanCTCs.xlsx",
+                "uri": {
+                    "access_time": "2019-09-24T18:37:17",
+                    "uri": "https://github.com/nbabirye/okey/blob/master/Table6-highlyexpressedECMgenesinhumanCTCs.xlsx",
+                    "sha1_checksum": "b920114543b26258c84146914507e272b9eeda5eff206a75166efbb2be985d8d",
+                    "filename": "Expressed ECM Genes in Human CTCs"
+                }
+            }
+        ]
+    },
+    "error_domain": {}
+}
