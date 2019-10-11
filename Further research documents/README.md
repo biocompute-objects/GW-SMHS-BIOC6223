@@ -16,39 +16,45 @@ Friday 10/11 9-4pm
 Location
 Ross Hall Rm559
 
-Group1 Friday 10/11 @11am     
+Group1 Friday 10/11 @11am - COMPLETED  
 Group2 Wednesday 10/9 @2:15pm - COMPLETED      
 Group3 Thursday 10/10 @3pm - COMPLETED   
-Group4 Wednesday 10/9 @4pm  - IN PROGRESS  
+Group4 Wednesday 10/9 @4pm  - COMPLETED  
 Group5 Wednesday 10/9 @3pm  - COMPLETED      
-Group6 Friday 10/11 @1:30pm    
+Group6 Friday 10/11 @1:30pm - COMPLETED
 Group7 Wednesday 10/9 @1pm - COMPLETED    
-Group8 Friday 10/11 @10:30am 
+Group8 Friday 10/11 @10:30am - COMPLETED
 
 ## Instructions
 
 For the 2 platforms- [CGC](http://cgc.sbgenomics.com) & [HIVE](https://hive.biochemistry.gwu.edu/dna.cgi?cmd=home) shown to you in class: 
 
 In groups of 3, students will produce 1 paragraph detailing
-1) Tools I looked for (these are the tools outlined in your BCOs from the publications)
-2) Briefly what the tools do
-3) Were they found in the platforms - Y/N
-4) If not: 
+* Tools I looked for (these are the tools outlined in your BCOs from the publications)
+* Briefly what the tools do
+* Were they found in the platforms - Y/N
+* If not: 
     * What the similar/equivalent ones would be AND
     * email the point of contact for CGC and HIVE explaining with this paragraph (You will be provided these contacts) what tools you did not find on the platform. 
 
-Once the assigment (with both parts- HIVE and CGC is complete), submit this to [Further research documents folder](https://github.com/biocompute-objects/GW-SMHS-BIOC6223). Instructions:
-   1. Create the document locally on your computer in txt format. Please upload the document to the [Further research documents folder](https://github.com/biocompute-objects/GW-SMHS-BIOC6223).
+Once the assigment (with both parts- HIVE and CGC) is complete, submit to [Further research documents folder](https://github.com/biocompute-objects/GW-SMHS-BIOC6223). Instructions:
+   1. Create the document locally on your computer in txt format (Name it "Group#_FurtherResearch". 
+   2. Upload the document to the [Further research documents folder](https://github.com/biocompute-objects/GW-SMHS-BIOC6223).
    In your Pull Request, please select appropriate:
   * **label** : "midterm: Further Research"
   * **assignee**: "Janisha Patel"
   * **milestone**: "Further Research"
   
-  2. If there were tools not found in HIVE or CGC, draft individual emails to them respectively with this information. Email details can be found below. 
+  Note: only one team member needs to do this.
+  3.  If there were tools not found in HIVE or CGC, draft individual emails to them respectively with this information. Template email can be found below.  
+  *Points of contact*      
+  for CGC: Dave Robertson <david.roberson@sbgenomics.com>       
+  For HIVE: HIVE <gwu.hive.team@gmail.com>      
+ 
  
 
 # Deliverables
-Two deliverables for this assignment: 1 paragraph document + 2 separate emails to the HIVE and CGC contact.
+Two deliverables for this assignment: 1 paragraph document + 2 separate emails to the HIVE and CGC contact. (To clarify: each team must send 1 email to HIVE and 1 email to CGC)
 Due: 10/13
 
 ------      
@@ -63,5 +69,7 @@ As a group, follow the same steps for CGC and create 1 paragraph. A template wou
 An email will be sent to the point of contact HIVE Platform and CGC for the respective tools not found in their platform."
   
 ### Details for email:
-In the format of "I am a graduate  student in the George Washington University taking x class.......I have created a BCO for x publication (cite appropriately), and the following tools in the workflow were not found in the platform"
-   
+Please refer to below template for reference (DO NOT COPY AND PASTE)
+
+"I am a graduate student at George Washington University taking x class. I have created a BCO for x publication, and looking to see if the workflow outlined in the publication can be reproducible in different cloud computing platforms.  I was unable to find the following tools from the workflows in the CGC : x, y, z. I did, however find these alternatives: a, b, c.  
+My instructor (as requested by Dr. Dennis Dean) has prompted me to provide this feedback."
