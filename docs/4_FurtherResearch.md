@@ -45,4 +45,4 @@ Group4 Wednesday 10/9 @4pm  - IN PROGRESS
 Group5 Wednesday 10/9 @3pm  - COMPLETED            
 Group6 Friday 10/11 @1:30pm               
 Group7 Wednesday 10/9 @1pm - COMPLETED          
-Group8 Friday 10/11 @10:30am     
+Group8 Friday 10/11 @11:30am     
