@@ -26,6 +26,8 @@ Group7 Wednesday 10/9 @1pm - COMPLETED
 Group8 Friday 10/11 @10:30am - COMPLETED
 
 
+Note: Since only one individual is required to come in and search HIVE for the tools, I highly recommend that individual comes with the list of tools in your pipeline. Next to each tool, indicate whether or not the tool was found in HIVE. If not, write an equivalent tool that was found in HIVE.As a group, follow the same steps for CGC and create 1 paragraph (template at the bottom of this page)
+         
 ## Instructions
 
 For the 2 platforms- [CGC](http://cgc.sbgenomics.com) & [HIVE](https://hive.biochemistry.gwu.edu/dna.cgi?cmd=home) shown to you in class: 
@@ -60,11 +62,7 @@ Once the assigment (with both parts- HIVE and CGC) is complete, submit to [Furth
 ------      
 
 ### Paragraph Template:   
-Only for reference- this should not be a direct copy/paste
-
-Note: Since only one individual is required to come in and search HIVE for the tools, I highly recommend that individual comes with the list of tools in your pipeline. Next to each tool, indicate whether or not the tool was found in HIVE. If not, write an equivalent tool that was found in HIVE. 
-
-As a group, follow the same steps for CGC and create 1 paragraph. A template would be:
+Only for reference- this should not be a direct copy/paste     
   " Our publication utilized 6 tools:  TopHat in Step 1,  [Tool2] in Step 2, [Tool3] in Step 3, [Tool4] in Step 4, [Tool5]in Step 5, [Tool6] in Step 6. Tool 1's purpose was to align [X] reads to [X] genomes. Tool 1 was found in the CGC, but was not found in the HIVE Platform. An equivalent tool found in the HIVE platform was HIVE Hexagon..... Tool 2's purpose was ____ ....not found either CGC or HIVE.... 
   ... .. 
 An email has been sent to HIVE Platform and CGC's points of contact with the the respective tools not found in their platform as feedback."
