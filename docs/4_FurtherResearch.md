@@ -21,7 +21,7 @@ Group2 Wednesday 10/9 @2:15pm - COMPLETED
 Group3 Thursday 10/10 @3pm - COMPLETED   
 Group4 Wednesday 10/9 @4pm  - COMPLETED  
 Group5 Wednesday 10/9 @3pm  - COMPLETED      
-Group6 Friday 10/11 @1:30pm - COMPLETED 
+Group6 Friday 10/11 @1:30pm - COMPLETED      
 Group7 Wednesday 10/9 @1pm - COMPLETED    
 Group8 Friday 10/11 @10:30am - COMPLETED
 
@@ -31,10 +31,10 @@ Group8 Friday 10/11 @10:30am - COMPLETED
 For the 2 platforms- [CGC](http://cgc.sbgenomics.com) & [HIVE](https://hive.biochemistry.gwu.edu/dna.cgi?cmd=home) shown to you in class: 
 
 In groups of 3, students will produce 1 paragraph detailing
-1) Tools I looked for (these are the tools outlined in your BCOs from the publications)
-2) Briefly what the tools do
-3) Were they found in the platforms - Y/N
-4) If not: 
+* Tools I looked for (these are the tools outlined in your BCOs from the publications)
+* Briefly what the tools do
+* Were they found in the platforms - Y/N
+* If not: 
     * What the similar/equivalent ones would be AND
     * email the point of contact for CGC and HIVE explaining with this paragraph (You will be provided these contacts) what tools you did not find on the platform. 
 
@@ -47,14 +47,14 @@ Once the assigment (with both parts- HIVE and CGC) is complete, submit to [Furth
   * **milestone**: "Further Research"
   
   Note: only one team member needs to do this.
-  2. If there were tools not found in HIVE or CGC, draft individual emails to them respectively with this information. Template email can be found below.  
+  3. If there were tools not found in HIVE or CGC, draft individual emails to them respectively with this information. Template email can be found below.  
   *Points of contact*      
   for CGC: Dave Robertson <david.roberson@sbgenomics.com>       
   For HIVE: HIVE <gwu.hive.team@gmail.com>      
  
 
 # Deliverables
-Two deliverables for this assignment: 1 paragraph document + 2 separate emails to the HIVE and CGC contact.
+2 deliverables for this assignment: 1 paragraph document + 2 separate emails to the HIVE and CGC contact. (To clarify: each team must send 1 email to HIVE and 1 email to CGC)
 Due: 10/13
 
 ------      
@@ -64,9 +64,11 @@ Due: 10/13
 Note: Since only one individual is required to come in and search HIVE for the tools, I highly recommend that individual comes with the list of tools in your pipeline. Next to each tool, indicate whether or not the tool was found in HIVE. If not, write an equivalent tool that was found in HIVE. 
 
 As a group, follow the same steps for CGC and create 1 paragraph. A template would be:
-  " Our publication utilized 6 tools:  TopHat in Step 1,  [Tool2] in Step 2, [Tool3] in Step 3, [Tool4] in Step 4, [Tool5]in Step 5, [Tool6]in Step 6. Tool 1's purpose was to align [X] reads to [X] genomes. Tool 1 was found in the CGC, but was not found in the HIVE Platform. An equivalent tool found in the HIVE platform was HIVE Hexagon..... Tool 2's purpose was ____ ....not found either CGC or HIVE.... 
+  " Our publication utilized 6 tools:  TopHat in Step 1,  [Tool2] in Step 2, [Tool3] in Step 3, [Tool4] in Step 4, [Tool5]in Step 5, [Tool6] in Step 6. Tool 1's purpose was to align [X] reads to [X] genomes. Tool 1 was found in the CGC, but was not found in the HIVE Platform. An equivalent tool found in the HIVE platform was HIVE Hexagon..... Tool 2's purpose was ____ ....not found either CGC or HIVE.... 
   ... .. 
 An email will be sent to the point of contact HIVE Platform and CGC for the respective tools not found in their platform."
   
-### Details for email:
-In the format of "I am a graduate  student in the George Washington University taking x class.......I have created a BCO for x publication (cite appropriately), and the following tools in the workflow were not found in the platform"
+### Details for email: 
+Please refer to below template for reference (DO NOT COPY AND PASTE)
+
+"I am a graduate student at George Washington University taking x class. I have created a BCO for x publication, and looking to see if the workflow outlined in the publication can be reproducible in different cloud computing platforms.  I was unable to find the following tools from the workflows in the CGC : x, y, z. I did, however find these alternatives: a, b, c. My instructor (as requested by Dr. Dennis Dean) has prompted me to provide this feedback."
