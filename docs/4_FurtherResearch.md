@@ -48,7 +48,9 @@ Once the assigment (with both parts- HIVE and CGC) is complete, submit to [Furth
   
   Note: only one team member needs to do this.
   2. If there were tools not found in HIVE or CGC, draft individual emails to them respectively with this information. Template email can be found below.  
-  Point of contact for CGC: Dave Robertson <david.roberson@sbgenomics.com>. For HIVE: HIVE <gwu.hive.team@gmail.com>
+  *Points of contact*      
+  for CGC: Dave Robertson <david.roberson@sbgenomics.com>       
+  For HIVE: HIVE <gwu.hive.team@gmail.com>      
  
 
 # Deliverables
