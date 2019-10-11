@@ -55,7 +55,7 @@ Once the assigment (with both parts- HIVE and CGC) is complete, submit to [Furth
 
 # Deliverables
 2 deliverables for this assignment: 1 paragraph document + 2 separate emails to the HIVE and CGC contact. (To clarify: each team must send 1 email to HIVE and 1 email to CGC)
-Due: 10/13
+## Due: 10/13
 
 ------      
 
