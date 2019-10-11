@@ -23,7 +23,7 @@ TOOL: KEGGpathway
 CGC Portion
 TOOLS: TopHat and Bowtie1
 TopHat uses the Bowtie tool to look at unmapped reads and align them according to splicing junctions.  
-These tools are found as public apps in the CGC.
+These tools are found as public apps in the CGC. 
 
 TOOL: UCSC Genome browser table
 This tool provided alignment comparisons to already provided genes within the genome browser table.
