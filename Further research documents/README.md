@@ -59,16 +59,17 @@ Two deliverables for this assignment: 1 paragraph document + 2 separate emails t
 
 ------      
 
-### Details for paragraph:     
+### Paragraph Template:   
+Only for reference- this should not be a direct copy/paste
 
 Note: Since only one individual is required to come in and search HIVE for the tools, I highly recommend that individual comes with the list of tools in your pipeline. Next to each tool, indicate whether or not the tool was found in HIVE. If not, write an equivalent tool that was found in HIVE. 
 
 As a group, follow the same steps for CGC and create 1 paragraph. A template would be:
-  " Our publication utilized 6 tools:  TopHat in Step 1,  [Tool2] in Step 2, [Tool3] in Step 3, [Tool4] in Step 4, [Tool5]in Step 5, [Tool6]in Step 6. Tool 1's purpose was to align [X] reads to [X] genomes. Tool 1 was found in the CGC, but was not found in the HIVE Platform. An equivalent tool found in the HIVE platform was HIVE Hexagon..... Tool 2's purpose was ____ ....not found either CGC or HIVE.... 
+  " Our publication utilized 6 tools:  TopHat in Step 1,  [Tool2] in Step 2, [Tool3] in Step 3, [Tool4] in Step 4, [Tool5]in Step 5, [Tool6] in Step 6. Tool 1's purpose was to align [X] reads to [X] genomes. Tool 1 was found in the CGC, but was not found in the HIVE Platform. An equivalent tool found in the HIVE platform was HIVE Hexagon..... Tool 2's purpose was ____ ....not found either CGC or HIVE.... 
   ... .. 
-An email has been sent to the point of contact HIVE Platform and CGC for the respective tools not found in their platform."
+An email has been sent to HIVE Platform and CGC's points of contact with the the respective tools not found in their platform as feedback."
   
-### Details for email:
-Please refer to below template for reference (DO NOT COPY AND PASTE)
+### Email template: 
+Only for reference- this should not be a direct copy/paste
 
 "I am a graduate student at George Washington University taking x class. I have created a BCO for x publication, and looking to see if the workflow outlined in the publication can be reproducible in different cloud computing platforms.  I was unable to find the following tools from the workflows in the CGC : x, y, z. I did, however find these alternatives: a, b, c. My instructor (as requested by Dr. Dennis Dean) has prompted me to provide this feedback."
