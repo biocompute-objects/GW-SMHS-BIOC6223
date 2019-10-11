@@ -71,5 +71,4 @@ An email will be sent to the point of contact HIVE Platform and CGC for the resp
 ### Details for email:
 Please refer to below template for reference (DO NOT COPY AND PASTE)
 
-"I am a graduate student at George Washington University taking x class. I have created a BCO for x publication, and looking to see if the workflow outlined in the publication can be reproducible in different cloud computing platforms.  I was unable to find the following tools from the workflows in the CGC : x, y, z. I did, however find these alternatives: a, b, c.  
-My instructor (as requested by Dr. Dennis Dean) has prompted me to provide this feedback."
+"I am a graduate student at George Washington University taking x class. I have created a BCO for x publication, and looking to see if the workflow outlined in the publication can be reproducible in different cloud computing platforms.  I was unable to find the following tools from the workflows in the CGC : x, y, z. I did, however find these alternatives: a, b, c. My instructor (as requested by Dr. Dennis Dean) has prompted me to provide this feedback."
