@@ -1,3 +1,37 @@
+# Further Research Group 5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------------
+
+# Notes
 HIVE Portion    
 TOOLs: TopHat and Bowtie 1    
     TopHat uses the bowtie tool to look at unmapped reads and align them according to splicing junctions.
