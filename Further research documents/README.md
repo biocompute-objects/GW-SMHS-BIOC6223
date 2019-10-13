@@ -47,14 +47,14 @@ Note: Since only one individual is required to come in and search HIVE for the t
 
     Local: Save on your computer in txt format (Name it "Group#_FurtherResearch"). Upload the document to the [Further research documents folder](https://github.com/biocompute-objects/GW-SMHS-BIOC6223)          
    OR       
-   Github: create a new file ("Group#_FurtherResearch.md) in the [Further research documents folder](https://github.com/biocompute-objects/GW-SMHS-BIOC6223) and write the pargraph there.
+   Github: create a new file ("Group#_FurtherResearch.md) in the [Further research documents folder](https://github.com/biocompute-objects/GW-SMHS-BIOC6223) and write the paragraph there.
    
    In your Pull Request, please select appropriate:
       * **label** : "midterm: Further Research"
       * **assignee**: "Janisha Patel"
       * **milestone**: "Further Research"
   
-       
+      
        
 Note: only one team member needs to do this:    
 
