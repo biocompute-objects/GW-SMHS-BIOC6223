@@ -2,6 +2,20 @@ Further Research: Connecting platforms, pipelines, and tools
 ===================================
 10/8-10/13
 
+
+For the 2 platforms- [CGC](http://cgc.sbgenomics.com) & [HIVE](https://hive.biochemistry.gwu.edu/dna.cgi?cmd=home) shown to you in class: 
+
+In groups of 3, students will produce 1 paragraph detailing
+   * Tools I looked for (these are the tools outlined in your BCOs from the publications)
+   * Briefly what the tools do
+   * Were they found in the platforms - Y/N
+   * If not: 
+      * What the similar/equivalent ones would be AND
+      * email the point of contact for CGC and HIVE explaining with this paragraph (You will be provided these contacts) what tools you did not find on the platform. 
+
+Once the assigment (with both parts- HIVE and CGC) is complete, submit to [Further research documents folder](https://github.com/biocompute-objects/GW-SMHS-BIOC6223).   
+
+## Groups/ times
 The group and times for this assignment are below. These instructions can be found in [4_FurtherResearch.md](https://github.com/biocompute-objects/GW-SMHS-BIOC6223/blob/master/docs/4_FurtherResearch.md)
 
 HIVE Sign-up *Only one individual per group needs to come for the HIVE portion of this assignment. It will not take more than 20 minutes.
@@ -28,23 +42,12 @@ Group8 Friday 10/11 @10:30am - COMPLETED
 Note: Since only one individual is required to come in and search HIVE for the tools, I highly recommend that individual comes with the list of tools in your pipeline. Next to each tool, indicate whether or not the tool was found in HIVE. If not, write an equivalent tool that was found in HIVE.As a group, follow the same steps for CGC and create 1 paragraph (template at the bottom of this page)
 
 ## Instructions
+  
+1. Create the document (Either locally or on Github)    
 
-For the 2 platforms- [CGC](http://cgc.sbgenomics.com) & [HIVE](https://hive.biochemistry.gwu.edu/dna.cgi?cmd=home) shown to you in class: 
-
-In groups of 3, students will produce 1 paragraph detailing
-   * Tools I looked for (these are the tools outlined in your BCOs from the publications)
-   * Briefly what the tools do
-   * Were they found in the platforms - Y/N
-   * If not: 
-      * What the similar/equivalent ones would be AND
-      * email the point of contact for CGC and HIVE explaining with this paragraph (You will be provided these contacts) what tools you did not find on the platform. 
-
-Once the assigment (with both parts- HIVE and CGC) is complete, submit to [Further research documents folder](https://github.com/biocompute-objects/GW-SMHS-BIOC6223).     
-Instructions:
-
-1. Create the document (whether locally on your computer in txt format (Name it "Group#_FurtherResearch" and Upload the document to the [Further research documents folder](https://github.com/biocompute-objects/GW-SMHS-BIOC6223)          
+    Local: Save on your computer in txt format (Name it "Group#_FurtherResearch"). Upload the document to the [Further research documents folder](https://github.com/biocompute-objects/GW-SMHS-BIOC6223)          
    OR       
-   create a new file ("Group#_FurtherResearch.md) in the [Further research documents folder](https://github.com/biocompute-objects/GW-SMHS-BIOC6223) and write the pargraph there.
+   Github: create a new file ("Group#_FurtherResearch.md) in the [Further research documents folder](https://github.com/biocompute-objects/GW-SMHS-BIOC6223) and write the pargraph there.
    
    In your Pull Request, please select appropriate:
       * **label** : "midterm: Further Research"
