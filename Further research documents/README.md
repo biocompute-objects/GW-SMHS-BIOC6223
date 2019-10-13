@@ -32,12 +32,12 @@ Note: Since only one individual is required to come in and search HIVE for the t
 For the 2 platforms- [CGC](http://cgc.sbgenomics.com) & [HIVE](https://hive.biochemistry.gwu.edu/dna.cgi?cmd=home) shown to you in class: 
 
 In groups of 3, students will produce 1 paragraph detailing
-* Tools I looked for (these are the tools outlined in your BCOs from the publications)
-* Briefly what the tools do
-* Were they found in the platforms - Y/N
-* If not: 
-    * What the similar/equivalent ones would be AND
-    * email the point of contact for CGC and HIVE explaining with this paragraph (You will be provided these contacts) what tools you did not find on the platform. 
+   * Tools I looked for (these are the tools outlined in your BCOs from the publications)
+   * Briefly what the tools do
+   * Were they found in the platforms - Y/N
+   * If not: 
+      * What the similar/equivalent ones would be AND
+      * email the point of contact for CGC and HIVE explaining with this paragraph (You will be provided these contacts) what tools you did not find on the platform. 
 
 Once the assigment (with both parts- HIVE and CGC) is complete, submit to [Further research documents folder](https://github.com/biocompute-objects/GW-SMHS-BIOC6223).     
 Instructions:
@@ -47,13 +47,13 @@ Instructions:
    create a new file ("Group#_FurtherResearch.md) in the [Further research documents folder](https://github.com/biocompute-objects/GW-SMHS-BIOC6223) and write the pargraph there.
    
    In your Pull Request, please select appropriate:
-  * **label** : "midterm: Further Research"
-  * **assignee**: "Janisha Patel"
-  * **milestone**: "Further Research"
+      * **label** : "midterm: Further Research"
+      * **assignee**: "Janisha Patel"
+      * **milestone**: "Further Research"
   
        
        
-       Note: only one team member needs to do this.     
+Note: only one team member needs to do this:    
 
 2.  If there were tools not found in HIVE or CGC, draft individual emails to them respectively with this information. Template email can be found below.  
   *Points of contact*      
