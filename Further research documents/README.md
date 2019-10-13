@@ -35,8 +35,8 @@ Group2 Wednesday 10/9 @2:15pm - COMPLETED
 Group3 Thursday 10/10 @3pm - COMPLETED   
 Group4 Wednesday 10/9 @4pm  - COMPLETED  
 Group5 Wednesday 10/9 @3pm  - COMPLETED      
-Group6 Friday 10/11 @1:30pm - COMPLETED
-Group7 Wednesday 10/9 @1pm - COMPLETED    
+Group6 Friday 10/11 @1:30pm - COMPLETED   
+Group7 Wednesday 10/9 @1pm - COMPLETED        
 Group8 Friday 10/11 @10:30am - COMPLETED
 
 Note: Since only one individual is required to come in and search HIVE for the tools, I highly recommend that individual comes with the list of tools in your pipeline. Next to each tool, indicate whether or not the tool was found in HIVE. If not, write an equivalent tool that was found in HIVE.As a group, follow the same steps for CGC and create 1 paragraph (template at the bottom of this page)
