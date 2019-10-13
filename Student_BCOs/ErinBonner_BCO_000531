@@ -1,18 +1,18 @@
 {
     "bco_id": "http://biocomputeobject.org/BCO_000531",
-    "checksum": "5e5bf8a64a7df0286289f08d591fe750022741b9b3d296b7a722470983cfb30c",
+    "checksum": "566a1d7fa7b80786844ced7c37d5eeb46afb4c9dff913eff05e693cb5847dee4",
     "bco_spec_version": "1.3.0",
     "provenance_domain": {
         "name": "STAT3 knockout in ovarian cancer",
         "version": "1.0.0",
         "license": "",
         "created": "2019-10-08T21:13:19.536617",
-        "modified": "2019-10-08T21:36:12.694020",
+        "modified": "2019-10-13T22:47:20.213626",
         "contributors": [
             {
                 "name": "Erin Bonner",
-                "orcid": "",
-                "affiliation": "",
+                "orcid": "https://orcid.org/0000-0002-1299-6330",
+                "affiliation": "The George Washington University",
                 "contribution": [
                     "createdBy"
                 ],
