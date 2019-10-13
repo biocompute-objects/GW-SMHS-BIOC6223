@@ -12,7 +12,7 @@ Create first BCO draft
   * **milestone**: "BCO draft"
 
 
-IF YOU CREATED A WIP PULL REQUEST DURING CLASS, HERE ARE YOU'RE INSTRUCTIONS FOR THIS EVENING (10/8): 
+If you created a WIP pull request during class, here are your instructions for this evening (10/8):
 1. Edit and finalize your BCO in the BCO Editor
 2. Download this final draft 
 3. Modify this pull request  with the new BCO
