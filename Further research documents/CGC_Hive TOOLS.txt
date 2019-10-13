@@ -1,0 +1,7 @@
+﻿Using the Cancer Genomics Cloud connection to The Cancer Genomics Atlas (TCGA) will be important to beginning our pipeline as the data from the publication annotates specifically from the TCGA. The Hive’s Hierarchical clustering algorithm is the primary tool in step 1 and 2. The CGC alignment metrics QC tool will be used for steps 3 and 4. Tool 1 is optimal as it has the capacity to cluster RNA sequences with references in matrices, and can also run correlations. The CGC Alignment QC tool 2 also has statistical capacity but may also allow us to merge the data and remove/modify the data set for better analysis.
+
+
+Other tools that could potentially be used are the CGC RNA-Seq alignment tool. Which may allow the various miRNA and transcript data to be compared for further analysis.
+
+
+Concerns would be for step 3 where we are aiming to remove certain correlation values and data labeled NA. I could not find a place where the tools specifically stated they had this function. The alignment metrics tool, however, shows where alignments do not occur effectively and thus I would assume would not use that alignment data in the statistical analysis.
