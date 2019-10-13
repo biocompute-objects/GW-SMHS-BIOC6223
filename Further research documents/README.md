@@ -39,16 +39,23 @@ In groups of 3, students will produce 1 paragraph detailing
     * What the similar/equivalent ones would be AND
     * email the point of contact for CGC and HIVE explaining with this paragraph (You will be provided these contacts) what tools you did not find on the platform. 
 
-Once the assigment (with both parts- HIVE and CGC) is complete, submit to [Further research documents folder](https://github.com/biocompute-objects/GW-SMHS-BIOC6223). Instructions:
-   1. Create the document locally on your computer in txt format (Name it "Group#_FurtherResearch". 
-   2. Upload the document to the [Further research documents folder](https://github.com/biocompute-objects/GW-SMHS-BIOC6223).
+Once the assigment (with both parts- HIVE and CGC) is complete, submit to [Further research documents folder](https://github.com/biocompute-objects/GW-SMHS-BIOC6223).     
+Instructions:
+
+1. Create the document (whether locally on your computer in txt format (Name it "Group#_FurtherResearch" and Upload the document to the [Further research documents folder](https://github.com/biocompute-objects/GW-SMHS-BIOC6223)          
+   OR       
+   create a new file ("Group#_FurtherResearch.md) in the [Further research documents folder](https://github.com/biocompute-objects/GW-SMHS-BIOC6223) and write the pargraph there.
+   
    In your Pull Request, please select appropriate:
   * **label** : "midterm: Further Research"
   * **assignee**: "Janisha Patel"
   * **milestone**: "Further Research"
   
-  Note: only one team member needs to do this.
-  3.  If there were tools not found in HIVE or CGC, draft individual emails to them respectively with this information. Template email can be found below.  
+       
+       
+       Note: only one team member needs to do this.     
+
+2.  If there were tools not found in HIVE or CGC, draft individual emails to them respectively with this information. Template email can be found below.  
   *Points of contact*      
   for CGC: Dave Robertson <david.roberson@sbgenomics.com>       
   For HIVE: HIVE <gwu.hive.team@gmail.com>      
