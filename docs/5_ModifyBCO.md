@@ -50,7 +50,5 @@ Thursday 10/17 9-5pm (this will be the last available time before pFDA submissio
 ## pFDA BCO challenge submission deadline is Friday Oct 18th @ 10:55am.
 
 Note: students should refer to 
-  BIOC6223 Lecture #1 BioCompute Introduction for help
-  [Specification document](https://github.com/biocompute-objects/BCO_Specification)
-  [User guide] (https://github.com/biocompute-objects/BCO_Specification/blob/master/user_guide.md)
+  BIOC6223 Lecture #1 BioCompute Introduction for help, [Specification document](https://github.com/biocompute-objects/BCO_Specification), [User guide] (https://github.com/biocompute-objects/BCO_Specification/blob/master/user_guide.md)
   
