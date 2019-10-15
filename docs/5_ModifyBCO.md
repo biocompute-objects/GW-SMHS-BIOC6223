@@ -38,8 +38,16 @@ Any later and there is no guarantee your BCO will be approved.
 Once you have received the "BCO approved" comment on your pull request AND modified the review status, please submit to the pFDA challenge. 
 -----
 
-If you have any questions, please create a Github issue and assign Jonathon Keeney or Janisha Patel.
-Thank you.
+If you have questions regarding the issues assigned to you, please first comment on the issue with your question and tag me in your comment. Given you've tagged Janisha Patel, you will receive a response to your comment within 0-2hrs.
+
+If after you've submitted the comment you still need help, I will be available in Rm 541:
+
+Monday 10/14 12-3pm
+Tuesday 10/15 9-1pm, 2-4pm
+Wednesday 10/16 9-12pm
+Thursday 10/17 9-5pm (this will be the last available time before pFDA submission)
+
+## pFDA BCO challenge submission deadline is Friday Oct 18th @ 10:55am.
 
 Note: students should refer to 
   BIOC6223 Lecture #1 BioCompute Introduction for help
