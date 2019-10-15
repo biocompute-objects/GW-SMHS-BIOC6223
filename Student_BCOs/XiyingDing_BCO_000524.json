@@ -1,0 +1,104 @@
+{
+    "bco_id": "http://biocomputeobject.org/BCO_000524",
+    "checksum": "893227528679a28274e102aa60ef67b64dbab5f8e064060edc5ba9f6fa4b464d",
+    "bco_spec_version": "1.3.0",
+    "provenance_domain": {
+        "name": "TAP: a targeted clinical genomics pipeline for detecting transcript variants using RNA-seq data",
+        "version": "0.4.2",
+        "license": "http://creativecommons.org/licenses/by/4.0/",
+        "created": "2019-10-07T22:19:18.384004",
+        "modified": "",
+        "contributors": [
+            {
+                "name": "",
+                "orcid": "",
+                "affiliation": "",
+                "contribution": [
+                    "createdBy"
+                ],
+                "email": "xzd@gwu.edu"
+            }
+        ]
+    },
+    "usability_domain": [
+        "TAP is a fast and robust RNA-seq variant detection pipeline. Using the Leucegene acute myeloid leukemia (AML) RNA-seq data and a set of 580 COSMIC target genes, TAP identified a wide range of hallmark molecular anomalies including gene fusions, tandem duplications, insertions and deletions in agreement with published literature results. Moreover, also in this dataset, TAP captured AML-specific splicing variants such as skipped exons and novel splice sites reported in studies elsewhere. Running time of TAP on 100–150 million read pairs and a 580-gene set is one to 2 hours on a 48-core machine."
+    ],
+    "extension_domain": {},
+    "description_domain": {
+        "keywords": [
+            "RNA-seq",
+            "Transcriptome assembly",
+            "Gene fusion",
+            "Alternative splicing",
+            "Internal tandem duplication",
+            "Partial tandem duplication",
+            "Acute myeloid leukemia"
+        ],
+        "pipeline_steps": [
+            {
+                "name": "BioBloomTools (BBT)",
+                "version": "2.1.0",
+                "step_number": 1,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "alignment-free genelevel classification of RNA-seq reads using BioBloomTools,  The first step of TAP is to classify and segregate whole-sample RNA-seq reads into bins corresponding to specific gene targets. The inputs to this sequence extraction step are RNA-seq read pairs and transcript sequences of a list of target genes."
+            },
+            {
+                "name": "Trans-ABySS",
+                "version": "1.5.4",
+                "step_number": 2,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Bins of read pairs belonging to individual genes are assembled independently in parallel. Reconstruct transcripts with a range of expression levels and sequence complexity."
+            },
+            {
+                "name": "Genomic Mapping and Alignment Program for mRNA and EST Sequences (GMAP)",
+                "version": "2014-12-28",
+                "step_number": 3,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Assembled contig sequences are aligned to the reference genome and the reference transcriptome using GMAP and the BWA-MEM algorithm of the BWA package, respectively. Concurrently, extracted reads are aligned to the assembled contigs to provide support evidence and read counts of SV calls."
+            },
+            {
+                "name": "Burrow-Wheeler Aligner for short-read alignment (BWA-MEM)",
+                "version": "0.7.12",
+                "step_number": 3,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Assembled contig sequences are aligned to the reference genome and the reference transcriptome using GMAP and the BWA-MEM algorithm of the BWA package, respectively. Concurrently, extracted reads are aligned to the assembled contigs to provide support evidence and read counts of SV calls."
+            },
+            {
+                "name": "Post Assembly Variant Finder (PAVFinder)",
+                "version": "0.4.2",
+                "step_number": 4,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Deduce variants from the split or gapped alignments of contigs to the references. Reports novel splicing events, such as exon skipping, novel exons, novel introns, retained introns, and novel splice donor and acceptor sites by comparing contig-to-genome alignments to reference gene models."
+            }
+        ]
+    },
+    "execution_domain": {
+        "external_data_endpoints": [],
+        "environment_variables": {},
+        "script_driver": "",
+        "software_prerequisites": [],
+        "script": []
+    },
+    "parametric_domain": [
+        {
+            "step": "",
+            "param": "",
+            "value": ""
+        }
+    ],
+    "io_domain": {
+        "input_subdomain": [],
+        "output_subdomain": []
+    },
+    "error_domain": {}
+}
