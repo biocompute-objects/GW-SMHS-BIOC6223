@@ -41,14 +41,13 @@
                 "description": ""
             },
             {
-                "name": "Cufflinks v2.2.1",
-                "version": "",
-                "step_number": 0,
-                "input_list": [],
-                "output_list": [],
-                "prerequisite": [],
-                "description": ""
-            },
+                "name": "STAR", 
+                "version": "2.5.2", 
+                "step_number": 1, 
+                 "input_list": [ 
+                     { 
+                          "uri": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE134375", 
+                           "filename": "GSE134375"             
             {
                 "name": "featureCounts v1.6.1",
                 "version": "",
