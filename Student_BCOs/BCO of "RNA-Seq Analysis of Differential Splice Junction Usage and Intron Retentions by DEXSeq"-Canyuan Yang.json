@@ -21,7 +21,7 @@
         ]
     },
     "usability_domain": [
-        "In this publication, researchers tried to study alternative splicing. Hence, data about splice junctions and intro retentions were needed. As a result, scientists used DEXseq to do differential analysis. Finally, this method was proved to be helpful in studying this field."
+        "In this publication, "Li, Y., Rao, X., Mattox, W. W., Amos, C. I., & Liu, B. (2015). RNA-seq analysis of differential splice junction usage and intron retentions by DEXSeq. PLoS One, 10(9), e0136653.", researchers tried to study alternative splicing. Hence, data about splice junctions and intro retentions were needed. As a result, scientists used DEXseq to do differential analysis. Finally, this method was proved to be helpful in studying this field."
     ],
     "extension_domain": {},
     "description_domain": {
