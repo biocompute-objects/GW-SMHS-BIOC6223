@@ -1,0 +1,498 @@
+{
+  "bco_id": "http://biocomputeobject.org/BCO_000548",
+  "checksum": "d8bfebf249af210dc4238a8c4b448d14db4c5d55be6bb68c668a0f718a687947",
+  "bco_spec_version": "1.3.0",
+  "provenance_domain": {
+    "name": "Single-cell RNA sequencing and gene expression profiling of pancreatic circulating tumor cells",
+    "version": "1.0.0",
+    "license": "http://spdx.org/licenses/CC-BY-4.0.html",
+    "created": "2019-10-16T07:57:49.105875",
+    "modified": "2019-10-16T10:40:35.877559",
+    "contributors": [
+      {
+        "name": "Elizabeth Christine Lee",
+        "orcid": "https://orcid.org/0000-0003-0384-595X",
+        "affiliation": "George Washington University School of Medicine & Health Sciences, Washington, D.C. 20037",
+        "contribution": [
+          "createdBy"
+        ],
+        "email": "eclee314@gwu.edu"
+      },
+      {
+        "name": "David T. Ting",
+        "orcid": "https://orcid.org/0000-0002-3261-2322",
+        "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114",
+        "contribution": [
+          "authoredBy",
+          "derivedFrom"
+        ],
+        "email": ""
+      },
+      {
+        "name": "Ben S. Wittner",
+        "orcid": "https://orcid.org/0000-0001-5657-9849",
+        "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114",
+        "contribution": [
+          "authoredBy",
+          "derivedFrom"
+        ],
+        "email": ""
+      },
+      {
+        "name": "Matteo Ligorio",
+        "orcid": "",
+        "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114",
+        "contribution": [
+          "authoredBy",
+          "derivedFrom"
+        ],
+        "email": ""
+      },
+      {
+        "name": "Nicole Vincent Jordan",
+        "orcid": "",
+        "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114",
+        "contribution": [
+          "authoredBy",
+          "derivedFrom"
+        ],
+        "email": ""
+      },
+      {
+        "name": "Ajay M. Shah",
+        "orcid": "",
+        "affiliation": "Center for Engineering in Medicine, Harvard Medical School, Boston, MA 02114",
+        "contribution": [
+          "authoredBy",
+          "derivedFrom"
+        ],
+        "email": ""
+      },
+      {
+        "name": "David T. Miyamoto",
+        "orcid": "https://orcid.org/0000-0003-3692-8823",
+        "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114",
+        "contribution": [
+          "authoredBy",
+          "derivedFrom"
+        ],
+        "email": ""
+      },
+      {
+        "name": "Nicola Aceto",
+        "orcid": "",
+        "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114",
+        "contribution": [
+          "authoredBy",
+          "derivedFrom"
+        ],
+        "email": ""
+      },
+      {
+        "name": "Francesca Bersani",
+        "orcid": "",
+        "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114",
+        "contribution": [
+          "authoredBy",
+          "derivedFrom"
+        ],
+        "email": ""
+      },
+      {
+        "name": "Brian W. Brannigan",
+        "orcid": "",
+        "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114",
+        "contribution": [
+          "authoredBy",
+          "derivedFrom"
+        ],
+        "email": ""
+      },
+      {
+        "name": "Kristina Xega",
+        "orcid": "",
+        "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114",
+        "contribution": [
+          "authoredBy",
+          "derivedFrom"
+        ],
+        "email": ""
+      },
+      {
+        "name": "Jordan C. Ciciliano",
+        "orcid": "",
+        "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114",
+        "contribution": [
+          "authoredBy",
+          "derivedFrom"
+        ],
+        "email": ""
+      },
+      {
+        "name": "Huili Zhu",
+        "orcid": "",
+        "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114",
+        "contribution": [
+          "authoredBy",
+          "derivedFrom"
+        ],
+        "email": ""
+      },
+      {
+        "name": "Olivia C. MacKenzie",
+        "orcid": "",
+        "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114",
+        "contribution": [
+          "authoredBy",
+          "derivedFrom"
+        ],
+        "email": ""
+      },
+      {
+        "name": "Julie Trautwein",
+        "orcid": "",
+        "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114",
+        "contribution": [
+          "authoredBy",
+          "derivedFrom"
+        ],
+        "email": ""
+      },
+      {
+        "name": "Kshitij S. Arora",
+        "orcid": "",
+        "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114",
+        "contribution": [
+          "authoredBy",
+          "derivedFrom"
+        ],
+        "email": ""
+      },
+      {
+        "name": "Mohammad Shahid",
+        "orcid": "",
+        "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114",
+        "contribution": [
+          "authoredBy",
+          "derivedFrom"
+        ],
+        "email": ""
+      },
+      {
+        "name": "Haley L. Ellis",
+        "orcid": "",
+        "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114",
+        "contribution": [
+          "authoredBy",
+          "derivedFrom"
+        ],
+        "email": ""
+      },
+      {
+        "name": "Na Qu",
+        "orcid": "",
+        "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114",
+        "contribution": [
+          "authoredBy",
+          "derivedFrom"
+        ],
+        "email": ""
+      },
+      {
+        "name": "Nabeel Bardeesy",
+        "orcid": "",
+        "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114",
+        "contribution": [
+          "authoredBy",
+          "derivedFrom"
+        ],
+        "email": ""
+      },
+      {
+        "name": "Miguel N. Rivera",
+        "orcid": "",
+        "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114",
+        "contribution": [
+          "authoredBy",
+          "derivedFrom"
+        ],
+        "email": ""
+      },
+      {
+        "name": "Vikram Deshpande",
+        "orcid": "https://orcid.org/0000-0003-4230-9308",
+        "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114",
+        "contribution": [
+          "authoredBy",
+          "derivedFrom"
+        ],
+        "email": ""
+      },
+      {
+        "name": "Cristina R. Ferrone",
+        "orcid": "",
+        "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114",
+        "contribution": [
+          "authoredBy",
+          "derivedFrom"
+        ],
+        "email": ""
+      },
+      {
+        "name": "Ravi Kapur",
+        "orcid": "",
+        "affiliation": "Center for Engineering in Medicine, Harvard Medical School, Boston, MA 02114",
+        "contribution": [
+          "authoredBy",
+          "derivedFrom"
+        ],
+        "email": ""
+      },
+      {
+        "name": "Sridhar Ramaswamy",
+        "orcid": "",
+        "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114",
+        "contribution": [
+          "authoredBy",
+          "derivedFrom"
+        ],
+        "email": ""
+      },
+      {
+        "name": "Toshi Shioda",
+        "orcid": "",
+        "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114",
+        "contribution": [
+          "authoredBy",
+          "derivedFrom"
+        ],
+        "email": ""
+      },
+      {
+        "name": "Mehmet Toner",
+        "orcid": "https://orcid.org/0000-0002-3647-3665",
+        "affiliation": "Center for Engineering in Medicine, Harvard Medical School, Boston, MA 02114",
+        "contribution": [
+          "authoredBy",
+          "derivedFrom"
+        ],
+        "email": ""
+      },
+      {
+        "name": "Shyamala Maheswaran",
+        "orcid": "https://orcid.org/0000-0002-9356-1709",
+        "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114",
+        "contribution": [
+          "authoredBy",
+          "derivedFrom"
+        ],
+        "email": "maheswaran@helix.mgh.harvard.edu"
+      },
+      {
+        "name": "Daniel A. Haber",
+        "orcid": "",
+        "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114;  Howard Hughes Medical Institute, Chevy Chase, MD 20815",
+        "contribution": [
+          "authoredBy",
+          "derivedFrom"
+        ],
+        "email": "haber@helix.mgh.harvard.edu"
+      }
+    ]
+  },
+  "usability_domain": [
+    "Circulating tumor cells (CTCs) shed from primary tumors play a key role in tumor metastasis, yet the transcriptional profiling of CTCs has not been fully elucidated.  This workflow serves to undertake detailed analysis of the composition of pancreatic cancer CTCs using single-cell RNA sequencing followed by differential gene expression and gene-set enrichment analysis.  To achieve RNA-sequencing profiles of CTCs at the single-cell level, a high-throughput microfluidic cell-separation device was used for enrichment of CTCs, which were then subjected to single cell micromanipulation.  Gene expression profiles of single cell CTCs were compared with that of matched primary tumors in a mouse model of pancreatic cancer, which led to the identification of three distinct CTC populations, which clustered separately from primary tumors and tumor-derived cell lines and exhibited particularly high expression levels of extracellular matrix genes.  This BCO was created based on the workflow from Ting et al.  doi: 10.1016/j.celrep.2014.08.029"
+  ],
+  "extension_domain": {},
+  "description_domain": {
+    "keywords": [
+      "single-cell RNA sequencing",
+      "circulating tumor cells",
+      "CTC",
+      "CTC clusters",
+      "pancreatic cancer",
+      "cancer metastasis",
+      "alignment",
+      "gene expression profiling",
+      "differential gene expression analysis",
+      "gene set enrichment analysis ",
+      "GSEA",
+      "extracellular matrix gene expression",
+      "ECM genes",
+      "CTC enrichment technology",
+      "microfluidic device "
+    ],
+    "pipeline_steps": [
+      {
+        "name": "TopHat",
+        "version": "2.0.4",
+        "step_number": 1,
+        "input_list": [
+          {
+            "access_time": "2019-09-24T18:37:17-0500",
+            "uri": "http://genome.ucsc.edu/cgi-bin/hgTables",
+            "sha1_checksum": "[000548]checksum",
+            "filename": "UCSC_Genome Browser_mm9 knownGene Table.txt"
+          }
+        ],
+        "output_list": [
+          {
+            "access_time": "2019-09-24T18:37:17-0500",
+            "uri": "http://example.com/mappedreads.sam",
+            "sha1_checksum": "[000548]checksum",
+            "filename": "tophat_mappedreads.sam"
+          }
+        ],
+        "prerequisite": [
+          {
+            "name": "Bowtie1 version 0.12.7",
+            "uri": {
+              "access_time": "2019-09-24T18:37:17-0500",
+              "uri": "https://sourceforge.net/projects/bowtie-bio/files/bowtie/0.12.7",
+              "sha1_checksum": "[000548]checksum",
+              "filename": ""
+            }
+          },
+          {
+            "name": "Samtools package",
+            "uri": {
+              "access_time": "2019-09-24T18:37:17-0500",
+              "uri": "http://samtools.sourceforge.net/",
+              "sha1_checksum": "[000548]checksum",
+              "filename": ""
+            }
+          }
+        ],
+        "description": "TopHat is a fast splice junction mapper that aligns RNA-Seq reads to a reference genome using the ultrafast short read mapping program Bowtie and then analyzes the mapping results to find exon-exon splice junctions.  This workflow used TopHat and Bowtie1 to align color space reads with the no-novel juncs argument set with mouse genome version mm9 and transcriptome defined by the mm9 knownGene table from genome.ucsc.edu.  If possible, each aligned read was mapped to its corresponding gene using the mm9 knownToLocusLink from genome.ucsc.edu."
+      },
+      {
+        "name": "Grid Graphics in R",
+        "version": "",
+        "step_number": 2,
+        "input_list": [],
+        "output_list": [
+          {
+            "access_time": "2019-09-24T18:37:17-0500",
+            "uri": "https://example.com/GeneExpressionHeatmap.png",
+            "sha1_checksum": "[000548]checksum",
+            "filename": "Heatmap_Extracellular Matrix Genes.png"
+          }
+        ],
+        "prerequisite": [
+          {
+            "name": "BD Biosciences Handbook",
+            "uri": {
+              "access_time": "2019-09-24T18:37:17-0500",
+              "uri": "http://www.bdbiosciences.com/documents/cd_marker_handbook.pdf",
+              "sha1_checksum": "[000548]checksum",
+              "filename": "cd_marker_handbook.pdf"
+            }
+          }
+        ],
+        "description": "Used for expression heatmap generation.  BD Biosciences Handbook was used for selection of established epithelial (Krt7, Krt8, Krt18, Krt19, Epcam, Egfr, Cdh1) and hematopoietic markers (Ptprc/Cd45, Csf3r/Cd114, Cd14, Fcgr3/Cd16, Itga2b/Cd41, Itgb3/Cd61)."
+      },
+      {
+        "name": "RankProd (RP) Bioconductor Package",
+        "version": "2.28.0",
+        "step_number": 3,
+        "input_list": [],
+        "output_list": [
+          {
+            "access_time": "2019-09-24T18:37:17-0500",
+            "uri": "http://example.com/differentiallyexpressedgenestable.csv",
+            "sha1_checksum": "[000548]checksum",
+            "filename": ""
+          }
+        ],
+        "prerequisite": [],
+        "description": "Used for the determination of false discovery rate (FDR) estimates for up and down differential expression of sequenced genes."
+      },
+      {
+        "name": "DAVID",
+        "version": "6.7",
+        "step_number": 4,
+        "input_list": [],
+        "output_list": [
+          {
+            "access_time": "2019-09-24T18:37:17-0500",
+            "uri": "http://example.com/DAVIDanalysisofCTCenrichedgenes.csv",
+            "sha1_checksum": "[00548]checksum",
+            "filename": ""
+          }
+        ],
+        "prerequisite": [
+          {
+            "name": "KEGG",
+            "uri": {
+              "access_time": "2019-09-24T18:37:17-0500",
+              "uri": "https://david-d.ncifcrf.gov/summary.jsp",
+              "sha1_checksum": "[00548]checksum",
+              "filename": ""
+            }
+          },
+          {
+            "name": "Gene Ontology Biological Process (GO_BP)",
+            "uri": {
+              "access_time": "2019-09-24T18:37:17-0500",
+              "uri": "https://david-d.ncifcrf.gov/summary.jsp",
+              "sha1_checksum": "[000548]checksum",
+              "filename": ""
+            }
+          },
+          {
+            "name": "Gene Ontology Biological Process (GO_BP)",
+            "uri": {
+              "access_time": "2019-09-24T18:37:17-0500",
+              "uri": "https://david-d.ncifcrf.gov/summary.jsp",
+              "sha1_checksum": "[000548]checksum",
+              "filename": ""
+            }
+          }
+        ],
+        "description": "DAVID provides a comprehensive set of annotation tools for functional interpretation of large lists of genes.  DAVID includes: KEGG (an integrated database used for biological interpretation of genome sequences and other high-throughput data), GO_BP (controlled vocabulary for classification of gene function and used to perform enrichment analysis for an independent biological process with a defined beginning and end), and GO_CC (controlled vocabulary for classification of gene function and used to perform enrichment analysis for a cellular structure)."
+      }
+    ]
+  },
+  "execution_domain": {
+    "external_data_endpoints": [],
+    "environment_variables": {},
+    "script_driver": "Unix-like environment",
+    "software_prerequisites": [],
+    "script": []
+  },
+  "parametric_domain": [
+    {
+      "step": "",
+      "param": "",
+      "value": ""
+    }
+  ],
+  "io_domain": {
+    "input_subdomain": [
+      {
+        "uri": {
+          "access_time": "2019-09-24T18:37:17-0500",
+          "uri": "http://example.com/RNAseqdata.fastq",
+          "sha1_checksum": "[000548]checksum",
+          "filename": ""
+        }
+      }
+    ],
+    "output_subdomain": [
+      {
+        "mediatype": "text/csv",
+        "uri": {
+          "access_time": "2019-09-24T18:37:17-0500",
+          "uri": "http://example.com/tablehighlyexpressedgenesinCTCs.csv",
+          "sha1_checksum": "[000548]checksum",
+          "filename": ""
+        }
+      }
+    ]
+  },
+  "error_domain": {
+    "empirical_error": {
+      "rank product (RP) methodology for differential gene expression – false discovery rate (FDR)": "less than or equal to 0.01"
+    }
+  }
+}
