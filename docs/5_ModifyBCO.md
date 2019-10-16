@@ -17,7 +17,7 @@ From **10/13-10/17,** using the BCO editor, please **modify your BCO** according
 3. Modify and save your BCO on the [BCO Editor](https://biocomputeobject.org/bco_editor_tst/).
 4. Once all modifications are complete, copy and paste the new JSON into the existing BCO you've submitted in the Students_BCO folder on Github. 
 4.  When you commit the changes, this will generate a pull request. Please add the following tags to the request: 
-- Label : "midterm: submission" 
+- Label : "midterm: BCO submission" 
 - Assignees : "Janisha Patel"
 - Project : "[Your project']"
 - Milestone : "Final BCO"
