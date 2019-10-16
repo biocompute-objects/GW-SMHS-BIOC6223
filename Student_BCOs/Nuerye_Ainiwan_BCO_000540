@@ -1,0 +1,322 @@
+{
+  "bco_id": "http://biocomputeobject.org/BCO_000540",
+  "bco_spec_version": "1.3.0",
+  "checksum": "f32ff5615314b1fa8902b8db260646407d7bc1a493580b1b669f595487bfdb94",
+  "provenance_domain": {
+    "license": "https://creativecommons.org/licenses/by/4.0/legalcode",
+    "name": "RNA-seq data of invasive ductal carcinoma and adjacent normal tissues from a Korean patient with breast cancer",
+    "created": "2019-10-08T22:41:42.868816",
+    "version": "1.0.0",
+    "modified": "2019-10-16T18:58:44.437783",
+    "contributors": [
+      {
+        "orcid": "https://orcid.org/0000-0002-0092-6116",
+        "affiliation": "The George Washington University",
+        "contribution": [
+          "createdBy"
+        ],
+        "name": "Nuerye Ainiwan",
+        "email": "nainiwan72@gwu.edu"
+      },
+      {
+        "orcid": "https://orcid.org/0000-0002-0492-3959",
+        "affiliation": "Catholic University of Korea School of Medicine",
+        "contribution": [
+          "authoredBy"
+        ],
+        "name": "Hong, Ji Hyung ",
+        "email": ""
+      },
+      {
+        "orcid": "https://orcid.org/0000-0002-2506-3740",
+        "affiliation": "Cancer Research Institute, College of Medicine, The Catholic University of Korea",
+        "contribution": [
+          "authoredBy"
+        ],
+        "name": "Yoon Ho Ko",
+        "email": ""
+      },
+      {
+        "orcid": "https://orcid.org/0000-0003-0611-9320",
+        "affiliation": "Department of Microbiology, College of Natural Sciences, Dankook University,",
+        "contribution": [
+          "authoredBy"
+        ],
+        "name": "Keunsoo Kang",
+        "email": ""
+      }
+    ],
+    "review": [
+      {
+        "date": "2019-10-16",
+        "reviewer": {
+          "orcid": "https://orcid.org/0000-0002-8824-4637",
+          "affiliation": "George Washington University",
+          "contribution": [
+            "curatedBy"
+          ],
+          "name": "Janisha Patel",
+          "email": "janishapatel@gwu.edu"
+        },
+        "reviewer_comment": "Reviewed by BioCompute technical assistant, approval pending modification by author",
+        "status": "in-review"
+      }
+    ]
+  },
+  "usability_domain": [
+    "RNA-seq data set of 10 cases of invasive ductal carcinoma and 3 non-adjacent normal tissues (subtype B) in patients with breast cancer",
+    "Adapted from Hong, J., Ko, Y., & Kang, K. (2018). RNA-seq data of invasive ductal carcinoma and adjacent normal tissues from a Korean patient with breast cancer. Data in Brief, 18, 736–739. https://doi.org/10.1016/j.dib.2018.03.079"
+  ],
+  "extension_domain": {},
+  "description_domain": {
+    "keywords": [
+      "Breast cancer",
+      "Invasive ductal carcinoma",
+      "Luminal B subtype",
+      "RNA-seq",
+      "Korean"
+    ],
+    "pipeline_steps": [
+      {
+        "name": "Trim Galore",
+        "step_number": 1,
+        "version": "0.4.2",
+        "input_list": [],
+        "output_list": [],
+        "prerequisite": [
+          {
+            "name": "Cutadapt version 1.1.2 ",
+            "uri": {
+              "access_time": "2018-03-21",
+              "uri": "https://github.com/marcelm/cutadapt/",
+              "sha1_checksum": "BCO_000540checksum",
+              "filename": "cutadapt"
+            }
+          }
+        ],
+        "description": "It is a wrapper tool around Cutadapt and FastQC to apply adapter trimming and quality to Fastq files conjointly."
+      },
+      {
+        "name": "Star",
+        "step_number": 2,
+        "version": "2.5.2.b",
+        "input_list": [],
+        "output_list": [],
+        "prerequisite": [],
+        "description": "It is a tool used to map sequencing reads to the reference genome"
+      },
+      {
+        "name": "Sambamba",
+        "step_number": 3,
+        "version": "0.6.5",
+        "input_list": [],
+        "output_list": [],
+        "prerequisite": [],
+        "description": "Used to remove PCR-duplicate of mapped reads"
+      },
+      {
+        "name": "RSeQC",
+        "step_number": 4,
+        "version": "2.6.4",
+        "input_list": [],
+        "output_list": [],
+        "prerequisite": [],
+        "description": "The quality of RNA-seq data was determined"
+      },
+      {
+        "name": "Cufflinks ",
+        "step_number": 5,
+        "version": "2.2.1",
+        "input_list": [],
+        "output_list": [],
+        "prerequisite": [
+          {
+            "name": "Cuffnorm function of the Cufflinks package.",
+            "uri": {
+              "access_time": "2018-03-21",
+              "uri": "http://cole-trapnell-lab.github.io/cufflinks/cuffnorm/",
+              "sha1_checksum": "BCO_000540checksum",
+              "filename": "cuffnorm"
+            }
+          }
+        ],
+        "description": "It is a tool that generates abundances of expression levels and normalized fragment counts based on library size."
+      },
+      {
+        "name": "Cufflinks",
+        "step_number": 6,
+        "version": "2.2.1",
+        "input_list": [],
+        "output_list": [],
+        "prerequisite": [
+          {
+            "name": "Cuffdiff function of the Cufflinks package",
+            "uri": {
+              "access_time": "2018-03-21",
+              "uri": "http://cole-trapnell-lab.github.io/cufflinks/cuffdiff/",
+              "sha1_checksum": "BCO_000540checksum",
+              "filename": "cuffdiff"
+            }
+          }
+        ],
+        "description": "Identify differential expressed genes between cancer and normal samples. "
+      },
+      {
+        "name": "Metascap",
+        "step_number": 7,
+        "version": "3.0",
+        "input_list": [],
+        "output_list": [],
+        "prerequisite": [],
+        "description": "Gene Ontology Analysis to identify key pathways regarding the DEGs"
+      }
+    ]
+  },
+  "execution_domain": {
+    "external_data_endpoints": [
+      {
+        "url": "https:// www.ncbi.nlm.nih.gov/bioproject/PRJNA432903",
+        "name": "BioProjectID: PRJNA432903"
+      },
+      {
+        "url": "",
+        "name": ""
+      }
+    ],
+    "environment_variables": {},
+    "script_driver": "",
+    "software_prerequisites": [
+      {
+        "version": "0.4.2",
+        "name": "Trim Galore",
+        "uri": {
+          "access_time": "2018-03-21",
+          "uri": "https://www.bioinformatics. babraham.ac.uk/projects/trim_galore",
+          "sha1_checksum": "BCO_000540checksum",
+          "filename": "TrimGalore"
+        }
+      },
+      {
+        "version": "2.5.2.b",
+        "name": "Star",
+        "uri": {
+          "access_time": "2018-03-21",
+          "uri": "http://code.google.com/p/rna-star/",
+          "sha1_checksum": "BCO_000540checksum",
+          "filename": "Star"
+        }
+      },
+      {
+        "version": "0.6.5",
+        "name": "Sambamba",
+        "uri": {
+          "access_time": "2018-03-21",
+          "uri": "https://github.com/lomereiter/sambamba",
+          "sha1_checksum": "BCO_000540checksum",
+          "filename": "Sambamba"
+        }
+      },
+      {
+        "version": "0.6.5",
+        "name": "RSeQC",
+        "uri": {
+          "access_time": "2018-03-21",
+          "uri": "http://code.google.com/p/rseqc/",
+          "sha1_checksum": "BCO_000540checksum",
+          "filename": "RSeQc"
+        }
+      },
+      {
+        "version": "2.2.1",
+        "name": "Cufflinks",
+        "uri": {
+          "access_time": "2018-03-21",
+          "uri": "ttp://cole-trapnell-lab.github.io/cufflinks/cuffnorm/",
+          "sha1_checksum": "BCO_000540checksum",
+          "filename": "Cuffnorm"
+        }
+      },
+      {
+        "version": "2.2.1",
+        "name": "cufflinks",
+        "uri": {
+          "access_time": "2018-03-21",
+          "uri": "http://cole-trapnell-lab.github.io/cufflinks/install/",
+          "sha1_checksum": "BCO_000540checksum",
+          "filename": "cufflinks-2.2.1.tar.gz"
+        }
+      },
+      {
+        "version": "3.0",
+        "name": "Metascape",
+        "uri": {
+          "access_time": "2018-03-21",
+          "uri": "http://metascape.org",
+          "sha1_checksum": "BCO_000540checksum",
+          "filename": "Metascape"
+        }
+      },
+      {
+        "version": "1.1.2",
+        "name": "Cutadapt version",
+        "uri": {
+          "access_time": "2018-03-21",
+          "uri": "uri\": \"https://www.bioinformatics. babraham.ac.uk/projects/trim_galore/ \",",
+          "sha1_checksum": "BCO_000540checksum",
+          "filename": "filename\": \"cutadapt-2.5.tar.gz"
+        }
+      }
+    ],
+    "script": []
+  },
+  "parametric_domain": [
+    {
+      "step": "2",
+      "param": "Human genome (hg38)",
+      "value": "Human reference genome hg38"
+    },
+    {
+      "step": "6",
+      "param": "Differentially expressed genes were defined as the genes with",
+      "value": "FDR- adjusted  p-values <0.05"
+    },
+    {
+      "step": "7",
+      "param": "The top 100 up-regulated and down-regulated genes that were highly expressed ",
+      "value": ">10 average FPKM"
+    }
+  ],
+  "io_domain": {
+    "input_subdomain": [
+      {
+        "uri": {
+          "access_time": "2018-03-21",
+          "uri": "PRJNA432903)(https:// www.ncbi.nlm.nih.gov/bioproject/PRJNA432903",
+          "sha1_checksum": "BCO_000540checksum",
+          "filename": "PRJNA432903"
+        }
+      }
+    ],
+    "output_subdomain": [
+      {
+        "mediatype": "https://doi. org/10.1016/j.dib.2018.03.079",
+        "uri": {
+          "access_time": "2018-03-21",
+          "uri": "https://doi. org/10.1016/j.dib.2018.03.079",
+          "sha1_checksum": "BCO_000540checksum",
+          "filename": "Supplementary Table1 Abundance of RefSeq genes"
+        }
+      },
+      {
+        "mediatype": "https://doi. org/10.1016/j.dib.2018.03.079",
+        "uri": {
+          "access_time": "2018-03-21",
+          "uri": "https://doi. org/10.1016/j.dib.2018.03.079",
+          "sha1_checksum": "BCO_000540checksum",
+          "filename": "Supplementary Table2 DEG in Cancer and Normal samples"
+        }
+      }
+    ]
+  },
+  "error_domain": {}
+}
