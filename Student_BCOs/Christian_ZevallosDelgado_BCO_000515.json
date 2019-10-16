@@ -1,27 +1,68 @@
 {
-    "bco_id": "http://biocomputeobject.org/BCO_000515",
-    "checksum": "600ab8d367cb739fe6053c903f356737e9bace86131bedf6fe3702214f7dc1a6",
+    "bco_id": "http://biocomputeobject.org/BCO_000547",
+    "checksum": "ddd5b472b12782ba3d74464c8b0c92ea76e76012443409591f043c9e05f97e2b",
     "bco_spec_version": "1.3.0",
     "provenance_domain": {
         "name": "RNA-seq data of invasive ductal carcinoma and adjacent normal tissues from a Korean patient with breast cancer",
-        "version": "1.0.0",
+        "version": "1.1",
         "license": "https://creativecommons.org/licenses/by/4.0/legalcode",
-        "created": "2019-10-06T03:39:59.203155",
-        "modified": "2019-10-08T15:33:06.958657",
+        "created": "2019-10-16T03:53:26.964099",
+        "modified": "2019-10-16T13:33:14.244924",
+        "review": [
+            {
+                "status": "in-review",
+                "reviewer_comment": "Reviewed by BioCompute technical assistant, approval pending modification by author",
+                "reviewer": {
+                    "orcid": "https://orcid.org/0000-0002-8824-4637",
+                    "affiliation": "George Washington University",
+                    "contribution": [
+                        "curatedBy"
+                    ],
+                    "name": "Janisha Patel",
+                    "email": "janishapatel@gwu.edu"
+                },
+                "date": "2019-10-15"
+            }
+        ],
         "contributors": [
             {
                 "name": "Christian Zevallos Delgado",
                 "orcid": "https://orcid.org/0000-0001-7078-3782",
-                "affiliation": "The George Washington University",
+                "affiliation": "George Washington University",
                 "contribution": [
                     "createdBy"
                 ],
                 "email": "czevallosd@gwu.edu"
+            },
+            {
+                "name": "Jihyoung Hyung Hong",
+                "orcid": "https://orcid.org/0000-0002-0492-3959",
+                "affiliation": "Division of Oncology, Department of Internal Medicine, College of Medicine, The Catholic University of Korea, Seoul, Republic of Korea",
+                "contribution": [
+                    "authoredBy"
+                ]
+            },
+            {
+                "name": "Yoon Ho Ko",
+                "orcid": "https://orcid.org/0000-0002-2506-3740",
+                "affiliation": "Division of Oncology, Department of Internal Medicine, College of Medicine, The Catholic University of Korea, Seoul, Republic of Korea",
+                "contribution": [
+                    "authoredBy"
+                ]
+            },
+            {
+                "name": "Keunsoo Kang",
+                "orcid": "https://orcid.org/0000-0003-0611-9320",
+                "affiliation": "Department of Microbiology, College of Natural Sciences, Dankook University, Cheonan 31116, Republic of Korea",
+                "contribution": [
+                    "authoredBy"
+                ],
+                "email": "kangk1204@dankook.ac.kr"
             }
         ]
     },
     "usability_domain": [
-        "Assessment of the Whole transcriptomic shotgun sequencing (Called RNA-seq) dataset from ten ductal carcinoma tissue and three samples of normal tissue from breast cancer patients from Korea. Expressed genes were identified with an FDR-adjusted p-value cutoff of 0.05 and  gene ontology evaluation reveals the association with onset or progression of breast cancer."
+        "Assessment of the Whole transcriptomic shotgun sequencing (Called RNA-seq) dataset from ten ductal carcinoma tissue and three samples of normal tissue from breast cancer patients from Korea. Expressed genes were identified with an FDR-adjusted p-value cutoff of 0.05 and  gene ontology evaluation reveals the association with onset or progression of breast cancer. Adapted from Jihyoung Hyung Hong, Yoon Ho Ko, and Keunsoo Kang. \"RNA-seq data of invasive ductal carcinoma and adjacent normal tissues from a Korean patient with breast cancer.\" Data in Brief 18 (March 21, 2018) : 736-739. https://doi.org/10.1016/j.dib.2018.03.079"
     ],
     "extension_domain": {
         "scm_extension": {
@@ -35,14 +76,14 @@
     "description_domain": {
         "keywords": [
             "Breast cancer",
-            " Invasive ductal carcinoma",
+            "Invasive ductal carcinoma",
             "Korean",
-            " Luminal B subtype",
+            "Luminal B subtype",
             "RNA-seq"
         ],
         "pipeline_steps": [
             {
-                "name": "Trim Galore",
+                "name": "TrimGalore",
                 "version": "0.4.2",
                 "step_number": 1,
                 "input_list": [],
@@ -51,7 +92,7 @@
                 "description": "Trimming of sequence reads"
             },
             {
-                "name": "Star ",
+                "name": "STAR",
                 "version": "2.5.2.b",
                 "step_number": 2,
                 "input_list": [],
@@ -75,7 +116,7 @@
                 "input_list": [],
                 "output_list": [],
                 "prerequisite": [],
-                "description": "Determine the quality of RNA-seq "
+                "description": "Determine the quality of RNA-seq"
             },
             {
                 "name": "Cufflinks used with Cuffnorm function",
@@ -93,7 +134,7 @@
                 "input_list": [],
                 "output_list": [],
                 "prerequisite": [],
-                "description": "Identify differential expressed genes between cancer and normal samples. "
+                "description": "Identify differential expressed genes between cancer and normal samples."
             },
             {
                 "name": "Metascape",
@@ -102,22 +143,22 @@
                 "input_list": [],
                 "output_list": [],
                 "prerequisite": [],
-                "description": "Gene Ontology Analysis to identify key pathways regarding the DEGs. "
+                "description": "Gene Ontology Analysis to identify key pathways regarding the DEGs."
             }
         ]
     },
     "execution_domain": {
         "external_data_endpoints": [
             {
-                "name": "BioProject ID: PRJNA432903",
-                "url": "https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA432903"
+                "name": "https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA432903",
+                "url": "BioProject ID: PRJNA432903"
             }
         ],
         "environment_variables": {},
         "script_driver": "",
         "software_prerequisites": [
             {
-                "name": "Trim Galore",
+                "name": "TrimGalore",
                 "version": "0.4.2",
                 "uri": {
                     "access_time": "2018-03-21",
@@ -141,7 +182,7 @@
                 "version": "2.5.2.b",
                 "uri": {
                     "access_time": "2018-03-21",
-                    "uri": "http://code.google.com/p/rna-star/",
+                    "uri": "http://code.google.com/p/rna-star",
                     "sha1_checksum": "6ad9dc4f6eae8ade00f063f632e7cf9bd074e52d",
                     "filename": "STAR-2.7.2d.tar.gz"
                 }
@@ -208,7 +249,7 @@
         {
             "step": "6",
             "param": "Diferentially expressed genes",
-            "value": "FDR-adjusted p-values <0.05."
+            "value": "FDR-adjusted p-values <0.05"
         },
         {
             "step": "7",
@@ -217,8 +258,36 @@
         }
     ],
     "io_domain": {
-        "input_subdomain": [],
-        "output_subdomain": []
+        "input_subdomain": [
+            {
+                "uri": {
+                    "access_time": "2018-03-21",
+                    "uri": "https:// www.ncbi.nlm.nih.gov/bioproject/PRJNA432903",
+                    "sha1_checksum": "BCO_000checksum",
+                    "filename": "PRJNA432903"
+                }
+            }
+        ],
+        "output_subdomain": [
+            {
+                "mediatype": "https://doi. org/10.1016/j.dib.2018.03.079",
+                "uri": {
+                    "access_time": "2018-03-21",
+                    "uri": "https://doi. org/10.1016/j.dib.2018.03.079",
+                    "sha1_checksum": "BCO_000checksum",
+                    "filename": "Supplementary Table1 Abundance of RefSeq genes"
+                }
+            },
+            {
+                "mediatype": "https://doi. org/10.1016/j.dib.2018.03.079",
+                "uri": {
+                    "access_time": "2018-03-21",
+                    "uri": "https://doi. org/10.1016/j.dib.2018.03.079",
+                    "sha1_checksum": "BCO_000checksum",
+                    "filename": "Supplementary Table2 DEG in Cancer and Normal samples"
+                }
+            }
+        ]
     },
     "error_domain": {}
 }
