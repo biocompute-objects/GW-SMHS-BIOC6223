@@ -1,0 +1,227 @@
+{
+    "bco_id": "http://biocomputeobject.org/BCO_000552",
+    "checksum": "c93075b8fbd99432a45f8e19acaaaf410eec802bb35a781cfb3de6c779d205e8",
+    "bco_spec_version": "1.3.0",
+    "provenance_domain": {
+        "name": "RNA-Seq Analysis of Differential Splice Junction Usage and Intron Retentions by DEXSeq",
+        "version": "1.0",
+        "license": "http://creativecommons.org/licenses/by/4.0/",
+        "created": "2019-10-17T19:43:19.909943",
+        "modified": "2019-10-17T19:57:55.629714",
+        "contributors": [
+            {
+                "name": "Yuan Gao",
+                "orcid": "https://orcid.org/0000-0003-0564-3016",
+                "affiliation": "George Washington University",
+                "contribution": [
+                    "createdBy"
+                ],
+                "email": "ygao61@gwu.edu"
+            }
+        ]
+    },
+    "usability_domain": [
+        "RNA-seq analysis of differential splice junction usage and intron retentions by DEXSeq. ",
+        "RNA-seq analysis of differential splice junction usage and intron retentions by DEXSeq. "
+    ],
+    "extension_domain": {},
+    "description_domain": {
+        "keywords": [
+            "Alternative splicing; Sequence motif analysis; Introns; RNA Interference;"
+        ],
+        "pipeline_steps": [
+            {
+                "name": "TopHat",
+                "version": "2.0.4",
+                "step_number": 1,
+                "input_list": [
+                    {
+                        "access_time": "",
+                        "uri": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE18508; https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE45419; https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE32216",
+                        "sha1_checksum": "BCO_000552checksum",
+                        "filename": ""
+                    }
+                ],
+                "output_list": [],
+                "prerequisite": [
+                    {
+                        "name": "Bowtie 2.0.0.7 ",
+                        "uri": {
+                            "access_time": "",
+                            "uri": "https://sourceforge.net/projects/bowtie-bio/files/bowtie2/2.0.0-beta7/bowtie2-2.0.0-beta7-macos-x86_64.zip/download",
+                            "sha1_checksum": "BCO_000552checksum",
+                            "filename": ""
+                        }
+                    }
+                ],
+                "description": "RNA-seq reads mapping; preparation of count tables "
+            },
+            {
+                "name": "SAM",
+                "version": "0.1.18.0",
+                "step_number": 2,
+                "input_list": [
+                    {
+                        "access_time": "",
+                        "uri": "https://useast.ensembl.org/Drosophila_melanogaster/Info/Index",
+                        "sha1_checksum": "BCO_000552checksum",
+                        "filename": "BDGP5.25 for Drosophila"
+                    },
+                    {
+                        "access_time": "",
+                        "uri": " ftp://ftp.ensembl.org/pub/release-75/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.75.dna.toplevel.fa.gz",
+                        "sha1_checksum": "BCO_000552checksum",
+                        "filename": "GRCh37 for the human breast cancer "
+                    }
+                ],
+                "output_list": [],
+                "prerequisite": [
+                    {
+                        "name": "CIGAR string field (Column 6)",
+                        "uri": {
+                            "access_time": "",
+                            "uri": "http://bioinformatics.cvr.ac.uk/blog/tag/cigar-string/",
+                            "sha1_checksum": "BCO_000552checksum",
+                            "filename": ""
+                        }
+                    }
+                ],
+                "description": "：（reads+information of SJs） can be interpreted with CIGAR"
+            },
+            {
+                "name": "DEXSeq ",
+                "version": "",
+                "step_number": 3,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [
+                    {
+                        "name": "R",
+                        "uri": {
+                            "access_time": "",
+                            "uri": "https://cran.cnr.berkeley.edu/bin/macosx/",
+                            "sha1_checksum": "BCO_000552checksum",
+                            "filename": ""
+                        }
+                    }
+                ],
+                "description": "differential analysis of SJ usage; DEXSeq_SJ  with R"
+            },
+            {
+                "name": "DEXSeq_IR",
+                "version": "1.3",
+                "step_number": 4,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [
+                    {
+                        "name": "Python script dexseq_prepare_annotation.py",
+                        "uri": {
+                            "access_time": "",
+                            "uri": "https://github.com/olgabot/rna-seq-diff-exprn/blob/master/scripts/external/dexseq_prepare_annotation.py",
+                            "sha1_checksum": "BCO_000552checksum",
+                            "filename": ""
+                        }
+                    }
+                ],
+                "description": "differential analysis for IRs"
+            },
+            {
+                "name": "MEME suite",
+                "version": "",
+                "step_number": 5,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Motif search:The frequencies of the motifs in signif- icant SJs were compared with those in all SJs in the reference genome"
+            }
+        ]
+    },
+    "execution_domain": {
+        "external_data_endpoints": [
+            {
+                "name": "",
+                "url": ""
+            }
+        ],
+        "environment_variables": {},
+        "script_driver": "",
+        "software_prerequisites": [
+            {
+                "name": "Bowtie",
+                "version": "2.0.0.7 ",
+                "uri": {
+                    "access_time": "2015-09-01",
+                    "uri": "https://sourceforge.net/projects/bowtie-bio/files/bowtie2/2.0.0-beta7/bowtie2-2.0.0-beta7-macos-x86_64.zip/download",
+                    "sha1_checksum": "BCO_000552checksum",
+                    "filename": ""
+                }
+            },
+            {
+                "name": " TopHat",
+                "version": "2.0.4",
+                "uri": {
+                    "access_time": "2015-09-01",
+                    "uri": "",
+                    "sha1_checksum": "BCO_000552checksum",
+                    "filename": ""
+                }
+            },
+            {
+                "name": "SAM",
+                "version": "0.1.18.0",
+                "uri": {
+                    "access_time": "2015-09-01",
+                    "uri": "",
+                    "sha1_checksum": "BCO_000552checksum",
+                    "filename": ""
+                }
+            }
+        ],
+        "script": []
+    },
+    "parametric_domain": [
+        {
+            "step": "1",
+            "param": "min-segment–intron ",
+            "value": "2"
+        },
+        {
+            "step": "1",
+            "param": "–a/--min-anchor-length",
+            "value": "8"
+        },
+        {
+            "step": "3",
+            "param": "SJ tags",
+            "value": ">10"
+        },
+        {
+            "step": "5",
+            "param": "-bp",
+            "value": "5"
+        }
+    ],
+    "io_domain": {
+        "input_subdomain": [
+            {
+                "uri": {
+                    "access_time": "",
+                    "uri": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE18508; https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE45419; https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE32216",
+                    "sha1_checksum": "BCO_000552checksum",
+                    "filename": "RNA Seq data"
+                }
+            },
+            {
+                "uri": {
+                    "access_time": "",
+                    "uri": "https://useast.ensembl.org/Drosophila_melanogaster/Info/Index;  ftp://ftp.ensembl.org/pub/release-75/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.75.dna.toplevel.fa.gz",
+                    "sha1_checksum": "BCO_000552checksum",
+                    "filename": "Reference data:"
+                }
+            }
+        ],
+        "output_subdomain": []
+    },
+    "error_domain": {}
+}
