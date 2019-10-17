@@ -1,0 +1,353 @@
+{
+    "bco_id": "http://biocomputeobject.org/BCO_000551",
+    "checksum": "218a6e4baa83718d64cb99000fb4d8b212374c7d93c291f77d055a6e7cc7065e",
+    "bco_spec_version": "1.3.0",
+    "provenance_domain": {
+        "name": "Splice Junction and Intron Retention Differential Analysis with DEXSeq",
+        "version": "1.0.0",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "created": "2019-10-17T14:48:25.314405",
+        "modified": "2019-10-17T19:07:11.336878",
+        "review": [
+            {
+                "status": "in-review",
+                "reviewer_comment": "Reviewed by BioCompute technical assistant, approval pending modification by author",
+                "reviewer": {
+                    "orcid": "https://orcid.org/0000-0002-8824-4637",
+                    "affiliation": "George Washington University",
+                    "contribution": [
+                        "curatedBy"
+                    ],
+                    "name": "Janisha Patel",
+                    "email": "janishapatel@gwu.edu"
+                },
+                "date": ""
+            }
+        ],
+        "contributors": [
+            {
+                "name": "Javid Ghaemmaghami",
+                "orcid": "https://orcid.org/0000-0002-0122-4466",
+                "affiliation": "George Washington University",
+                "contribution": [
+                    "createdBy"
+                ],
+                "email": "javidgmh@gmail.com"
+            },
+            {
+                "name": "Yafang Li",
+                "orcid": "",
+                "affiliation": "Dartmouth College",
+                "contribution": [
+                    "authoredBy",
+                    "derivedFrom"
+                ],
+                "email": ""
+            },
+            {
+                "name": "Xiayu Rao",
+                "orcid": "",
+                "affiliation": "The University of Texas MD Anderson Cancer Center",
+                "contribution": [
+                    "authoredBy",
+                    "derivedFrom"
+                ],
+                "email": ""
+            },
+            {
+                "name": "William W. Mattox",
+                "orcid": "",
+                "affiliation": "The University of Texas MD Anderson Cancer Center",
+                "contribution": [
+                    "authoredBy",
+                    "derivedFrom"
+                ],
+                "email": ""
+            },
+            {
+                "name": "Christopher I. Amos",
+                "orcid": "",
+                "affiliation": "Dartmouth College",
+                "contribution": [
+                    "authoredBy",
+                    "derivedFrom"
+                ],
+                "email": ""
+            },
+            {
+                "name": "Bin Liu",
+                "orcid": "",
+                "affiliation": "The University of Texas MD Anderson Cancer Center",
+                "contribution": [
+                    "authoredBy",
+                    "derivedFrom"
+                ],
+                "email": "bliu1@mdanderson.org"
+            }
+        ]
+    },
+    "usability_domain": [
+        "In the article titled RNA-Seq Analysis of Differential Splice Junction Usage and Intron Retentions by DEXSeq Li et al., showed that through their method DEXSeq can be used to conduct differential analysis on count table as well as reference file of splice junctions (SJs) and intron retentions (IRs). Differential analysis by DEXSeq can be later used to help identify of splicing events. The genomic positions of splice junctions depicted by DEXSeq can be further analyzed through MEME suite to perform a sequence motif search depicting the pattern of splicing events. Li et al. used RNA-seq data from Drosophila to conduct differential analysis of SJs and IRs. To show that their method can also be used to study human disease implicated by alternative splicing events, the paper used RNA-seq data from Human breast cancer and Arabidopsis to conduct SJs and IRs differential analysis. Since IR is very rare in mammals (3%), Arabdiopsis was used to conduct IR analysis with Python script dexseq_prepare_annotation.py from DEXSeq to generate intron reference files. The dexseq_count.py application in DEXSeq was then used to generate count tables of IRs. The count table and reference file were later put into DEXSeq as inputs for differential analysis of IR. In this BCO the pipeline provided shows the location of SJs as well as the differential analysis of these SJs with the Human Breast Cancer data set. The IR analysis of Arabdiopsis is not included in this pipeline since SJ genomic coordinates can later be used to conduct a sequence motif search and possibly help better understand the mechanism of disease development and the transcription process itself."
+    ],
+    "extension_domain": {},
+    "description_domain": {
+        "keywords": [
+            "Sequence motif analysis",
+            "Introns",
+            "Alternative splicing",
+            "RNA interference",
+            "Drosophila melanogaster",
+            "Plant genomics",
+            "Invertebrate genomics",
+            "Genome analysis",
+            "Human Breast Cancer"
+        ],
+        "pipeline_steps": [
+            {
+                "name": "Bowtie ",
+                "version": "2.0.0.7",
+                "step_number": 1,
+                "input_list": [
+                    {
+                        "access_time": "2015-09-01",
+                        "uri": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE45419",
+                        "sha1_checksum": "BCO_000551checksum",
+                        "filename": "GSE45419_raw_counts.txt.gz"
+                    },
+                    {
+                        "access_time": "2015-09-01",
+                        "uri": "https://grch37.ensembl.org/Homo_sapiens/Info/Index",
+                        "sha1_checksum": "BCO_000551checksum",
+                        "filename": "Human Breast Cancer data set"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "access_time": "2015-09-01",
+                        "uri": "http://example.com/data/514769/RNA-seq",
+                        "sha1_checksum": "BCO_000551checksum",
+                        "filename": "Aligned_RNA-seq "
+                    }
+                ],
+                "prerequisite": [],
+                "description": "Using Bowtie, an ultrafast short read aligner, to align the human breast cancer reference genome from Ensembl GRCh37 to the RNA-seq data from GEO, accession number GSE45419, in a FASTA file. The RNA-seq data from GEO included benign breast lesions, estrogen receptor-positive (ER+), triple negative, and human epidermal growth factor receptor-positive (HER2+) breast tumors. "
+            },
+            {
+                "name": "TopHat",
+                "version": "2.0.4",
+                "step_number": 2,
+                "input_list": [
+                    {
+                        "access_time": "2015-09-01",
+                        "uri": "http://example.com/data/514769/RNA-seq",
+                        "sha1_checksum": "BCO_000551checksum",
+                        "filename": "Aligned_RNA-seq"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "access_time": "2015-09-01",
+                        "uri": "http://example.com/data/514769/RNA-seqSJmap.bam",
+                        "sha1_checksum": "BCO_000551checksum",
+                        "filename": "SJ_mapped.bam"
+                    }
+                ],
+                "prerequisite": [],
+                "description": "Using the aligned RNA-seq reads made available from Bowtie to map splice junctions. TopHat analyzes the sequence mapping results to find and locate splice junctions between exons."
+            },
+            {
+                "name": "SAMtools",
+                "version": "0.1.18.0",
+                "step_number": 3,
+                "input_list": [
+                    {
+                        "access_time": "2015-09-01",
+                        "uri": "http://example.com/data/514769/RNA-seqSJmap.bam",
+                        "sha1_checksum": "BCO_000551checksum",
+                        "filename": "SJ_mapped.bam"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "access_time": "2015-09-01",
+                        "uri": "http://example.com/data/514769/RNA-seqSJmap.sam",
+                        "sha1_checksum": "BCO_000551checksum",
+                        "filename": "sort_SJ.sam"
+                    }
+                ],
+                "prerequisite": [],
+                "description": "Using the CIGAR string field in the SAM file, information of SJs in the sequence reads was explained. Positions, count reads, and genes associated with SJ can be identified. "
+            },
+            {
+                "name": "Custom step 1",
+                "version": "1",
+                "step_number": 4,
+                "input_list": [
+                    {
+                        "access_time": "2015-09-01",
+                        "uri": "http://sourceforge.net/projects/differential-sj-usage/files/.",
+                        "sha1_checksum": "BCO_000551checksum",
+                        "filename": "GSE18508_program.docx"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "access_time": "2015-09-01",
+                        "uri": "http://sourceforge.net/projects/differential-sj-usage/files/.",
+                        "sha1_checksum": "BCO_000551checksum",
+                        "filename": "mappedSJ"
+                    }
+                ],
+                "prerequisite": [],
+                "description": "SJs with both start and end positions mapped in exons as well as both ends not mapped to exons were mapped to the gene. The two mapped SJs originating from the same splicing even were later combined."
+            },
+            {
+                "name": "Custom step 2",
+                "version": "1",
+                "step_number": 5,
+                "input_list": [
+                    {
+                        "access_time": "2015-09-01",
+                        "uri": "http://sourceforge.net/projects/differential-sj-usage/files/.",
+                        "sha1_checksum": "BCO_000551checksum",
+                        "filename": "mappedSJ"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "access_time": "2015-09-01",
+                        "uri": "http://sourceforge.net/projects/differential-sj-usage/files/.",
+                        "sha1_checksum": "BCO_000551checksum",
+                        "filename": "SJ_count_table"
+                    }
+                ],
+                "prerequisite": [],
+                "description": "A count table of the SJs from the same splicing event was created and each SJ in every gene was numbered to mimic the exon library for DEXSeq analysis. "
+            },
+            {
+                "name": "DEXSeq",
+                "version": "3.9",
+                "step_number": 6,
+                "input_list": [
+                    {
+                        "access_time": "2015-09-01",
+                        "uri": "http://sourceforge.net/projects/differential-sj-usage/files/.",
+                        "sha1_checksum": "BCO_000551checksum",
+                        "filename": "SJ_count_table"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "access_time": "2015-09-01",
+                        "uri": "https://doi.org/10.1371/journal.pone.0136653.g003",
+                        "sha1_checksum": "BCO_000551checksum",
+                        "filename": "Figure3E"
+                    }
+                ],
+                "prerequisite": [
+                    {
+                        "name": "R",
+                        "uri": {
+                            "access_time": "2015-09-01",
+                            "uri": "https://cran.cnr.berkeley.edu/",
+                            "sha1_checksum": "BCO_000551checksum",
+                            "filename": " R-3.6.1.pkg"
+                        }
+                    }
+                ],
+                "description": "The count table and reference file of SJs were used as the input for DEXSeq differential analysis of SJs. Locating the positions of known SJs. "
+            },
+            {
+                "name": "MEME suite",
+                "version": "5.1.0",
+                "step_number": 7,
+                "input_list": [
+                    {
+                        "access_time": "2015-09-01",
+                        "uri": "https://doi.org/10.1371/journal.pone.0136653.s002",
+                        "sha1_checksum": "BCO_000551checksum",
+                        "filename": "The list of significant splicing junctions"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "access_time": "2015-09-01",
+                        "uri": "https://doi.org/10.1371/journal.pone.0136653.t003",
+                        "sha1_checksum": "BCO_000551checksum",
+                        "filename": "Significant sequence motifs"
+                    }
+                ],
+                "prerequisite": [],
+                "description": "With the known genomic coordinates of the SJs, provided by DEXSeq, a sequence motif search can be conducted using MEME suite which is an open source tool for motif discovery. The output list provided is not relevant to the human breast cancer sequence motif search but shows significant motifs in CG10279, CG32423, and CG8636 of Drosophila RNAi datasets. The input file is also the significant SJs in Drosophila provided by DEXSeq differential analysis. Sequence motif searchers were conducted by MEME suite on the human breast cancer SJ dataset but were not provided for by the paper. The input and output file here are to serve as examples that a sequence motif search can be conducted with the known SJ positions to conduct further human disease mechanism analysis as well as alternative splicing analysis."
+            }
+        ]
+    },
+    "execution_domain": {
+        "external_data_endpoints": [],
+        "environment_variables": {},
+        "script_driver": "",
+        "software_prerequisites": [
+            {
+                "name": "R",
+                "version": "3.6.1",
+                "uri": {
+                    "access_time": "2015-09-01",
+                    "uri": "https://cran.cnr.berkeley.edu/",
+                    "sha1_checksum": "BCO_000551checksum",
+                    "filename": "R-3.6.1.pkg"
+                }
+            }
+        ],
+        "script": [
+            {
+                "uri": {
+                    "access_time": "2015-09-01",
+                    "uri": "http://sourceforge.net/projects/differential-sj-usage/files/.",
+                    "sha1_checksum": "BCO_000551checksum",
+                    "filename": "GSE18508_program (shell script)"
+                }
+            }
+        ]
+    },
+    "parametric_domain": [
+        {
+            "step": "2",
+            "param": "-min-segment-intron 2",
+            "value": "2"
+        },
+        {
+            "step": "2",
+            "param": "-a/--min-anchor-length",
+            "value": "8"
+        },
+        {
+            "step": "2",
+            "param": "other parameters",
+            "value": "default"
+        }
+    ],
+    "io_domain": {
+        "input_subdomain": [
+            {
+                "uri": {
+                    "access_time": "2015-09-01",
+                    "uri": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE45419",
+                    "sha1_checksum": "BCO_000551checksum",
+                    "filename": "GSE45419_raw_counts.txt.gz"
+                }
+            }
+        ],
+        "output_subdomain": [
+            {
+                "mediatype": "HTML",
+                "uri": {
+                    "access_time": "2015-09-01",
+                    "uri": "http://example.com/data/514769/SJ_diff_analysis",
+                    "sha1_checksum": "BCO_000551checksum",
+                    "filename": "SJ_Analysis"
+                }
+            }
+        ]
+    },
+    "error_domain": {}
+}
