@@ -1,0 +1,242 @@
+{
+    "bco_id": "http://biocomputeobject.org/BCO_000543",
+    "checksum": "c3fc0f68fce596caf5ae18cbdb018760454012026c340c842ba116a304beeb6c",
+    "bco_spec_version": "1.3.0",
+    "provenance_domain": {
+        "name": "Use DEXSeq to study SJs and IRs",
+        "version": "2.0.0",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "created": "2019-10-09T01:55:40.046696",
+        "modified": "2019-10-17T18:43:11.311551",
+        "review": [
+            {
+                "status": "in-review",
+                "reviewer_comment": "Reviewed by BioCompute technical assistant, approval pending modification by author",
+                "reviewer": {
+                    "orcid": "https://orcid.org/0000-0002-8824-4637",
+                    "affiliation": " George Washington University",
+                    "contribution": [
+                        "curatedBy"
+                    ],
+                    "name": "Janisha Patel",
+                    "email": "janishapatel@gwu.edu"
+                },
+                "date": "2019-10-17"
+            }
+        ],
+        "contributors": [
+            {
+                "name": "Canyuan Yang",
+                "orcid": "",
+                "affiliation": " George Washington University",
+                "contribution": [
+                    "createdBy"
+                ],
+                "email": "canyuanyang@gwu.edu"
+            },
+            {
+                "name": "Yafang Li",
+                "orcid": "",
+                "affiliation": "Dartmouth College",
+                "contribution": [
+                    "authoredBy"
+                ],
+                "email": ""
+            },
+            {
+                "name": "Xiayu Rao",
+                "orcid": "",
+                "affiliation": "The University of Texas MD Anderson Cancer Center",
+                "contribution": [
+                    "authoredBy"
+                ],
+                "email": ""
+            },
+            {
+                "name": "William W. Mattox",
+                "orcid": "",
+                "affiliation": "The University of Texas MD Anderson Cancer Center",
+                "contribution": [
+                    "authoredBy"
+                ],
+                "email": ""
+            },
+            {
+                "name": "Christopher I. Amos",
+                "orcid": "",
+                "affiliation": "Dartmouth College",
+                "contribution": [
+                    "authoredBy"
+                ],
+                "email": ""
+            },
+            {
+                "name": "Bin Liu",
+                "orcid": "",
+                "affiliation": "The University of Texas MD Anderson Cancer Center",
+                "contribution": [
+                    "authoredBy"
+                ],
+                "email": "bliu1@mdanderson.org"
+            }
+        ]
+    },
+    "usability_domain": [
+        "In this publication, \"Li, Y., Rao, X., Mattox, W. W., Amos, C. I., & Liu, B. (2015). RNA-seq analysis of differential splice junction usage and intron retentions by DEXSeq. PLoS One, 10(9), e0136653.\", researchers tried to study alternative splicing. Hence, data about splice junctions and intro retentions were needed. As a result, scientists used DEXseq to do differential analysis. Finally, this method was proved to be helpful in studying this field."
+    ],
+    "extension_domain": {},
+    "description_domain": {
+        "keywords": [
+            "SJs",
+            "IRs",
+            "DEXSeq"
+        ],
+        "pipeline_steps": [
+            {
+                "name": "Bowtie",
+                "version": "2.0.0.7",
+                "step_number": 1,
+                "input_list": [
+                    {
+                        "access_time": "2015-09-01",
+                        "uri": "",
+                        "sha1_checksum": "BCO_000543checksum",
+                        "filename": ""
+                    }
+                ],
+                "output_list": [
+                    {
+                        "access_time": "2015-09-01",
+                        "uri": "",
+                        "sha1_checksum": "BCO_000543checksum",
+                        "filename": ""
+                    }
+                ],
+                "prerequisite": [],
+                "description": "RNA-seq reads mapping"
+            },
+            {
+                "name": "TopHat",
+                "version": "2.0.4",
+                "step_number": 2,
+                "input_list": [],
+                "output_list": [
+                    {
+                        "access_time": "2015-09-01",
+                        "uri": "",
+                        "sha1_checksum": "BCO_000543checksum",
+                        "filename": ""
+                    }
+                ],
+                "prerequisite": [],
+                "description": "RNA-seq reads mapping"
+            },
+            {
+                "name": "SAM tools",
+                "version": "0.1.18.0",
+                "step_number": 3,
+                "input_list": [
+                    {
+                        "access_time": "2015-09-01",
+                        "uri": "",
+                        "sha1_checksum": "BCO_000543checksum",
+                        "filename": ""
+                    }
+                ],
+                "output_list": [
+                    {
+                        "access_time": "2015-09-01",
+                        "uri": "",
+                        "sha1_checksum": "BCO_000543checksum",
+                        "filename": ""
+                    }
+                ],
+                "prerequisite": [],
+                "description": "RNA-seq reads mapping"
+            },
+            {
+                "name": "DEXSeq",
+                "version": "",
+                "step_number": 4,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Differential analysis."
+            }
+        ]
+    },
+    "execution_domain": {
+        "external_data_endpoints": [
+            {
+                "name": "",
+                "url": ""
+            }
+        ],
+        "environment_variables": {},
+        "script_driver": "",
+        "software_prerequisites": [
+            {
+                "name": "TopHat",
+                "version": "2.0.4",
+                "uri": {
+                    "access_time": "2015-09-01",
+                    "uri": "",
+                    "sha1_checksum": "BCO_000543checksum",
+                    "filename": ""
+                }
+            },
+            {
+                "name": "Bowtie",
+                "version": "2.0.0.7",
+                "uri": {
+                    "access_time": "2015-09-01",
+                    "uri": "",
+                    "sha1_checksum": "BCO_000543checksum",
+                    "filename": ""
+                }
+            },
+            {
+                "name": "SAM tools",
+                "version": "0.1.18.0",
+                "uri": {
+                    "access_time": "2015-09-01",
+                    "uri": "",
+                    "sha1_checksum": "BCO_000543checksum",
+                    "filename": ""
+                }
+            }
+        ],
+        "script": []
+    },
+    "parametric_domain": [
+        {
+            "step": "1",
+            "param": "–min-segment–intron 2",
+            "value": "2"
+        },
+        {
+            "step": "1",
+            "param": "–a/--min-anchor-length",
+            "value": "8"
+        },
+        {
+            "step": "3",
+            "param": "sliding",
+            "value": "5-bp"
+        }
+    ],
+    "io_domain": {
+        "input_subdomain": [
+            {
+                "uri": {
+                    "access_time": "2015-09-01",
+                    "uri": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE18508",
+                    "sha1_checksum": "BCO_000543checksum",
+                    "filename": "GSE18508"
+                }
+            }
+        ],
+        "output_subdomain": []
+    },
+    "error_domain": {}
+}
