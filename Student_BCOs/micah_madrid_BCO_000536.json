@@ -1,0 +1,229 @@
+{
+    "bco_id": "http://biocomputeobject.org/BCO_000536",
+    "checksum": "cd7248555386913fbc1f643ae2daa9da4e4c60f3392e9ce05c71dce9b87f8a7b",
+    "bco_spec_version": "1.3.0",
+    "provenance_domain": {
+        "name": "Correlating miRNA and gene expression data in 34 cancer phenotypes",
+        "version": "1.0.0",
+        "license": "Creative Commons Attribution 4.0 International License",
+        "created": "2019-10-08T21:21:31.942099",
+        "modified": "2019-10-17T17:36:45.351641",
+        "review": [
+            {
+                "status": "in-review",
+                "reviewer_comment": " Reviewed by BioCompute technical assistant, approval pending modification by author",
+                "reviewer": {
+                    "orcid": "https://orcid.org/0000-0002-8824-4637",
+                    "affiliation": "George Washington University ",
+                    "contribution": [],
+                    "name": "Janisha Patel",
+                    "email": "janishapatel@gwu.edu"
+                },
+                "date": "2019-10-17"
+            }
+        ],
+        "contributors": [
+            {
+                "name": "Micah Madrid",
+                "orcid": "https://orcid.org/0000-0002-7527-022X",
+                "affiliation": "The George Washington University",
+                "contribution": [
+                    "createdBy"
+                ],
+                "email": "mmadrid@gwu.edu"
+            },
+            {
+                "name": "Ling Sheng Loh",
+                "orcid": "https://orcid.org/0000-0003-0981-7984",
+                "affiliation": "The George Washington University ",
+                "contribution": [],
+                "email": "loh_ling_sheng@hotmail.com"
+            },
+            {
+                "name": "June Beshea ",
+                "orcid": "https://orcid.org/0000-0001-9101-8000",
+                "affiliation": "The George Washington University ",
+                "contribution": [],
+                "email": "jbeshea@gwu.edu"
+            }
+        ]
+    },
+    "usability_domain": [
+        "This workflow serves to integrate TCGA expression data of mRNAs/proteins and miRNAs in cancer, thereafter calculate the correlations between miRNA and features/protein expressions in several cancer studies to better understand the roles of miRNA in target feature expression profiles under cancer conditions. This example pipeline was created based on the work of Ahmed et al. doi: 10.1186/s13104-018-3160-9"
+    ],
+    "extension_domain": {},
+    "description_domain": {
+        "keywords": [
+            "Cancer",
+            "miRna",
+            "miRCancerdb",
+            "TCGA",
+            "rna sequencing"
+        ],
+        "pipeline_steps": [
+            {
+                "name": "Input and Data Tidying ",
+                "version": "R Version 3.6.1",
+                "step_number": 0,
+                "input_list": [
+                    {
+                        "access_time": "2019-10-12T19:11:18.369303",
+                        "uri": "http://example.com/data/514869/genome.fasta",
+                        "sha1_checksum": "000529checksum",
+                        "filename": "TCGA.miRNA.sh"
+                    },
+                    {
+                        "access_time": "2019-09-12T19:11:18.369303",
+                        "uri": "http://example.com/data/514769/genome.fasta",
+                        "sha1_checksum": "000529checksum",
+                        "filename": "feature.sh"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "access_time": "2019-10-12T19:11:18.369303",
+                        "uri": "http://example.com/data/514769/genome.fasta",
+                        "sha1_checksum": "000529checksum",
+                        "filename": "0_preprocessed.TCGA.sh"
+                    }
+                ],
+                "prerequisite": [],
+                "description": "Integrate emic data from database "
+            },
+            {
+                "name": "Compare miRNA to human miRNA annotations",
+                "version": "R Version 3.6.1",
+                "step_number": 1,
+                "input_list": [
+                    {
+                        "access_time": "2019-10-12T19:11:18.369303",
+                        "uri": "http://example.com/data/514869/genome.fasta",
+                        "sha1_checksum": "000529checksum",
+                        "filename": "TCGA.miRNA.sh"
+                    },
+                    {
+                        "access_time": "2019-10-12T19:11:18.369303",
+                        "uri": "http://example.com/data/514769/genome.fasta",
+                        "sha1_checksum": "000529checksum",
+                        "filename": "0_preprocessed.TCGA.sh"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "access_time": "2019-10-12T19:11:18.369303",
+                        "uri": "http://example.com/data/514769/correlated.fasta",
+                        "sha1_checksum": "000529checksum",
+                        "filename": "1_Correlated.sh"
+                    }
+                ],
+                "prerequisite": [],
+                "description": "Calculate Pearson's correlation of miRNA expression matrix and gene/protein expression matrices for each cancer type"
+            },
+            {
+                "name": "Remove missing values (NA) and insignificant correlation values",
+                "version": "R Version 3.6.1",
+                "step_number": 2,
+                "input_list": [
+                    {
+                        "access_time": "2019-10-12T19:11:18.369303",
+                        "uri": "http://example.com/data/514769/correlated.fasta",
+                        "sha1_checksum": "000529checksum",
+                        "filename": "1_Correlated.sh"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "access_time": "2019-10-12T19:11:18.369303",
+                        "uri": "http://example.com/data/514769/trimmed.fasta",
+                        "sha1_checksum": "000529checksum",
+                        "filename": "2_Trimmedcorrelation.sh"
+                    }
+                ],
+                "prerequisite": [],
+                "description": "removing missing data rows and insignificant correlation values less than 0.1"
+            },
+            {
+                "name": "Merge correlation data for all cancer types ",
+                "version": "",
+                "step_number": 3,
+                "input_list": [
+                    {
+                        "access_time": "2019-10-12T19:11:18.369303",
+                        "uri": "http://example.com/data/514769/trimmed.fasta",
+                        "sha1_checksum": "000529checksum",
+                        "filename": "2_Trimmedcorrelation.sh"
+                    }
+                ],
+                "output_list": [
+                    {
+                        "access_time": "2019-10-12T19:11:18.369303",
+                        "uri": "http://example.com/data/514769/mergedtrimmed.fasta",
+                        "sha1_checksum": "000529checksum",
+                        "filename": "3_Mergedtrimmed.sh"
+                    }
+                ],
+                "prerequisite": [],
+                "description": "Merge correlation data for all 34 cancer types into a single table"
+            }
+        ]
+    },
+    "execution_domain": {
+        "external_data_endpoints": [],
+        "environment_variables": {},
+        "script_driver": "Host type - x86_64-linux",
+        "software_prerequisites": [
+            {
+                "name": "SQLite database",
+                "version": "",
+                "uri": {
+                    "access_time": "2019-10-12T19:11:18.369303",
+                    "uri": "",
+                    "sha1_checksum": "000529checksum",
+                    "filename": ""
+                }
+            },
+            {
+                "name": "R",
+                "version": "3.6.1",
+                "uri": {
+                    "access_time": "2019-10-12T19:11:18.369303",
+                    "uri": "",
+                    "sha1_checksum": "000529checksum",
+                    "filename": ""
+                }
+            }
+        ],
+        "script": []
+    },
+    "parametric_domain": [
+        {
+            "step": "2",
+            "param": "minimum",
+            "value": "0.1"
+        }
+    ],
+    "io_domain": {
+        "input_subdomain": [
+            {
+                "uri": {
+                    "access_time": "2019-10-12T19:11:18.369303",
+                    "uri": "https://bioconductor.org/packages/release/bioc/html/RTCGA.html",
+                    "sha1_checksum": "000529checksum",
+                    "filename": ""
+                }
+            }
+        ],
+        "output_subdomain": [
+            {
+                "mediatype": "",
+                "uri": {
+                    "access_time": "2019-10-12T19:11:18.369303",
+                    "uri": "http://example.com/data/514769/analyzed.csv",
+                    "sha1_checksum": "000529checksum",
+                    "filename": ""
+                }
+            }
+        ]
+    },
+    "error_domain": {}
+}
