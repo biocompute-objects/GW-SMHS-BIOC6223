@@ -1,13 +1,27 @@
 {
     "bco_id": "http://biocomputeobject.org/BCO_000541",
-    "checksum": "745c1e6c07f3cc5909669ea990c9b72e1c55bd1acdf31230a6042eaf1c902b5f",
+    "checksum": "e2ea8899456e0984818cfa04a9d77e5fdad50009f62680437656d73b7b838362",
     "bco_spec_version": "1.3.0",
     "provenance_domain": {
         "name": "RNA-seq data of invasive ductal carcinoma and adjacent normal tissues from a Korean patient with breast cancer",
         "version": "1.0.0",
         "license": "http://creativecommons.org/licenses/by/4.0/",
         "created": "2019-10-08T22:44:51.859208",
-        "modified": "2019-10-09T02:36:02.520644",
+        "modified": "2019-10-17T01:38:40.997940",
+        "review": [
+            {
+                "status": "in-review",
+                "reviewer_comment": "Please add \"derivedFrom\" contribution type.",
+                "reviewer": {
+                    "orcid": "https://orcid.org/0000-0002-8824-4637",
+                    "affiliation": "The George Washington University ",
+                    "contribution": [],
+                    "name": "Janisha Patel",
+                    "email": "janishapatel@gwu.edu"
+                },
+                "date": "2019-10-15"
+            }
+        ],
         "contributors": [
             {
                 "name": "Nikhita Gogate",
@@ -17,11 +31,42 @@
                     "createdBy"
                 ],
                 "email": "nikigogate@gwu.edu"
+            },
+            {
+                "name": "Ji Hyung Hong",
+                "orcid": "https://orcid.org/0000-0002-0492-3959",
+                "affiliation": "Division of Oncology, Department of Internal Medicine, College of Medicine, The Catholic University of Korea, Seoul, Republic of Korea",
+                "contribution": [
+                    "authoredBy",
+                    "derivedFrom"
+                ],
+                "email": ""
+            },
+            {
+                "name": "Yoon Ho Ko",
+                "orcid": "https://orcid.org/0000-0002-2506-3740",
+                "affiliation": "Division of Oncology, Department of Internal Medicine, College of Medicine, The Catholic University of Korea, Seoul, Republic of Korea and Cancer Research Institute, College of Medicine, The Catholic University of Korea, Seoul, Republic of Korea",
+                "contribution": [
+                    "authoredBy",
+                    "derivedFrom"
+                ],
+                "email": ""
+            },
+            {
+                "name": "Keunsoo Kang",
+                "orcid": "https://orcid.org/0000-0003-0611-9320",
+                "affiliation": "Department of Microbiology, College of Natural Sciences, Dankook University, Cheonan 31116, Republic of Korea",
+                "contribution": [
+                    "authoredBy",
+                    "derivedFrom"
+                ],
+                "email": "kangk1204@dankook.ac.kr"
             }
         ]
     },
     "usability_domain": [
-        "10 samples of IDC from a Korean patient exhibiting luminal B subtype of breast cancer were compared to 3 samples of matched normal tissue to perform an RNA-seq experiment, the results of which identified several pathways associated with onset or progression of breast cancer"
+        "10 samples of IDC from a Korean patient exhibiting luminal B subtype of breast cancer were compared to 3 samples of matched normal tissue to perform an RNA-seq experiment, the results of which identified several pathways associated with onset or progression of breast cancer",
+        "Adapted from PMID: 29900229 Hong, Ji Hyung, Yoon Ho Ko, and Keunsoo Kang.\"RNA-seq data of invasive ductal carcinoma and adjacent normal tissues from a Korean patient with breast cancer.\"Data in brief 18 (2018): 736-739."
     ],
     "extension_domain": {},
     "description_domain": {
@@ -206,6 +251,16 @@
                     "uri": "http://metascape.org",
                     "sha1_checksum": "BCO_000541checksum",
                     "filename": "Metascape"
+                }
+            },
+            {
+                "name": "Cutadapt",
+                "version": "1.1.2 ",
+                "uri": {
+                    "access_time": "2018-03-21",
+                    "uri": "https://github.com/marcelm/cutadapt/",
+                    "sha1_checksum": "BCO_000541checksum",
+                    "filename": "Cutadapt"
                 }
             }
         ],
