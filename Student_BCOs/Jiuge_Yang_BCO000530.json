@@ -1,0 +1,592 @@
+{
+    "bco_id": "http://biocomputeobject.org/BCO_000530",
+    "checksum": "376b47c6d18df2eb8eb33d52fc0a1eef08fb19104222828a465005d31e268f50",
+    "bco_spec_version": "1.3.0",
+    "provenance_domain": {
+        "name": "Detecting transcript variants using RNA-seq data via TAP: a targeted clinical genomics pipeline",
+        "version": "1.0.0",
+        "license": "BCCA (academic use)",
+        "created": "2019-10-08T20:15:08.906896",
+        "modified": "2019-10-09T03:01:34.322039",
+        "contributors": [
+            {
+                "name": "Jiuge Yang",
+                "orcid": "https://orcid.org/0000-0002-6497-0714",
+                "affiliation": "George Washington University",
+                "contribution": [
+                    "createdBy"
+                ],
+                "email": "jiugeyang@gwu.edu"
+            },
+            {
+                "name": "Readman Chiu",
+                "orcid": "https://orcid.org/0000-0002-2215-5535",
+                "affiliation": "Canada’s Michael Smith Genome Sciences Centre, BC Cancer Agency",
+                "contribution": [
+                    "authoredBy"
+                ],
+                "email": ""
+            },
+            {
+                "name": "Ka Ming Nip",
+                "orcid": "",
+                "affiliation": "Canada’s Michael Smith Genome Sciences Centre, BC Cancer Agency",
+                "contribution": [
+                    "authoredBy"
+                ],
+                "email": ""
+            },
+            {
+                "name": "Justin Chu",
+                "orcid": "",
+                "affiliation": "Canada’s Michael Smith Genome Sciences Centre, BC Cancer Agency",
+                "contribution": [
+                    "authoredBy"
+                ],
+                "email": ""
+            },
+            {
+                "name": "Inanc Birol",
+                "orcid": "",
+                "affiliation": "Canada’s Michael Smith Genome Sciences Centre, BC Cancer Agency and department of Medical Genetics, The University of British Columbia, Vancouver, BC, Canada",
+                "contribution": [],
+                "email": ""
+            }
+        ]
+    },
+    "usability_domain": [
+        "A BCO adaptation of a published medical journal article which introduced a clinical genomics pipeline.",
+        "A four-staged pipeline designated to detecting structural variants by de novo RNA-seq assembly.",
+        "A targeted approach supported by robust sequencing protocol and flexible selection of related genes."
+    ],
+    "extension_domain": {},
+    "description_domain": {
+        "keywords": [
+            "RNA-seq",
+            "Transcriptome assembly",
+            "Clinical genomics",
+            "Gene fusion",
+            "Aliternative splicing",
+            "Internal tandem duplication",
+            "Partial tandem duplication",
+            "Acute myeloid leukemia"
+        ],
+        "pipeline_steps": [
+            {
+                "name": "BioBloomTools (BBT)",
+                "version": "2.1.0",
+                "step_number": 1,
+                "input_list": [
+                    {
+                        "access_time": "2018-09-10",
+                        "uri": "https://www.ncbi.nlm.nih.gov/geoprofiles/49642",
+                        "sha1_checksum": "BCO_000530checksum",
+                        "filename": "Type 1 diabetes gene expression profiling"
+                    },
+                    {
+                        "access_time": "2018-09-10",
+                        "uri": "https://www.ncbi.nlm.nih.gov/geoprofiles/?term=62190",
+                        "sha1_checksum": "BCO_000530checksum",
+                        "filename": "Type 1 diabetes gene expression profiling"
+                    },
+                    {
+                        "access_time": "2018-09-10",
+                        "uri": "https://www.ncbi.nlm.nih.gov/geoprofiles/52656",
+                        "sha1_checksum": "BCO_000530checksum",
+                        "filename": "Atxn7l3b-Type 1 diabetes gene expression profiling"
+                    },
+                    {
+                        "access_time": "2018-09-10",
+                        "uri": "https://www.ncbi.nlm.nih.gov/geoprofiles/?term=67309",
+                        "sha1_checksum": "BCO_000530checksum",
+                        "filename": "Bone marrow stromal cell lines"
+                    }
+                ],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Classify and segregate whole-sample RNA-seq reads into bins corresponding to specific gene targets by using alignment-free methods."
+            },
+            {
+                "name": "Trans-ABySS",
+                "version": "1.5.4",
+                "step_number": 2,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "De novo reconstruction of transcript sequences from classified bins of read pairs."
+            },
+            {
+                "name": "Genomic Mapping and Alignment Program for mRNA and EST Sequences (GMAP)",
+                "version": "2014-12-28",
+                "step_number": 3,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Concurrent alignments of assembled contig sequences to reference genome and extracted reads to contig sequences."
+            },
+            {
+                "name": "Burrow-Wheeler Aligner for short-read alignment (BWA-MEM)",
+                "version": "0.7.12",
+                "step_number": 3,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Concurrent alignments of assembled contig sequences to reference transcriptome and extracted reads to contig sequences."
+            },
+            {
+                "name": "Post Assembly Variant Finder (PAVFinder)",
+                "version": "0.4.2",
+                "step_number": 4,
+                "input_list": [],
+                "output_list": [
+                    {
+                        "access_time": "2018-09-10",
+                        "uri": " http://example.com/data/49642/detected_sv.csv",
+                        "sha1_checksum": "BCO_000530checksum",
+                        "filename": "example output for demonstration, no actual meaning"
+                    },
+                    {
+                        "access_time": "2018-09-10",
+                        "uri": "http://example.com/data/62190/detected_sv.csv",
+                        "sha1_checksum": "BCO_000530checksum",
+                        "filename": "example output for demonstration, no actual meaning"
+                    },
+                    {
+                        "access_time": "2018-09-10",
+                        "uri": "http://example.com/data/52656/detected_sv.csv",
+                        "sha1_checksum": "BCO_000530checksum",
+                        "filename": "example output for demonstration, no actual meaning"
+                    },
+                    {
+                        "access_time": "2018-09-10",
+                        "uri": "http://example.com/data/67309/detected_sv.csv",
+                        "sha1_checksum": "BCO_000530checksum",
+                        "filename": "example output for demonstration, no actual meaning"
+                    }
+                ],
+                "prerequisite": [],
+                "description": "Detection of structural variants."
+            }
+        ]
+    },
+    "execution_domain": {
+        "external_data_endpoints": [],
+        "environment_variables": {},
+        "script_driver": "Python 2.7",
+        "software_prerequisites": [
+            {
+                "name": "BioBloomTools (BBT)",
+                "version": "2.1.0",
+                "uri": {
+                    "access_time": "2018-09-10",
+                    "uri": "https://github.com/bcgsc/biobloom",
+                    "sha1_checksum": "BCO_000530checksum",
+                    "filename": ""
+                }
+            },
+            {
+                "name": "Trans-ABySS ",
+                "version": "1.5.4",
+                "uri": {
+                    "access_time": "2018-09-10",
+                    "uri": "https://github.com/bcgsc/transabyss",
+                    "sha1_checksum": "BCO_000530checksum",
+                    "filename": ""
+                }
+            },
+            {
+                "name": "Genomic Mapping and Alignment Program for mRNA and EST Sequences (GMAP)",
+                "version": "2014-12-28",
+                "uri": {
+                    "access_time": "2018-09-10",
+                    "uri": "http://research-pub.gene.com/gmap/",
+                    "sha1_checksum": "BCO_000530checksum",
+                    "filename": ""
+                }
+            },
+            {
+                "name": "Burrow-Wheeler Aligner for short-read alignment (BWA-MEM)",
+                "version": "0.7.12",
+                "uri": {
+                    "access_time": "2018-09-10",
+                    "uri": "https://github.com/lh3/bwa",
+                    "sha1_checksum": "BCO_000530checksum",
+                    "filename": ""
+                }
+            },
+            {
+                "name": "Post Assembly Variant Finder (PAVFinder)",
+                "version": "0.4.2",
+                "uri": {
+                    "access_time": "2018-09-10",
+                    "uri": "http://www.bcgsc.ca/platform/bioinfo/software/pavfinder",
+                    "sha1_checksum": "BCO_000530checksum",
+                    "filename": ""
+                }
+            }
+        ],
+        "script": [
+            {
+                "uri": {
+                    "access_time": "2018-09-10",
+                    "uri": "http://www.bcgsc.ca/platform/bioinfo/software/pavfinder ",
+                    "sha1_checksum": "BCO_000530checksum",
+                    "filename": ""
+                }
+            }
+        ]
+    },
+    "parametric_domain": [],
+    "io_domain": {
+        "input_subdomain": [
+            {
+                "uri": {
+                    "access_time": "2018-09-10",
+                    "uri": "https://www.ncbi.nlm.nih.gov/geoprofiles/49642",
+                    "sha1_checksum": "BCO_000530checksum",
+                    "filename": "Type 1 diabetes gene expression profiling"
+                }
+            },
+            {
+                "uri": {
+                    "access_time": "2018-09-10",
+                    "uri": "https://www.ncbi.nlm.nih.gov/geoprofiles/?term=62190",
+                    "sha1_checksum": "BCO_000530checksum",
+                    "filename": "Type 1 diabetes gene expression profiling"
+                }
+            },
+            {
+                "uri": {
+                    "access_time": "2018-09-10",
+                    "uri": "https://www.ncbi.nlm.nih.gov/geoprofiles/52656",
+                    "sha1_checksum": "BCO_000530checksum",
+                    "filename": "Atxn7l3b-Type 1 diabetes gene expression profiling"
+                }
+            },
+            {
+                "uri": {
+                    "access_time": "2018-09-10",
+                    "uri": "https://www.ncbi.nlm.nih.gov/geoprofiles/?term=67309",
+                    "sha1_checksum": "BCO_000530checksum",
+                    "filename": "Bone marrow stromal cell lines"
+                }
+            }
+        ],
+        "output_subdomain": [
+            {
+                "mediatype": "text/csv",
+                "uri": {
+                    "access_time": "2018-09-10",
+                    "uri": "http://example.com/data/49642/detected_sv.csv",
+                    "sha1_checksum": "BCO_000530checksum",
+                    "filename": "example output for demonstration, no actual meaning"
+                }
+            }
+        ]
+    },
+    "error_domain": {}
+}
+
+{
+    "bco_id": "http://biocomputeobject.org/BCO_000530",
+    "checksum": "2d86222b118733d99702737f8caebc22a4b860c54613c023565908807c039e94",
+    "bco_spec_version": "1.3.0",
+    "provenance_domain": {
+        "name": "Detecting transcript variants using RNA-seq data via TAP: a targeted clinical genomics pipeline",
+        "version": "1.0.0",
+        "license": "BCCA (academic use)",
+        "created": "2019-10-08T20:15:08.906896",
+        "modified": "2019-10-17T15:40:43.495084",
+        "contributors": [
+            {
+                "name": "Jiuge Yang",
+                "orcid": "https://orcid.org/0000-0002-6497-0714",
+                "affiliation": "George Washington University",
+                "contribution": [
+                    "createdBy"
+                ],
+                "email": "jiugeyang@gwu.edu"
+            },
+            {
+                "name": "Readman Chiu",
+                "orcid": "https://orcid.org/0000-0002-2215-5535",
+                "affiliation": "Canada’s Michael Smith Genome Sciences Centre, BC Cancer Agency",
+                "contribution": [
+                    "authoredBy",
+                    "derivedFrom"
+                ],
+                "email": ""
+            },
+            {
+                "name": "Ka Ming Nip",
+                "orcid": "",
+                "affiliation": "Canada’s Michael Smith Genome Sciences Centre, BC Cancer Agency",
+                "contribution": [
+                    "authoredBy",
+                    "derivedFrom"
+                ],
+                "email": ""
+            },
+            {
+                "name": "Justin Chu",
+                "orcid": "",
+                "affiliation": "Canada’s Michael Smith Genome Sciences Centre, BC Cancer Agency",
+                "contribution": [
+                    "authoredBy",
+                    "derivedFrom"
+                ],
+                "email": ""
+            },
+            {
+                "name": "Inanc Birol",
+                "orcid": "",
+                "affiliation": "Canada’s Michael Smith Genome Sciences Centre, BC Cancer Agency and department of Medical Genetics, The University of British Columbia, Vancouver, BC, Canada",
+                "contribution": [
+                    "authoredBy",
+                    "derivedFrom"
+                ],
+                "email": ""
+            },
+            {
+                "name": "Janisha Patel",
+                "orcid": "",
+                "affiliation": "George Washington University",
+                "contribution": [
+                    "curatedBy"
+                ],
+                "email": ""
+            }
+        ]
+    },
+    "usability_domain": [
+        "A BCO adaptation of a published medical journal article which introduced a clinical genomics pipeline (doi:https://doi.org/10.1186/s12920-018-0402-6).",
+        "A four-staged pipeline designated to detecting structural variants by de novo RNA-seq assembly.",
+        "A targeted approach supported by robust sequencing protocol and flexible selection of related genes."
+    ],
+    "extension_domain": {},
+    "description_domain": {
+        "keywords": [
+            "RNA-seq",
+            "Transcriptome assembly",
+            "Clinical genomics",
+            "Gene fusion",
+            "Aliternative splicing",
+            "Internal tandem duplication",
+            "Partial tandem duplication",
+            "Acute myeloid leukemia"
+        ],
+        "pipeline_steps": [
+            {
+                "name": "BioBloomTools (BBT)",
+                "version": "2.1.0",
+                "step_number": 1,
+                "input_list": [
+                    {
+                        "access_time": "2018-09-10",
+                        "uri": "https://www.ncbi.nlm.nih.gov/geoprofiles/49642",
+                        "sha1_checksum": "BCO_000530checksum",
+                        "filename": "Type 1 diabetes gene expression profiling"
+                    },
+                    {
+                        "access_time": "2018-09-10",
+                        "uri": "https://www.ncbi.nlm.nih.gov/geoprofiles/?term=62190",
+                        "sha1_checksum": "BCO_000530checksum",
+                        "filename": "Type 1 diabetes gene expression profiling"
+                    },
+                    {
+                        "access_time": "2018-09-10",
+                        "uri": "https://www.ncbi.nlm.nih.gov/geoprofiles/52656",
+                        "sha1_checksum": "BCO_000530checksum",
+                        "filename": "Atxn7l3b-Type 1 diabetes gene expression profiling"
+                    },
+                    {
+                        "access_time": "2018-09-10",
+                        "uri": "https://www.ncbi.nlm.nih.gov/geoprofiles/?term=67309",
+                        "sha1_checksum": "BCO_000530checksum",
+                        "filename": "Bone marrow stromal cell lines"
+                    }
+                ],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Classify and segregate whole-sample RNA-seq reads into bins corresponding to specific gene targets by using alignment-free methods."
+            },
+            {
+                "name": "Trans-ABySS",
+                "version": "1.5.4",
+                "step_number": 2,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "De novo reconstruction of transcript sequences from classified bins of read pairs."
+            },
+            {
+                "name": "Genomic Mapping and Alignment Program for mRNA and EST Sequences (GMAP)",
+                "version": "2014-12-28",
+                "step_number": 3,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Concurrent alignments of assembled contig sequences to reference genome and extracted reads to contig sequences."
+            },
+            {
+                "name": "Burrow-Wheeler Aligner for short-read alignment (BWA-MEM)",
+                "version": "0.7.12",
+                "step_number": 3,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Concurrent alignments of assembled contig sequences to reference transcriptome and extracted reads to contig sequences."
+            },
+            {
+                "name": "Post Assembly Variant Finder (PAVFinder)",
+                "version": "0.4.2",
+                "step_number": 4,
+                "input_list": [],
+                "output_list": [
+                    {
+                        "access_time": "2018-09-10",
+                        "uri": " http://example.com/data/49642/detected_sv.csv",
+                        "sha1_checksum": "BCO_000530checksum",
+                        "filename": "example output for demonstration, no actual meaning"
+                    },
+                    {
+                        "access_time": "2018-09-10",
+                        "uri": "http://example.com/data/62190/detected_sv.csv",
+                        "sha1_checksum": "BCO_000530checksum",
+                        "filename": "example output for demonstration, no actual meaning"
+                    },
+                    {
+                        "access_time": "2018-09-10",
+                        "uri": "http://example.com/data/52656/detected_sv.csv",
+                        "sha1_checksum": "BCO_000530checksum",
+                        "filename": "example output for demonstration, no actual meaning"
+                    },
+                    {
+                        "access_time": "2018-09-10",
+                        "uri": "http://example.com/data/67309/detected_sv.csv",
+                        "sha1_checksum": "BCO_000530checksum",
+                        "filename": "example output for demonstration, no actual meaning"
+                    }
+                ],
+                "prerequisite": [],
+                "description": "Detection of structural variants."
+            }
+        ]
+    },
+    "execution_domain": {
+        "external_data_endpoints": [],
+        "environment_variables": {},
+        "script_driver": "Python 2.7",
+        "software_prerequisites": [
+            {
+                "name": "BioBloomTools (BBT)",
+                "version": "2.1.0",
+                "uri": {
+                    "access_time": "2018-09-10",
+                    "uri": "https://github.com/bcgsc/biobloom",
+                    "sha1_checksum": "BCO_000530checksum",
+                    "filename": ""
+                }
+            },
+            {
+                "name": "Trans-ABySS ",
+                "version": "1.5.4",
+                "uri": {
+                    "access_time": "2018-09-10",
+                    "uri": "https://github.com/bcgsc/transabyss",
+                    "sha1_checksum": "BCO_000530checksum",
+                    "filename": ""
+                }
+            },
+            {
+                "name": "Genomic Mapping and Alignment Program for mRNA and EST Sequences (GMAP)",
+                "version": "2014-12-28",
+                "uri": {
+                    "access_time": "2018-09-10",
+                    "uri": "http://research-pub.gene.com/gmap/",
+                    "sha1_checksum": "BCO_000530checksum",
+                    "filename": ""
+                }
+            },
+            {
+                "name": "Burrow-Wheeler Aligner for short-read alignment (BWA-MEM)",
+                "version": "0.7.12",
+                "uri": {
+                    "access_time": "2018-09-10",
+                    "uri": "https://github.com/lh3/bwa",
+                    "sha1_checksum": "BCO_000530checksum",
+                    "filename": ""
+                }
+            },
+            {
+                "name": "Post Assembly Variant Finder (PAVFinder)",
+                "version": "0.4.2",
+                "uri": {
+                    "access_time": "2018-09-10",
+                    "uri": "http://www.bcgsc.ca/platform/bioinfo/software/pavfinder",
+                    "sha1_checksum": "BCO_000530checksum",
+                    "filename": ""
+                }
+            }
+        ],
+        "script": [
+            {
+                "uri": {
+                    "access_time": "2018-09-10",
+                    "uri": "http://www.bcgsc.ca/platform/bioinfo/software/pavfinder ",
+                    "sha1_checksum": "BCO_000530checksum",
+                    "filename": ""
+                }
+            }
+        ]
+    },
+    "parametric_domain": [],
+    "io_domain": {
+        "input_subdomain": [
+            {
+                "uri": {
+                    "access_time": "2018-09-10",
+                    "uri": "https://www.ncbi.nlm.nih.gov/geoprofiles/49642",
+                    "sha1_checksum": "BCO_000530checksum",
+                    "filename": "Type 1 diabetes gene expression profiling"
+                }
+            },
+            {
+                "uri": {
+                    "access_time": "2018-09-10",
+                    "uri": "https://www.ncbi.nlm.nih.gov/geoprofiles/?term=62190",
+                    "sha1_checksum": "BCO_000530checksum",
+                    "filename": "Type 1 diabetes gene expression profiling"
+                }
+            },
+            {
+                "uri": {
+                    "access_time": "2018-09-10",
+                    "uri": "https://www.ncbi.nlm.nih.gov/geoprofiles/52656",
+                    "sha1_checksum": "BCO_000530checksum",
+                    "filename": "Atxn7l3b-Type 1 diabetes gene expression profiling"
+                }
+            },
+            {
+                "uri": {
+                    "access_time": "2018-09-10",
+                    "uri": "https://www.ncbi.nlm.nih.gov/geoprofiles/?term=67309",
+                    "sha1_checksum": "BCO_000530checksum",
+                    "filename": "Bone marrow stromal cell lines"
+                }
+            }
+        ],
+        "output_subdomain": [
+            {
+                "mediatype": "text/csv",
+                "uri": {
+                    "access_time": "2018-09-10",
+                    "uri": "http://example.com/data/49642/detected_sv.csv",
+                    "sha1_checksum": "BCO_000530checksum",
+                    "filename": "example output for demonstration, no actual meaning"
+                }
+            }
+        ]
+    },
+    "error_domain": {}
+}
