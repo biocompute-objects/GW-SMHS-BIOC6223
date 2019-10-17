@@ -10,13 +10,48 @@
         "modified": "2019-10-08T21:58:34.013743",
         "contributors": [
             {
-                "name": "",
+                "name": "Weifei Wang",
                 "orcid": "",
-                "affiliation": "",
+                "affiliation": "The George Washington university",
                 "contribution": [
                     "createdBy"
                 ],
                 "email": "492398990@qq.com"
+            },
+            {
+                "name": "Readman Chiu",
+                "orcid": "https://orcid.org/0000-0002-2215-5535",
+                "affiliation": "Canada’s Michael Smith Genome Sciences Centre, BC Cancer Agency",
+                "contribution": [
+                    "authoredBy", "derivedFrom"
+                ],
+                "email": ""
+            },
+            {
+                "name": "Ka Ming Nip",
+                "orcid": "",
+                "affiliation": "Canada’s Michael Smith Genome Sciences Centre, BC Cancer Agency",
+                "contribution": [
+                    "authoredBy", "derivedFrom"
+                ],
+                "email": ""
+            },
+            {
+                "name": "Justin Chu",
+                "orcid": "",
+                "affiliation": "Canada’s Michael Smith Genome Sciences Centre, BC Cancer Agency",
+                "contribution": [
+                    "authoredBy", "derivedFrom"],
+                "email": ""
+            },
+            {
+                "name": "Inanc Birol",
+                "orcid": "",
+                "affiliation": "Canada’s Michael Smith Genome Sciences Centre, BC Cancer Agency and Department of Medical Genetics, The University of British Columbia",
+                "contribution": [
+                    "authoredBy", "derivedFrom"
+                ],
+                "email": "ibirol@bcgsc.ca"
             }
         ]
     },
@@ -40,7 +75,26 @@
                 "name": "BioBloomTools",
                 "version": "2.1.0",
                 "step_number": 1,
-                "input_list": [],
+                "input_list": [
+                    {
+                        "access_time": "9/10/2018",
+                        "uri": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE62190",
+                        "sha1_checksum": "BCO_000525checksum",
+                        "filename": "Leucegene: AML sequencing (part 3)"
+                    },
+                    {
+                        "access_time": "9/10/2018",
+                        "uri": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE66917",
+                        "sha1_checksum": "BCO_000525checksum",
+                        "filename": "Leucegene: AML sequencing (part 4)"
+                    },
+                    {
+                        "access_time": "9/10/2018",
+                        "uri": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE67039",
+                        "sha1_checksum": "BCO_000525checksum",
+                        "filename": "Leucegene: AML sequencing (part 5)"
+                    }
+                ],
                 "output_list": [],
                 "prerequisite": [],
                 "description": "the entire sample rna-seq reading segment is classified and isolated into boxes corresponding to specific gene targets by using BioBloomTools"
@@ -86,14 +140,116 @@
     "execution_domain": {
         "external_data_endpoints": [],
         "environment_variables": {},
-        "script_driver": "",
-        "software_prerequisites": [],
+        "script_driver": "Python 2.7",
+        "software_prerequisites": [
+            {
+                "name": "Linux",
+                "version": "",
+                "uri": {
+                    "access_time": "",
+                    "uri": "https://www.linux.org/",
+                    "sha1_checksum": "BCO_000525checksum",
+                    "filename": ""
+                }
+            },
+            {
+                "name": "BioBloomTools (BBT)",
+                "version": "2.1.0",
+                "uri": {
+                    "access_time": "9/10/2018",
+                    "uri": "https://github.com/bcgsc/biobloom",
+                    "sha1_checksum": "BCO_000525checksum",
+                    "filename": ""
+                }
+            },
+            {
+                "name": "Trans-ABySS",
+                "version": "1.5.4",
+                "uri": {
+                    "access_time": "9/10/2018",
+                    "uri": "https://github.com/bcgsc/transabyss",
+                    "sha1_checksum": "BCO_000525checksum",
+                    "filename": ""
+                }
+            },
+            {
+                "name": "Genomic Mapping and Alignment Program for mRNA and EST Sequences (GMAP)",
+                "version": "2014-12-28",
+                "uri": {
+                    "access_time": "9/10/2018",
+                    "uri": "http://research-pub.gene.com/gmap/",
+                    "sha1_checksum": "BCO_000525checksum",
+                    "filename": ""
+                }
+            },
+            {
+                "name": "Burrow-Wheeler Aligner for short-read alignment (BWA-MEM)",
+                "version": "0.7.12",
+                "uri": {
+                    "access_time": "9/10/2018",
+                    "uri": "https://github.com/lh3/bwa",
+                    "sha1_checksum": "BCO_000525checksum",
+                    "filename": ""
+                }
+            },
+            {
+                "name": "Post Assembly Variant Finder (PAVFinder)",
+                "version": "0.4.2",
+                "uri": {
+                    "access_time": "9/10/2018",
+                    "uri": "http://www.bcgsc.ca/platform/bioinfo/software/pavfinder",
+                    "sha1_checksum": "BCO_000525checksum",
+                    "filename": ""
+                }
+            }
+        ],
         "script": []
     },
-    "parametric_domain": [],
+    "parametric_domain": [
+        {
+            "step": "",
+            "param": "",
+            "value": ""
+        }
+    ],
     "io_domain": {
-        "input_subdomain": [],
-        "output_subdomain": []
+        "input_subdomain": [
+            {
+                "uri": {
+                    "access_time": "9/10/2018",
+                    "uri": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE62190",
+                    "sha1_checksum": "BCO_000525checksum",
+                    "filename": "Leucegene: AML sequencing (part 3)"
+                }
+            },
+            {
+                "uri": {
+                    "access_time": "9/10/2018",
+                    "uri": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE66917",
+                    "sha1_checksum": "BCO_000525checksum",
+                    "filename": "Leucegene: AML sequencing (part 4)"
+                }
+            },
+            {
+                "uri": {
+                    "access_time": "9/10/2018",
+                    "uri": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE67039",
+                    "sha1_checksum": "BCO_000525checksum",
+                    "filename": "Leucegene: AML sequencing (part 5)"
+                }
+            }
+        ],
+        "output_subdomain": [
+            {
+                "mediatype": "text/csv",
+                "uri": {
+                    "access_time": "9/10/2018",
+                    "uri": "http://example.com/data/49642/detected_sv.csv",
+                    "sha1_checksum": "BCO_000525checksum",
+                    "filename": "example output for demonstration, no actual meaning"
+                }
+            }
+        ]
     },
     "error_domain": {}
 }
