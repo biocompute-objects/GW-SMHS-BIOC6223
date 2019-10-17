@@ -1,27 +1,84 @@
 {
-    "bco_id": "http://biocomputeobject.org/BCO_000535",
-    "checksum": "e3a323a4a5150583faf5bce5d6cbb3385aa024f409988fc3a5cdd77af1943cf7",
+    "bco_id": "http://biocomputeobject.org/BCO_000546",
+    "checksum": "33ec002c04d4432f4910c15b2b43c2f21abb6fb56aefd58b5f51d8d0b7d3add0",
     "bco_spec_version": "1.3.0",
     "provenance_domain": {
-        "name": "Altered STAT3 Expression in Ovarian Cancer",
+        "name": "Multi-omics profiling reveals key signaling pathways in ovarian cancer controlled by STAT3",
         "version": "1.0.0",
-        "license": "",
-        "created": "2019-10-08T21:21:16.675893",
-        "modified": "2019-10-08T21:43:45.786586",
+        "license": "Attribution 4.0 International (CC BY 4.0)",
+        "created": "2019-10-15T19:03:27.501822",
+        "modified": "2019-10-17T01:07:00.543309",
+        "review": [
+            {
+                "status": "in-review",
+                "reviewer_comment": "Reviewed by BioCompute technical assistant, approval pending modification by author",
+                "reviewer": {
+                    "orcid": "https://orcid.org/0000-0002-8824-4637",
+                    "affiliation": "George Washington University",
+                    "contribution": [
+                        "curatedBy"
+                    ],
+                    "name": "Janisha Patel",
+                    "email": "janishapatel@gwu.edu"
+                },
+                "date": "2019-10-15"
+            }
+        ],
         "contributors": [
             {
-                "name": "",
-                "orcid": "",
-                "affiliation": "",
+                "name": "Evan Littleton",
+                "orcid": "https://orcid.org/0000-0003-2335-025X",
+                "affiliation": "George Washington University",
                 "contribution": [
                     "createdBy"
                 ],
                 "email": "evanlittleton@gwu.edu"
+            },
+            {
+                "name": "Tiangong Lu",
+                "orcid": "",
+                "affiliation": "University of Michigan",
+                "contribution": [
+                    "authoredBy",
+                    "derivedFrom"
+                ],
+                "email": ""
+            },
+            {
+                "name": "Nouri Neamati",
+                "orcid": "https://orcid.org/0000-0003-3291-7131",
+                "affiliation": "University of Michigan",
+                "contribution": [
+                    "authoredBy",
+                    "derivedFrom"
+                ],
+                "email": "neamati@umich.edu"
+            },
+            {
+                "name": "Mats Ljungman",
+                "orcid": "https://orcid.org/0000-0003-1553-6695",
+                "affiliation": "University of Michigan",
+                "contribution": [
+                    "authoredBy",
+                    "derivedFrom"
+                ],
+                "email": ""
+            },
+            {
+                "name": "Armand Bankhead, III",
+                "orcid": "",
+                "affiliation": "University of Michigan",
+                "contribution": [
+                    "authoredBy",
+                    "derivedFrom"
+                ],
+                "email": ""
             }
         ]
     },
     "usability_domain": [
-        "Multi-omics study using expression and proteomic data"
+        "Transcriptomic and proteomic data used to understand cell-wide effects of STAT3 knockdown on ovarian cancer cells. Adapted from Tiangong Lu, Armand Bankhead III, Mats Ljungman, and Nouri Neamati. \"Multi-omics profiling reveals key signaling pathways in ovarian cancer controlled by STAT3.\" Theranostics. 2019; 9(19): 5478–5496. http://www.thno.org/v09p5478.htm",
+        "No information about scripts, parameters, or environments for execution were given. Only inputs and outputs given were input files for alignment (step 1) and output files from differential analysis (step 4)"
     ],
     "extension_domain": {},
     "description_domain": {
@@ -39,14 +96,14 @@
                 "step_number": 1,
                 "input_list": [
                     {
-                        "access_time": "",
-                        "uri": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6735387/",
-                        "filename": ""
+                        "access_time": "2019-10-15 T15:20:45",
+                        "uri": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE134375",
+                        "filename": "SRA files"
                     }
                 ],
                 "output_list": [],
                 "prerequisite": [],
-                "description": ""
+                "description": "Alignment of reads to reference genome"
             },
             {
                 "name": "Cufflinks",
@@ -55,7 +112,7 @@
                 "input_list": [],
                 "output_list": [],
                 "prerequisite": [],
-                "description": ""
+                "description": "Quantification of aligned reads"
             },
             {
                 "name": "featureCounts",
@@ -64,16 +121,22 @@
                 "input_list": [],
                 "output_list": [],
                 "prerequisite": [],
-                "description": ""
+                "description": "Attainment of gene read counts from quantification"
             },
             {
                 "name": "DESeq2",
                 "version": "1.18.1",
                 "step_number": 4,
                 "input_list": [],
-                "output_list": [],
+                "output_list": [
+                    {
+                        "access_time": "2019-10-15 T15:25:30",
+                        "uri": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6735387/bin/thnov09p5478s1.pdf",
+                        "filename": "Supplemental Data"
+                    }
+                ],
                 "prerequisite": [],
-                "description": ""
+                "description": "Differential expression analysis of RNA-seq data"
             }
         ]
     },
@@ -82,7 +145,15 @@
         "environment_variables": {},
         "script_driver": "",
         "software_prerequisites": [],
-        "script": []
+        "script": [
+            {
+                "uri": {
+                    "access_time": "",
+                    "uri": "",
+                    "filename": ""
+                }
+            }
+        ]
     },
     "parametric_domain": [
         {
@@ -92,8 +163,25 @@
         }
     ],
     "io_domain": {
-        "input_subdomain": [],
-        "output_subdomain": []
+        "input_subdomain": [
+            {
+                "uri": {
+                    "access_time": "2019-10-15 T15:40:10",
+                    "uri": " https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE134375",
+                    "filename": "SRA files"
+                }
+            }
+        ],
+        "output_subdomain": [
+            {
+                "mediatype": "text",
+                "uri": {
+                    "access_time": "2019-10-15 T15:40:10",
+                    "uri": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6735387/bin/thnov09p5478s1.pdf",
+                    "filename": "Supplemental Data"
+                }
+            }
+        ]
     },
     "error_domain": {}
 }
