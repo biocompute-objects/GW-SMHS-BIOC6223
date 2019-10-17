@@ -1,13 +1,13 @@
 {
   "bco_id": "http://biocomputeobject.org/BCO_000540",
   "bco_spec_version": "1.3.0",
-  "checksum": "f32ff5615314b1fa8902b8db260646407d7bc1a493580b1b669f595487bfdb94",
+  "checksum": "08495fe0565dc4ee70b058973da1b6e448d4ac8941d5200d6431807e14ec179b",
   "provenance_domain": {
     "license": "https://creativecommons.org/licenses/by/4.0/legalcode",
     "name": "RNA-seq data of invasive ductal carcinoma and adjacent normal tissues from a Korean patient with breast cancer",
     "created": "2019-10-08T22:41:42.868816",
     "version": "1.0.0",
-    "modified": "2019-10-16T18:58:44.437783",
+    "modified": "2019-10-16T20:05:34.483686",
     "contributors": [
       {
         "orcid": "https://orcid.org/0000-0002-0092-6116",
@@ -22,25 +22,28 @@
         "orcid": "https://orcid.org/0000-0002-0492-3959",
         "affiliation": "Catholic University of Korea School of Medicine",
         "contribution": [
-          "authoredBy"
+          "authoredBy",
+          "derivedFrom"
         ],
         "name": "Hong, Ji Hyung ",
         "email": ""
       },
       {
-        "orcid": "https://orcid.org/0000-0002-2506-3740",
+        "orcid": "",
         "affiliation": "Cancer Research Institute, College of Medicine, The Catholic University of Korea",
         "contribution": [
-          "authoredBy"
+          "authoredBy",
+          "derivedFrom"
         ],
         "name": "Yoon Ho Ko",
         "email": ""
       },
       {
-        "orcid": "https://orcid.org/0000-0003-0611-9320",
+        "orcid": "",
         "affiliation": "Department of Microbiology, College of Natural Sciences, Dankook University,",
         "contribution": [
-          "authoredBy"
+          "authoredBy",
+          "derivedFrom"
         ],
         "name": "Keunsoo Kang",
         "email": ""
