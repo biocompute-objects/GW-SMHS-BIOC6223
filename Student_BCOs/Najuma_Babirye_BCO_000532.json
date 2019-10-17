@@ -1,13 +1,13 @@
 {
     "bco_id": "http://biocomputeobject.org/BCO_000532",
-    "checksum": "ee2a0e2898aaf9e2955d45a2caec8dc5ee20aa46187a49a533d41c9370b13c3f",
+    "checksum": "a53ca9af9ea671a59fd54429b2a58c436391690b85096d1a41c358aa6999ee2a",
     "bco_spec_version": "1.3.0",
     "provenance_domain": {
         "name": "RNA sequencing and gene enrichment of Pancreatic CTCs",
         "version": "1.0.0",
         "license": "https://spdx.org/licenses/CC-BY-4.0.html",
         "created": "2019-10-08T21:19:52.713920",
-        "modified": "2019-10-16T20:46:21.197743",
+        "modified": "2019-10-17T15:33:37.924817",
         "contributors": [
             {
                 "name": "Najuma Babirye",
@@ -17,6 +17,203 @@
                     "createdBy"
                 ],
                 "email": "nsbabirye@gwu.edu"
+            },
+            {
+                "name": "David T. Ting",
+                "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School; Department of Medicine, Harvard Medical School",
+                "contribution": [
+                    "authoredBy"
+                ],
+                "email": ""
+            },
+            {
+                "name": "Ben S. Wittner",
+                "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School; Department of Medicine, Harvard Medical School",
+                "contribution": [
+                    "authoredBy"
+                ]
+            },
+            {
+                "name": "Matteo Ligorio",
+                "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School; Department of Surgery, Harvard Medical School; Department of Health Sciences, University of Genoa, 16126 Genoa, Italy",
+                "contribution": [
+                    "authoredBy"
+                ]
+            },
+            {
+                "name": "Nicole Vincent Jordan",
+                "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School; Department of Medicine, Harvard Medical School",
+                "contribution": [
+                    "authoredBy"
+                ]
+            },
+            {
+                "name": "Ajay M. Shah",
+                "affiliation": "Center for Engineering in Medicine, Harvard Medical School, Boston; Department of Surgery, Harvard Medical School, Boston",
+                "contribution": [
+                    "authoredBy"
+                ]
+            },
+            {
+                "name": "David T. Miyamoto",
+                "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston; Department of Radiation Oncology, Harvard Medical School",
+                "contribution": [
+                    "authoredBy"
+                ]
+            },
+            {
+                "name": "Nicola Aceto",
+                "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School; Department of Medicine, Harvard Medical School",
+                "contribution": [
+                    "authoredBy"
+                ]
+            },
+            {
+                "name": "Francesca Bersani",
+                "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School; Department of Medicine, Harvard Medical School",
+                "contribution": [
+                    "authoredBy"
+                ]
+            },
+            {
+                "name": "Brian W. Brannigan",
+                "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School; Department of Medicine, Harvard Medical School",
+                "contribution": [
+                    "authoredBy"
+                ]
+            },
+            {
+                "name": "Kristina Xega",
+                "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School; Department of Medicine, Harvard Medical School",
+                "contribution": [
+                    "authoredBy"
+                ]
+            },
+            {
+                "name": "Jordan C. Ciciliano",
+                "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School; Department of Medicine, Harvard Medical School",
+                "contribution": [
+                    "authoredBy"
+                ]
+            },
+            {
+                "name": "Huili Zhu",
+                "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School; Department of Medicine, Harvard Medical School",
+                "contribution": [
+                    "authoredBy"
+                ]
+            },
+            {
+                "name": "Olivia C. MacKenzie",
+                "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School; Department of Medicine, Harvard Medical School",
+                "contribution": [
+                    "authoredBy"
+                ]
+            },
+            {
+                "name": "Julie Trautwein",
+                "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School; Department of Medicine, Harvard Medical School",
+                "contribution": [
+                    "authoredBy"
+                ]
+            },
+            {
+                "name": "Kshitij S. Arora",
+                "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School; Department of Surgery, Harvard Medical School; Department of Pathology, Harvard Medical School",
+                "contribution": [
+                    "authoredBy"
+                ]
+            },
+            {
+                "name": "Mohammad Shahid",
+                "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School; Department of Surgery, Harvard Medical School; Department of Pathology, Harvard Medical School",
+                "contribution": [
+                    "authoredBy"
+                ]
+            },
+            {
+                "name": "Haley L. Ellis",
+                "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School; Department of Medicine, Harvard Medical School",
+                "contribution": [
+                    "authoredBy"
+                ]
+            },
+            {
+                "name": "Na Qu",
+                "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School; Department of Medicine, Harvard Medical School",
+                "contribution": [
+                    "authoredBy"
+                ]
+            },
+            {
+                "name": "Nabeel Bardeesy",
+                "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School; Department of Medicine, Harvard Medical School",
+                "contribution": [
+                    "authoredBy"
+                ]
+            },
+            {
+                "name": "Miguel N. Rivera",
+                "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School; Department of Pathology, Harvard Medical School",
+                "contribution": [
+                    "authoredBy"
+                ]
+            },
+            {
+                "name": "Vikram Deshpande",
+                "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School; Department of Pathology, Harvard Medical School",
+                "contribution": [
+                    "authoredBy"
+                ]
+            },
+            {
+                "name": "Cristina R. Ferrone",
+                "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School; Department of Surgery, Harvard Medical School",
+                "contribution": [
+                    "authoredBy"
+                ]
+            },
+            {
+                "name": "Ravi Kapur",
+                "affiliation": "Center for Engineering in Medicine, Harvard Medical School",
+                "contribution": [
+                    "authoredBy"
+                ]
+            },
+            {
+                "name": "Sridhar Ramaswamy",
+                "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School; Department of Medicine, Harvard Medical School",
+                "contribution": [
+                    "authoredBy"
+                ]
+            },
+            {
+                "name": "Toshi Shioda",
+                "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School; Department of Medicine, Harvard Medical School",
+                "contribution": [
+                    "authoredBy"
+                ]
+            },
+            {
+                "name": "Mehmet Toner",
+                "affiliation": "Center for Engineering in Medicine, Harvard Medical School, Boston; Department of Surgery, Harvard Medical School, Boston",
+                "contribution": [
+                    "authoredBy"
+                ]
+            },
+            {
+                "name": "Shyamala Maheswaran",
+                "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School; Department of Surgery, Harvard Medical School",
+                "contribution": [
+                    "authoredBy"
+                ]
+            },
+            {
+                "name": "Daniel A. Haber",
+                "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School; Department of Medicine, Harvard Medical School; Howard Hughes Medical Institute",
+                "contribution": [
+                    "authoredBy"
+                ]
             }
         ]
     },
