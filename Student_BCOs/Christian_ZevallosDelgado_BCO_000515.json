@@ -65,7 +65,7 @@
         ]
     },
     "usability_domain": [
-        "Assessment of the Whole transcriptomic shotgun sequencing (Called RNA-seq) dataset from ten ductal carcinoma tissue and three samples of normal tissue from breast cancer patients from Korea. Expressed genes were identified with an FDR-adjusted p-value cutoff of 0.05 and  gene ontology evaluation reveals the association with onset or progression of breast cancer. Adapted from Jihyoung Hyung Hong, Yoon Ho Ko, and Keunsoo Kang. "RNA-seq data of invasive ductal carcinoma and adjacent normal tissues from a Korean patient with breast cancer." Data in Brief 18 (March 21, 2018) : 736-739. https://doi.org/10.1016/j.dib.2018.03.079"
+        "Assessment of the Whole transcriptomic shotgun sequencing (Called RNA-seq) dataset from ten ductal carcinoma tissue and three samples of normal tissue from breast cancer patients from Korea. Expressed genes were identified with an FDR-adjusted p-value cutoff of 0.05 and  gene ontology evaluation reveals the association with onset or progression of breast cancer. Adapted from Jihyoung Hyung Hong, Yoon Ho Ko, and Keunsoo Kang. RNA-seq data of invasive ductal carcinoma and adjacent normal tissues from a Korean patient with breast cancer. Data in Brief 18 (March 21, 2018) : 736-739. https://doi.org/10.1016/j.dib.2018.03.079"
     ],
     "extension_domain": {
         "scm_extension": {
