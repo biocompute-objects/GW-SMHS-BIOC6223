@@ -1,27 +1,75 @@
+
 {
     "bco_id": "http://biocomputeobject.org/BCO_000542",
-    "checksum": "dd638a7889d7c00028955b4273b15f623b38fd4aa7993058ba1b446a7cc094b3",
+    "checksum": "c4ee6db345788bca72b36b045a7d7d1838c13ec7c54282fd72ee4fb2feb195d3",
     "bco_spec_version": "1.3.0",
     "provenance_domain": {
         "name": "RNA-seq data of invasive ductal carcinoma and adjacent normal tissues from a Korean patient with breast cancer",
         "version": "1.0.0",
         "license": "https://creativecommons.org/licenses/by/4.0/legalcode",
         "created": "2019-10-09T01:12:11.449999",
-        "modified": "2019-10-09T01:40:55.677521",
+        "modified": "2019-10-17T19:58:35.246773",
+        "review": [
+            {
+                "status": "in-review",
+                "reviewer_comment": "Reviewed by BioCompute technical assistant, approval pending modification by author",
+                "reviewer": {
+                    "orcid": "https://orcid.org/0000-0002-8824-4637",
+                    "affiliation": "George Washington University",
+                    "contribution": [
+                        "curatedBy"
+                    ],
+                    "name": "Janisha Patel",
+                    "email": "janishapatel@gwu.edu"
+                },
+                "date": "2019-10-16"
+            }
+        ],
         "contributors": [
             {
-                "name": "",
-                "orcid": "",
-                "affiliation": "",
+                "name": "Wei Shao",
+                "orcid": "https://orcid.org/0000-0002-7023-7674",
+                "affiliation": "George Washington University",
                 "contribution": [
                     "createdBy"
                 ],
                 "email": "wshao04@gmail.com"
+            },
+            {
+                "name": "Ji Hyung Hong",
+                "orcid": "https://orcid.org/0000-0002-0492-3959",
+                "affiliation": "Division of Oncology, Department of Internal Medicine, College of Medicine, The Catholic University of Korea, Seoul, Republic of Korea",
+                "contribution": [
+                    "derivedFrom",
+                    "authoredBy"
+                ],
+                "email": ""
+            },
+            {
+                "name": "Yoon Ho Ko",
+                "orcid": "https://orcid.org/0000-0002-2506-3740",
+                "affiliation": "Division of Oncology, Department of Internal Medicine, College of Medicine, The Catholic University of Korea, Seoul, Republic of Korea and Cancer Research Institute, College of Medicine, The Catholic University of Korea, Seoul, Republic of Korea",
+                "contribution": [
+                    "authoredBy",
+                    "derivedFrom"
+                ],
+                "email": ""
+            },
+            {
+                "name": "Keunsoo Kang",
+                "orcid": "https://orcid.org/0000-0003-0611-9320",
+                "affiliation": "Department of Microbiology, College of Natural Sciences, Dankook University, Cheonan 31116, Republic of Korea",
+                "contribution": [
+                    "authoredBy",
+                    "derivedFrom"
+                ],
+                "email": ""
             }
         ]
     },
     "usability_domain": [
-        " Total RNA was extracted from ten samples of cancer tissue(invasive ductal carcinoma; luminal B subtype) and three samples of adjacent normal tissue from a Korean patient with invasive ductal carcinoma. Transcriptomes of breast cancer and normal samples were profiled  via RNA-seq. Differentially expressed genes were identified with an FDR-adjusted p-value cutoff of 0.55. Gene ontology analysis indicated that several pathways are associated with the onset and progression of invasive ductal carcinoma. "
+        " Total RNA was extracted from ten samples of cancer tissue(invasive ductal carcinoma; luminal B subtype) and three samples of adjacent normal tissue from a Korean patient with invasive ductal carcinoma. Transcriptomes of breast cancer and normal samples were profiled  via RNA-seq. Differentially expressed genes were identified with an FDR-adjusted p-value cutoff of 0.55. Gene ontology analysis indicated that several pathways are associated with the onset and progression of invasive ductal carcinoma. ",
+        "Adapted from PMID: 29900229 Hong, Ji Hyung, Yoon Ho Ko, and Keunsoo Kang. RNA-seq data of invasive ductal carcinoma and adjacent normal tissues from a Korean patient with breast cancer. Data in brief 18 (2018): 736-73. "
     ],
     "extension_domain": {},
     "description_domain": {
@@ -36,12 +84,22 @@
         ],
         "pipeline_steps": [
             {
-                "name": "Trim Galore  with Cutadapt(version 1.1.2)",
+                "name": "Trim Galore ",
                 "version": "0.4.2",
                 "step_number": 1,
                 "input_list": [],
                 "output_list": [],
-                "prerequisite": [],
+                "prerequisite": [
+                    {
+                        "name": "Cutadapt version 1.1.2",
+                        "uri": {
+                            "access_time": "2018-03-21",
+                            "uri": "https://github.com/marcelm/cutadapt/",
+                            "sha1_checksum": "000542checksum",
+                            "filename": "cutadapt"
+                        }
+                    }
+                ],
                 "description": "Sequence reads are trimmed"
             },
             {
@@ -116,7 +174,7 @@
                 "uri": {
                     "access_time": "2018-03-21",
                     "uri": "https://www.bioinformatics. babraham.ac.uk/projects/trim_galore/",
-                    "sha1_checksum": "4dbace01e516788a53fc37fc6e6cd4b562b2db3a",
+                    "sha1_checksum": "000542checksum",
                     "filename": "TrimGalore-0.6.4.tar.gz"
                 }
             },
@@ -126,7 +184,7 @@
                 "uri": {
                     "access_time": "2018-03-21",
                     "uri": "http://code.google.com/p/cutadapt/",
-                    "sha1_checksum": "bc92e43825d5d10892b69cdbd21448f17353c477",
+                    "sha1_checksum": "000542checksum",
                     "filename": "cutadapt-2.5.tar.gz"
                 }
             },
@@ -136,7 +194,7 @@
                 "uri": {
                     "access_time": "2018-03-21",
                     "uri": "http://code.google.com/p/rna-star/",
-                    "sha1_checksum": "6ad9dc4f6eae8ade00f063f632e7cf9bd074e52d",
+                    "sha1_checksum": "000542checksum",
                     "filename": "STAR-2.7.2d.tar.gz"
                 }
             },
@@ -146,7 +204,7 @@
                 "uri": {
                     "access_time": "2018-03-21",
                     "uri": "https://github.com/lomereiter/sambamba",
-                    "sha1_checksum": "2dff374474d2f47ac1d92c8c906e7e0f5ab8f1ee",
+                    "sha1_checksum": "000542checksum",
                     "filename": "sambamba-0.7.0.tar.gz"
                 }
             },
@@ -156,7 +214,7 @@
                 "uri": {
                     "access_time": "2018-03-21",
                     "uri": "http://rseqc.sourceforge.net/",
-                    "sha1_checksum": "1ec84a2357dc80c9cdfcab32b7c6c2a8c022ad74",
+                    "sha1_checksum": "000542checksum",
                     "filename": "RSeQC-2.6.4.tar.gz"
                 }
             },
@@ -166,7 +224,7 @@
                 "uri": {
                     "access_time": "2018-03-21",
                     "uri": "http://cole-trapnell-lab.github.io/cufflinks/install/",
-                    "sha1_checksum": "2b1b3a8f12cd2821ffc74ffbdd55cb329f37cbbb",
+                    "sha1_checksum": "000542checksum",
                     "filename": "cufflinks-2.2.1.tar.gz"
                 }
             },
@@ -176,7 +234,7 @@
                 "uri": {
                     "access_time": "2018-03-21",
                     "uri": "http://cole-trapnell-lab.github.io/cufflinks/",
-                    "sha1_checksum": "2b1b3a8f12cd2821ffc74ffbdd55cb329f37cbbb",
+                    "sha1_checksum": "000542checksum",
                     "filename": "cufflinks-2.2.1.tar.gz"
                 }
             },
@@ -186,7 +244,7 @@
                 "uri": {
                     "access_time": "2018-03-21",
                     "uri": "http://metascape.org",
-                    "sha1_checksum": "b29ae4022584c07408c5bd0f32dae8e08148afc5",
+                    "sha1_checksum": "000542checksum",
                     "filename": "http://metascape.org/gp/index.html#/main/step1"
                 }
             }
@@ -200,18 +258,13 @@
             "value": "Human reference genome hg38"
         },
         {
-            "step": "4",
-            "param": "transcript integrity number (TIN) score",
-            "value": "Table1 in the data article:RNA-seq data of invasive ductal carcinoma and adjacent normal tissues from a Korean patient with breast cancer"
-        },
-        {
             "step": "6",
             "param": "Diferentially expressed genes",
-            "value": "FDR-adjusted p-values <0.05."
+            "value": "FDR-adjusted p-values <0.05"
         },
         {
             "step": "7",
-            "param": "The top 100 up-regulated and down-regulated genes that were highly expressed",
+            "param": "Analysis of top 100 up-regulated and down-regulated genes that were highly expressed",
             "value": ">10 average FPKM values"
         }
     ],
@@ -221,7 +274,7 @@
                 "uri": {
                     "access_time": "2018-03-21",
                     "uri": "https:// www.ncbi.nlm.nih.gov/bioproject/PRJNA432903",
-                    "sha1_checksum": "BCO_000541checksum",
+                    "sha1_checksum": "000542checksum",
                     "filename": "PRJNA432903"
                 }
             }
@@ -232,7 +285,7 @@
                 "uri": {
                     "access_time": "2018-03-21",
                     "uri": "https://doi. org/10.1016/j.dib.2018.03.079",
-                    "sha1_checksum": "BCO_000541checksum",
+                    "sha1_checksum": "000542checksum",
                     "filename": "Supplementary Table1 Abundance of RefSeq genes"
                 }
             },
@@ -241,7 +294,7 @@
                 "uri": {
                     "access_time": "2018-03-21",
                     "uri": "https://doi. org/10.1016/j.dib.2018.03.079",
-                    "sha1_checksum": "BCO_000541checksum",
+                    "sha1_checksum": "000542checksum",
                     "filename": "Supplementary Figure2 DEG in Cancer and Normal samples"
                 }
             }
