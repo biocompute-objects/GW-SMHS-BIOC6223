@@ -23,7 +23,7 @@
                 "orcid": "https://orcid.org/0000-0002-2215-5535",
                 "affiliation": "Canada’s Michael Smith Genome Sciences Centre, BC Cancer Agency",
                 "contribution": [
-                    "authoredBy"
+                    "authoredBy", "derivedFrom"
                 ],
                 "email": ""
             },
@@ -32,7 +32,7 @@
                 "orcid": "",
                 "affiliation": "Canada’s Michael Smith Genome Sciences Centre, BC Cancer Agency",
                 "contribution": [
-                    "authoredBy"
+                    "authoredBy", "derivedFrom"
                 ],
                 "email": ""
             },
@@ -40,7 +40,8 @@
                 "name": "Justin Chu",
                 "orcid": "",
                 "affiliation": "Canada’s Michael Smith Genome Sciences Centre, BC Cancer Agency",
-                "contribution": [],
+                "contribution": [
+                    "authoredBy", "derivedFrom"],
                 "email": ""
             },
             {
@@ -48,9 +49,9 @@
                 "orcid": "",
                 "affiliation": "Canada’s Michael Smith Genome Sciences Centre, BC Cancer Agency and Department of Medical Genetics, The University of British Columbia",
                 "contribution": [
-                    "authoredBy"
+                    "authoredBy", "derivedFrom"
                 ],
-                "email": ""
+                "email": "ibirol@bcgsc.ca"
             }
         ]
     },
