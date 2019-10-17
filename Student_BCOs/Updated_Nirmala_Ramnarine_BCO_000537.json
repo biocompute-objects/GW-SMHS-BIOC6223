@@ -1,13 +1,13 @@
 {
     "bco_id": "http://biocomputeobject.org/BCO_000537",
-    "checksum": "271d71c4faf2a2b323cd4fb125849e415c2b0feb96eb1cd9a93720068ade23ac",
+    "checksum": "08de587210ddbbcdbb2ecdb94536e177c717ef5f11e827911099047319f742f3",
     "bco_spec_version": "1.3.0",
     "provenance_domain": {
         "name": "Single-cell RNA sequencing identifies extracellular matrix gene expression by pancreatic circulating tumor cells",
         "version": "1.0.0",
         "license": "",
         "created": "2019-10-08T21:22:14.871482",
-        "modified": "2019-10-17T05:25:51.188495",
+        "modified": "2019-10-17T18:50:16.032813",
         "review": [
             {
                 "status": "in-review",
@@ -30,7 +30,8 @@
                 "orcid": "https://orcid.org/0000-0002-9001-8153",
                 "affiliation": "George Washington University",
                 "contribution": [
-                    "createdBy"
+                    "createdBy",
+                    "derivedFrom"
                 ],
                 "email": "nramnarine13@gwu.edu"
             },
@@ -39,7 +40,8 @@
                 "orcid": "https://orcid.org/0000-0002-3261-2322",
                 "affiliation": "Massachusetts General Hospital Cancer Center, MASSACHUSETTS GENERAL HOSPITAL CANCER CENTER, Dana-Farber/Harvard Cancer Center, Massachusetts General Hospital, Harvard-MIT Division of Health Sciences and Technology, Massachusetts Institute of Technology",
                 "contribution": [
-                    "authoredBy"
+                    "authoredBy",
+                    "derivedFrom"
                 ],
                 "email": ""
             },
@@ -48,7 +50,8 @@
                 "orcid": "https://orcid.org/0000-0001-5657-9849",
                 "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114, USA; Department of Medicine, Harvard Medical School, Boston, MA 02114, USA.",
                 "contribution": [
-                    "authoredBy"
+                    "authoredBy",
+                    "derivedFrom"
                 ],
                 "email": ""
             },
@@ -57,7 +60,8 @@
                 "orcid": "https://orcid.org/0000-0001-8865-0881",
                 "affiliation": " Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114, USA; Department of Surgery, Harvard Medical School, Boston, MA 02114, USA; Department of Health Sciences, University of Genoa, 16126 Genoa, Italy.",
                 "contribution": [
-                    "authoredBy"
+                    "authoredBy",
+                    "derivedFrom"
                 ],
                 "email": ""
             },
@@ -66,7 +70,8 @@
                 "orcid": "https://orcid.org/0000-0002-0137-5782",
                 "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114, USA; Department of Medicine, Harvard Medical School, Boston, MA 02114, USA.",
                 "contribution": [
-                    "authoredBy"
+                    "authoredBy",
+                    "derivedFrom"
                 ],
                 "email": ""
             },
@@ -75,7 +80,8 @@
                 "orcid": "",
                 "affiliation": " Center for Engineering in Medicine, Harvard Medical School, Boston, MA 02114, USA; Department of Surgery, Harvard Medical School, Boston, MA 02114, USA.",
                 "contribution": [
-                    "authoredBy"
+                    "authoredBy",
+                    "derivedFrom"
                 ],
                 "email": ""
             },
@@ -84,7 +90,8 @@
                 "orcid": "https://orcid.org/0000-0003-3692-8823",
                 "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114, USA; Department of Radiation Oncology, Harvard Medical School, Boston, MA 02114, USA.",
                 "contribution": [
-                    "authoredBy"
+                    "authoredBy",
+                    "derivedFrom"
                 ],
                 "email": ""
             },
@@ -93,7 +100,8 @@
                 "orcid": "https://orcid.org/0000-0001-9579-6918",
                 "affiliation": " Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114, USA; Department of Medicine, Harvard Medical School, Boston, MA 02114, USA.",
                 "contribution": [
-                    "authoredBy"
+                    "authoredBy",
+                    "derivedFrom"
                 ],
                 "email": ""
             },
@@ -102,7 +110,8 @@
                 "orcid": "https://orcid.org/0000-0002-0343-7078",
                 "affiliation": " Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114, USA; Department of Medicine, Harvard Medical School, Boston, MA 02114, USA.",
                 "contribution": [
-                    "authoredBy"
+                    "authoredBy",
+                    "derivedFrom"
                 ],
                 "email": ""
             },
@@ -111,7 +120,8 @@
                 "orcid": "",
                 "affiliation": " Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114, USA; Department of Medicine, Harvard Medical School, Boston, MA 02114, USA.",
                 "contribution": [
-                    "authoredBy"
+                    "authoredBy",
+                    "derivedFrom"
                 ],
                 "email": ""
             },
@@ -120,7 +130,8 @@
                 "orcid": "",
                 "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114, USA; Department of Medicine, Harvard Medical School, Boston, MA 02114, USA.",
                 "contribution": [
-                    "authoredBy"
+                    "authoredBy",
+                    "derivedFrom"
                 ],
                 "email": ""
             },
@@ -129,7 +140,8 @@
                 "orcid": "https://orcid.org/0000-0003-1427-2608",
                 "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114, USA; Department of Medicine, Harvard Medical School, Boston, MA 02114, USA.",
                 "contribution": [
-                    "authoredBy"
+                    "authoredBy",
+                    "derivedFrom"
                 ],
                 "email": ""
             },
@@ -138,7 +150,8 @@
                 "orcid": "",
                 "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114, USA; Department of Medicine, Harvard Medical School, Boston, MA 02114, USA.",
                 "contribution": [
-                    "authoredBy"
+                    "authoredBy",
+                    "derivedFrom"
                 ],
                 "email": ""
             },
@@ -147,7 +160,8 @@
                 "orcid": "",
                 "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114, USA; Department of Medicine, Harvard Medical School, Boston, MA 02114, USA.",
                 "contribution": [
-                    "authoredBy"
+                    "authoredBy",
+                    "derivedFrom"
                 ],
                 "email": ""
             },
@@ -156,7 +170,8 @@
                 "orcid": "",
                 "affiliation": " Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114, USA; Department of Medicine, Harvard Medical School, Boston, MA 02114, USA.",
                 "contribution": [
-                    "authoredBy"
+                    "authoredBy",
+                    "derivedFrom"
                 ],
                 "email": ""
             },
@@ -165,7 +180,8 @@
                 "orcid": "",
                 "affiliation": " Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114, USA; Department of Surgery, Harvard Medical School, Boston, MA 02114, USA; Department of Pathology, Harvard Medical School, Boston, MA 02114, USA.",
                 "contribution": [
-                    "authoredBy"
+                    "authoredBy",
+                    "derivedFrom"
                 ],
                 "email": ""
             },
@@ -174,7 +190,8 @@
                 "orcid": "",
                 "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114, USA; Department of Surgery, Harvard Medical School, Boston, MA 02114, USA; Department of Pathology, Harvard Medical School, Boston, MA 02114, USA.",
                 "contribution": [
-                    "authoredBy"
+                    "authoredBy",
+                    "derivedFrom"
                 ],
                 "email": ""
             },
@@ -183,7 +200,8 @@
                 "orcid": "",
                 "affiliation": " Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114, USA; Department of Medicine, Harvard Medical School, Boston, MA 02114, USA.",
                 "contribution": [
-                    "authoredBy"
+                    "authoredBy",
+                    "derivedFrom"
                 ],
                 "email": ""
             },
@@ -192,7 +210,8 @@
                 "orcid": "",
                 "affiliation": " Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114, USA; Department of Medicine, Harvard Medical School, Boston, MA 02114, USA.",
                 "contribution": [
-                    "authoredBy"
+                    "authoredBy",
+                    "derivedFrom"
                 ],
                 "email": ""
             },
@@ -201,7 +220,8 @@
                 "orcid": "",
                 "affiliation": " Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114, USA; Department of Medicine, Harvard Medical School, Boston, MA 02114, USA.",
                 "contribution": [
-                    "authoredBy"
+                    "authoredBy",
+                    "derivedFrom"
                 ],
                 "email": ""
             },
@@ -210,7 +230,8 @@
                 "orcid": "",
                 "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114, USA; Department of Pathology, Harvard Medical School, Boston, MA 02114, USA.",
                 "contribution": [
-                    "authoredBy"
+                    "authoredBy",
+                    "derivedFrom"
                 ],
                 "email": ""
             },
@@ -219,7 +240,8 @@
                 "orcid": "",
                 "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114, USA; Department of Pathology, Harvard Medical School, Boston, MA 02114, USA.",
                 "contribution": [
-                    "authoredBy"
+                    "authoredBy",
+                    "derivedFrom"
                 ],
                 "email": ""
             },
@@ -228,7 +250,8 @@
                 "orcid": "https://orcid.org/0000-0002-9465-7008",
                 "affiliation": " Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114, USA; Department of Surgery, Harvard Medical School, Boston, MA 02114, USA.",
                 "contribution": [
-                    "authoredBy"
+                    "authoredBy",
+                    "derivedFrom"
                 ],
                 "email": ""
             },
@@ -237,7 +260,8 @@
                 "orcid": "",
                 "affiliation": " Center for Engineering in Medicine, Harvard Medical School, Boston, MA 02114, USA.",
                 "contribution": [
-                    "authoredBy"
+                    "authoredBy",
+                    "derivedFrom"
                 ],
                 "email": ""
             },
@@ -246,7 +270,8 @@
                 "orcid": "https://orcid.org/0000-0001-6715-4686",
                 "affiliation": " Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114, USA; Department of Medicine, Harvard Medical School, Boston, MA 02114, USA.",
                 "contribution": [
-                    "authoredBy"
+                    "authoredBy",
+                    "derivedFrom"
                 ],
                 "email": ""
             },
@@ -255,7 +280,8 @@
                 "orcid": "",
                 "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114, USA; Department of Medicine, Harvard Medical School, Boston, MA 02114, USA.",
                 "contribution": [
-                    "authoredBy"
+                    "authoredBy",
+                    "derivedFrom"
                 ],
                 "email": ""
             },
@@ -264,7 +290,8 @@
                 "orcid": "",
                 "affiliation": "Center for Engineering in Medicine, Harvard Medical School, Boston, MA 02114, USA; Department of Surgery, Harvard Medical School, Boston, MA 02114, USA.",
                 "contribution": [
-                    "authoredBy"
+                    "authoredBy",
+                    "derivedFrom"
                 ],
                 "email": ""
             },
@@ -273,7 +300,8 @@
                 "orcid": "https://orcid.org/0000-0002-9356-1709",
                 "affiliation": " Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114, USA; Department of Surgery, Harvard Medical School, Boston, MA 02114, USA. Electronic address: maheswaran@helix.mgh.harvard.edu.",
                 "contribution": [
-                    "authoredBy"
+                    "authoredBy",
+                    "derivedFrom"
                 ],
                 "email": ""
             },
@@ -282,15 +310,16 @@
                 "orcid": "https://orcid.org/0000-0003-1378-6551",
                 "affiliation": "Massachusetts General Hospital Cancer Center, Harvard Medical School, Boston, MA 02114, USA; Department of Medicine, Harvard Medical School, Boston, MA 02114, USA; Howard Hughes Medical Institute, Chevy Chase, MD 20815, USA. Electronic address: haber@helix.mgh.harvard.edu.",
                 "contribution": [
-                    "authoredBy"
+                    "authoredBy",
+                    "derivedFrom"
                 ],
                 "email": ""
             }
         ]
     },
     "usability_domain": [
-        "To identify the expression of extracellular matrix genes in mouse pancreatic CTCs and human CTCs originating from the pancreas, breasts, and prostate.",
-        "PMID: 25242334 PMCID: PMC4230325 DOI: 10.1016/j.celrep.2014.08.029",
+        "This BCO was adapted by: Single-cell RNA sequencing identifies extracellular matrix gene expression by pancreatic circulating tumor cells by Ting, David T et al (2014). The main objective was to identify the expression of extracellular matrix genes in mouse pancreatic CTCs and human CTCs originating from the pancreas, breasts, and prostate.",
+        "[PMID: 25242334] [PMCID: PMC4230325] [DOI: 10.1016/j.celrep.2014.08.029]",
         "Description: After being shed from primary tumors, circulating tumor cells (CTC) are able to infiltrate and spread cancerous material to various organs in the human body via the bloodstream. Though CTCs are rare, the metastatic nature of these cells encourage researchers to focus on and develop therapeutic target treatment methods. Ting et al. were able to compare multiple genome-wide expression profiles of CTCs, which were then matched to the original tumors. Genetically engineered mouse pancreatic cancer models were used in the experiment in order to compare to Pancreatic ductal adenocarcinoma (PDAC) in humans. Individual CTCs were isolated from cells using purification and selection methods and were then subjected to single-cell RNA sequencing. CTC gene sequencing, processing, and enrichment was done by utilizing various metadata, databases, tools, and programs. The authors successfully observed high expression of stromal-derived extracellular matrix proteins in both mouse and human pancreatic CTCs. The experimental evidence supported the conclusion that CTC expression mediates metastatic invasion to distant organs. "
     ],
     "extension_domain": {
