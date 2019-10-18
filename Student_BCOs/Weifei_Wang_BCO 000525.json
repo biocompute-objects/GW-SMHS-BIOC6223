@@ -57,7 +57,9 @@
     },
     "usability_domain": [
         "Targeted Assembly Pipeline (TAP) is a fast and powerful RNA-seq mutation detection pipeline. TAP uses the Leucegene acute myeloid leukemia (AML) RNA-seq data and a set of 580 COSMIC target genes to identify a wide range of hallmark molecular anomalies including gene fusions, tandem duplications, insertions and deletions in agreement with published literature results. In addition, TAP captured AML specific splicing variants, such as skipped exons and new splicing sites reported elsewhere in the data set. TAP spends 2 hours on a 48-core machine running on 100–150 million read pairs and a 580-gene set. "
-    ],
+    ,"Chiu, R., Nip, K. M., Chu, J., & Birol, I. (2018, September 10). TAP: a targeted clinical genomics pipeline for detecting transcript variants using RNA-seq data. Faculty Research and Publications. A, BioMed Central.",
+        "Retrieved October 17, 2019, from https://open.library.ubc.ca/collections/facultyresearchandpublications/52383/items/1.0372014"
+],
     "extension_domain": {},
     "description_domain": {
         "keywords": [
@@ -146,7 +148,7 @@
                 "name": "Linux",
                 "version": "",
                 "uri": {
-                    "access_time": "",
+                    "access_time": "9/10/2018",
                     "uri": "https://www.linux.org/",
                     "sha1_checksum": "BCO_000525checksum",
                     "filename": ""
