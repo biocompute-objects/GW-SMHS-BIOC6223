@@ -4,10 +4,26 @@
     "bco_spec_version": "1.3.0",
     "provenance_domain": {
         "name": "TAP: a targeted clinical genomics pipeline for detecting transcript variants using RNA- seq data",
-        "version": "0.4.2",
+        "version": "1.0.0",
         "license": "http://creativecommons.org/licenses/by/4.0/",
         "created": "2019-10-07T22:30:36.405354",
         "modified": "2019-10-08T21:58:34.013743",
+        "review": [
+            {
+                "status": "in-review",
+                "reviewer_comment": "Reviewed by BioCompute technical assistant, approval pending modification by author",
+                "reviewer": {
+                    "orcid": "https://orcid.org/0000-0002-8824-4637",
+                    "affiliation": "George Washington University",
+                    "contribution": [
+                        "curatedBy"
+                    ],
+                    "name": "Janisha Patel",
+                    "email": "janishapatel@gwu.edu"
+                },
+                "date": "10/17/2019"
+            }
+        ],
         "contributors": [
             {
                 "name": "Weifei Wang",
@@ -56,7 +72,7 @@
         ]
     },
     "usability_domain": [
-        "Targeted Assembly Pipeline (TAP) is a fast and powerful RNA-seq mutation detection pipeline. TAP uses the Leucegene acute myeloid leukemia (AML) RNA-seq data and a set of 580 COSMIC target genes to identify a wide range of hallmark molecular anomalies including gene fusions, tandem duplications, insertions and deletions in agreement with published literature results. In addition, TAP captured AML specific splicing variants, such as skipped exons and new splicing sites reported elsewhere in the data set. TAP spends 2 hours on a 48-core machine running on 100–150 million read pairs and a 580-gene set. "
+        "Targeted Assembly Pipeline (TAP) is a fast and powerful detection pipeline for RNA-seq. It contains four steps. First, the entire sample rna-seq reading segment is classified and isolated into boxes corresponding to specific gene targets by using BioBloomTools. Second, using Trans-ABySS to assemble reading pairs belonging to individual genes in parallel. Third, the GMAP and BWA match the assembled overlapping groups with reference genomes and transcriptomes. Fourth, using PAVFinder to structure and splice variant detection "
     ,"Chiu, R., Nip, K. M., Chu, J., & Birol, I. (2018, September 10). TAP: a targeted clinical genomics pipeline for detecting transcript variants using RNA-seq data. Faculty Research and Publications. A, BioMed Central.",
         "Retrieved October 17, 2019, from https://open.library.ubc.ca/collections/facultyresearchandpublications/52383/items/1.0372014"
 ],
