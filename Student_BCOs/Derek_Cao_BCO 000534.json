@@ -1,0 +1,175 @@
+{
+    "bco_id": "http://biocomputeobject.org/BCO_000534",
+    "checksum": "442ba25cf83b2e391b039a0326a711e3918e240bf7afe4e691b1299679fbc417",
+    "bco_spec_version": "1.3.0",
+    "provenance_domain": {
+        "name": "Multi-omics profiling reveals key signaling pathways in ovarian cancer controlled by STAT3",
+        "version": "1.0.0",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "created": "2019-10-08T21:21:01.804217",
+        "modified": "2019-10-18T01:28:15.288271",
+        "review": [
+            {
+                "status": "in-review",
+                "reviewer_comment": "Reviewed by BioCompute technical assistant, approval pending modification by author",
+                "reviewer": {
+                    "orcid": "https://orcid.org/0000-0002-8824-4637",
+                    "affiliation": "George Washington University",
+                    "contribution": [
+                        "curatedBy"
+                    ],
+                    "name": "Janisha Patel",
+                    "email": "janishapatel@gwu.edu"
+                },
+                "date": "10/16/2019"
+            }
+        ],
+        "contributors": [
+            {
+                "name": "Derek Cao",
+                "orcid": "https://orcid.org/0000-0002-7901-9470",
+                "affiliation": "George Washington University",
+                "contribution": [
+                    "createdBy"
+                ],
+                "email": "cderek7@gwu.edu"
+            },
+            {
+                "name": "Tiangong Lu",
+                "orcid": "",
+                "affiliation": "Department of Medicinal Chemistry, College of Pharmacy, Rogel Cancer Center, University of Michigan, Ann Arbor",
+                "contribution": [
+                    "authoredBy",
+                    "derivedFrom"
+                ],
+                "email": ""
+            },
+            {
+                "name": "Armand Bankhead, III,",
+                "orcid": "",
+                "affiliation": "Department of Computational Medicine and Bioinformatics, University of Michigan, Ann Arbor ; Department of Biostatistics, School of Public Health, University of Michigan, Ann Arbor",
+                "contribution": [
+                    "authoredBy",
+                    "derivedFrom"
+                ],
+                "email": ""
+            },
+            {
+                "name": "Mats Ljungman ",
+                "orcid": "https://orcid.org/0000-0003-1553-6695",
+                "affiliation": "Departments of Radiation Oncology, Rogel Cancer Center, University of Michigan Medical School and Department of Environmental Health Sciences, School of Public Health, University of Michigan, Ann Arbor",
+                "contribution": [
+                    "authoredBy",
+                    "derivedFrom"
+                ],
+                "email": ""
+            },
+            {
+                "name": "Nouri Neamati",
+                "orcid": "https://orcid.org/0000-0003-3291-7131",
+                "affiliation": "Department of Medicinal Chemistry, College of Pharmacy, Rogel Cancer Center, University of Michigan, Ann Arbor",
+                "contribution": [
+                    "authoredBy",
+                    "derivedFrom"
+                ],
+                "email": ""
+            }
+        ]
+    },
+    "usability_domain": [
+        "Adapted from Tiangong Lu, Armand Bankhead, III,  Mats Ljungman, Nouri Neamati. \"Multi-omics profiling reveals key signaling pathways in ovarian cancer controlled by STAT3.\" PMC6735387(July 28, 2019). https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6735387/",
+        "Identify a link between STAT3 and E2F target genes and also alter the STAT family members depends on the STAT3 deletion.",
+        "Identify multi-level (Bru-Seq, RNA-Seq, and MS Proteomic) expression signatures of parental and STAT3 KO ovarian cancer cells by using multi-omic genome-wide profiling.",
+        "Identify new genes set and 41 genes differentially regulated in order to response for STAT3 KO within a wide range of cellular processes."
+    ],
+    "extension_domain": {},
+    "description_domain": {
+        "keywords": [
+            "CRISPR-Cas9",
+            "Multi-omic genome-wide analysis",
+            "Ovarian cancer",
+            "STAT3",
+            "STAT3 knockout"
+        ],
+        "pipeline_steps": [
+            {
+                "name": "STAR",
+                "version": "2.5.2",
+                "step_number": 1,
+                "input_list": [
+                    {
+                        "access_time": "",
+                        "uri": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6735387/",
+                        "filename": "PMC6735387"
+                    }
+                ],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Ultrafast universal RNA-seq aligner."
+            },
+            {
+                "name": "Cufflinks ",
+                "version": "2.2.1",
+                "step_number": 2,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Gene quantifications were calculated by using Cufflinks v2.2.1 to quantify refGene annotations."
+            },
+            {
+                "name": "featureCounts ",
+                "version": "1.6.1",
+                "step_number": 3,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "An efficient general purpose program for assigning sequence reads to genomic features."
+            },
+            {
+                "name": "DESeq2 ",
+                "version": "1.18.1",
+                "step_number": 4,
+                "input_list": [],
+                "output_list": [],
+                "prerequisite": [],
+                "description": "Moderated estimation of fold change and dispersion for RNA-seq data."
+            }
+        ]
+    },
+    "execution_domain": {
+        "external_data_endpoints": [],
+        "environment_variables": {},
+        "script_driver": "",
+        "software_prerequisites": [],
+        "script": []
+    },
+    "parametric_domain": [
+        {
+            "step": "",
+            "param": "",
+            "value": ""
+        }
+    ],
+    "io_domain": {
+        "input_subdomain": [
+            {
+                "uri": {
+                    "access_time": "",
+                    "uri": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE134375",
+                    "filename": ""
+                }
+            }
+        ],
+        "output_subdomain": [
+            {
+                "mediatype": "",
+                "uri": {
+                    "access_time": "",
+                    "uri": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6735387/bin/thnov09p5478s1.pdf ",
+                    "filename": ""
+                }
+            }
+        ]
+    },
+    "error_domain": {}
+}
