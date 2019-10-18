@@ -1,27 +1,153 @@
 {
     "bco_id": "http://biocomputeobject.org/BCO_000513",
-    "checksum": "498097b78fe8a97df62b26a8ed9d2b261196e7bed395f18c0a6f378e01e2f415",
+    "checksum": "d018376a3caa3bcedfa58776542b9a5745bd396af15dc70145dd1028cd12cca8",
     "bco_spec_version": "1.3.0",
     "provenance_domain": {
         "name": "RNA sequencing identifies specific PIWI-interacting small non-coding RNA expression patterns in breast cancer",
-        "version": "2.9.0",
-        "license": "",
+        "version": "1.0.0",
+        "license": "https://spdx.org/licenses/CC-BY-4.0.html",
         "created": "2019-10-02T03:18:24.739033",
-        "modified": "2019-10-08T15:56:27.060627",
+        "modified": "2019-10-17T18:00:10.044690",
+        "review": [
+            {
+                "status": "in-review",
+                "reviewer_comment": "Reviewed by BioCompute technical assistant, approval pending modification by author",
+                "reviewer": {
+                    "orcid": " https://orcid.org/0000-0002-8824-4637",
+                    "affiliation": "George Washington University ",
+                    "contribution": [
+                        "curatedBy"
+                    ],
+                    "name": "Janisha Patel",
+                    "email": "janishapatel@gwu.edu"
+                },
+                "date": "10/14/19"
+            }
+        ],
         "contributors": [
             {
                 "name": "Zuleima Munoz",
-                "orcid": "",
+                "orcid": "https://orcid.org/0000-0002-7389-3757",
                 "affiliation": "The George Washington University ",
                 "contribution": [
-                    "createdBy"
+                    "authoredBy"
                 ],
                 "email": "zmunoz09@gwu.edu"
+            },
+            {
+                "name": "Adnan Hashim",
+                "orcid": "",
+                "affiliation": "Laboratory of Molecular Medicine and Genomics, Faculty of Medicine and Surgery, University of Salerno, Baronissi, SA, Italy",
+                "contribution": [
+                    "authoredBy",
+                    "derivedFrom"
+                ],
+                "email": ""
+            },
+            {
+                "name": "Francesca Rizzo",
+                "orcid": "",
+                "affiliation": "Laboratory of Molecular Medicine and Genomics, Faculty of Medicine and Surgery, University of Salerno, Baronissi, SA, Italy",
+                "contribution": [
+                    "authoredBy",
+                    "derivedFrom"
+                ],
+                "email": ""
+            },
+            {
+                "name": "Giovanna Marchese",
+                "orcid": "",
+                "affiliation": "Laboratory of Molecular Medicine and Genomics, Faculty of Medicine and Surgery, University of Salerno, Baronissi, SA, Italy",
+                "contribution": [
+                    "authoredBy",
+                    "derivedFrom"
+                ],
+                "email": ""
+            },
+            {
+                "name": "Maria Ravo",
+                "orcid": "",
+                "affiliation": "Laboratory of Molecular Medicine and Genomics, Faculty of Medicine and Surgery, University of Salerno, Baronissi, SA, Italy",
+                "contribution": [
+                    "authoredBy",
+                    "derivedFrom"
+                ],
+                "email": ""
+            },
+            {
+                "name": "Roberta Tarallo",
+                "orcid": "",
+                "affiliation": "Laboratory of Molecular Medicine and Genomics, Faculty of Medicine and Surgery, University of Salerno, Baronissi, SA, Italy",
+                "contribution": [
+                    "authoredBy",
+                    "derivedFrom"
+                ],
+                "email": ""
+            },
+            {
+                "name": "Giovanni Nassa",
+                "orcid": "",
+                "affiliation": "Laboratory of Molecular Medicine and Genomics, Faculty of Medicine and Surgery, University of Salerno, Baronissi, SA, Italy",
+                "contribution": [
+                    "authoredBy",
+                    "derivedFrom"
+                ],
+                "email": ""
+            },
+            {
+                "name": "Giorgio Giurato",
+                "orcid": "",
+                "affiliation": "Laboratory of Molecular Medicine and Genomics, Faculty of Medicine and Surgery, University of Salerno, Baronissi, SA, Italy",
+                "contribution": [
+                    "authoredBy",
+                    "derivedFrom"
+                ],
+                "email": ""
+            },
+            {
+                "name": "Gianluca Santamaria",
+                "orcid": "",
+                "affiliation": "Laboratory of Molecular Medicine and Genomics, Faculty of Medicine and Surgery, University of Salerno, Baronissi, SA, Italy",
+                "contribution": [
+                    "authoredBy",
+                    "derivedFrom"
+                ],
+                "email": ""
+            },
+            {
+                "name": "Angela Cordella",
+                "orcid": "",
+                "affiliation": "Fondazione IRCCS SDN, Napoli, Italy",
+                "contribution": [
+                    "authoredBy",
+                    "derivedFrom"
+                ],
+                "email": ""
+            },
+            {
+                "name": "Concita Cantarella",
+                "orcid": "",
+                "affiliation": "Consiglio per la Ricerca e la Sperimentazione in Agricoltura, Centro di Ricerca per l'Orticoltura, Pontecagnano, SA, Italy",
+                "contribution": [
+                    "authoredBy",
+                    "derivedFrom"
+                ],
+                "email": ""
+            },
+            {
+                "name": "Alessandro Weisz",
+                "orcid": "",
+                "affiliation": "Laboratory of Molecular Medicine and Genomics, Faculty of Medicine and Surgery, University of Salerno, Baronissi, SA, Italy",
+                "contribution": [
+                    "authoredBy",
+                    "derivedFrom"
+                ],
+                "email": "ti.asinu@zsiewa"
             }
         ]
     },
     "usability_domain": [
-        " SmallRNA-Seq data from breast cancer cell lines (BC) and tumor biopsies showed more than 100 BC piRNAs molecules. piRNAs are known to be involved in RNA silencing and regulation of gene expression. This pipeline intents to investigate the role of piRNA in the transcription and post-transcription of gene regulation in cancer cells. "
+        " SmallRNA-Seq data from breast cancer cell lines (BC) and tumor biopsies showed more than 100 BC piRNAs molecules. piRNAs are known to be involved in RNA silencing and regulation of gene expression. This pipeline intents to investigate the role of piRNA in the transcription and post-transcription of gene regulation in cancer cells. Adapted from Adnan Hashim, Francesca Rizzo, Giovanna Marchese, Maria Ravo, Roberta Tarallo, Giovanni Nassa, Giorgio Giurato, Gianluca Santamaria, Angela Cordella, Concita Cantarella, and Alessandro Weisz.  "
     ],
     "extension_domain": {},
     "description_domain": {
@@ -81,7 +207,7 @@
                 "input_list": [],
                 "output_list": [],
                 "prerequisite": [],
-                "description": "piRNA target RNAs were identified by sequence complementarity between each piRNA and the 5′-UTRs, CDSs or 3′-UTRs of all known human RNAs or RNAs expressed in breast invasive carcinomas. "
+                "description": ""
             },
             {
                 "name": "Ingenuity Pathway Analysis ",
@@ -159,8 +285,27 @@
         }
     ],
     "io_domain": {
-        "input_subdomain": [],
-        "output_subdomain": []
+        "input_subdomain": [
+            {
+                "uri": {
+                    "access_time": "",
+                    "uri": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE56134",
+                    "sha1_checksum": "000513checksum",
+                    "filename": "Data  for Raw small RNA sequencing "
+                }
+            }
+        ],
+        "output_subdomain": [
+            {
+                "mediatype": "",
+                "uri": {
+                    "access_time": "",
+                    "uri": "http://example.com/0430/ncotarget-05-9901-s002.pdf ",
+                    "sha1_checksum": "000513checksum",
+                    "filename": "RNA sequencing identifies specific PIWI-interacting small non- coding RNA expression patterns in breast cancer"
+                }
+            }
+        ]
     },
     "error_domain": {}
 }
