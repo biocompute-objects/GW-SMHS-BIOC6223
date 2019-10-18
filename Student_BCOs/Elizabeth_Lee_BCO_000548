@@ -1,13 +1,13 @@
 {
   "bco_id": "http://biocomputeobject.org/BCO_000548",
-  "checksum": "ab1ea99cd0bef00720d044e70d8cb28f6c1723d08782ad2e24ee764d6bb36be5",
+  "checksum": "8042f0001824cccd922a48cef851f5a4d212a1acdbdbdf8d11004fbf2819b11e",
   "bco_spec_version": "1.3.0",
   "provenance_domain": {
     "name": "Single-cell RNA sequencing and gene expression profiling of pancreatic circulating tumor cells",
     "version": "1.0.0",
     "license": "http://spdx.org/licenses/CC-BY-4.0.html",
     "created": "2019-10-16T07:57:49.105875",
-    "modified": "2019-10-18T01:43:31.038846",
+    "modified": "2019-10-18T02:30:58.981107",
     "review": [
       {
         "status": "approved",
@@ -319,7 +319,14 @@
   "usability_domain": [
     "Circulating tumor cells (CTCs) shed from primary tumors play a key role in tumor metastasis, yet the transcriptional profiling of CTCs has not been fully elucidated.  This workflow serves to undertake detailed analysis of the composition of pancreatic cancer CTCs using single-cell RNA sequencing followed by differential gene expression analysis and gene-set enrichment analysis (GSEA).  To achieve RNA-sequencing profiles of CTCs at the single-cell level, a high-throughput inertial focusing-enhanced microfluidic CTC separation device, termed the CTC-iChip, was used for enrichment of CTCs (PMID 23552373), which were then subjected to single cell micromanipulation and sequencing (PMID 20203668).  Gene expression profiles of single cell CTCs were compared with that of matched primary tumors in a mouse model of pancreatic cancer, which led to the identification of three distinct CTC populations, which clustered separately from primary tumors and tumor-derived cell lines and exhibited particularly high expression levels of extracellular matrix (ECM) genes (GEO GSE51372, GSE60407).  This BCO was created based on the workflow from Ting et al.  doi: 10.1016/j.celrep.2014.08.029"
   ],
-  "extension_domain": {},
+  "extension_domain": {
+    "scm_extension": {
+      "scm_repository": "https://github.com/nbabirye/okey",
+      "scm_path": "",
+      "scm_type": "git",
+      "scm_commit": ""
+    }
+  },
   "description_domain": {
     "keywords": [
       "single-cell RNA sequencing",
