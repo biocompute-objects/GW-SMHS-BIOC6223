@@ -33,7 +33,7 @@ Any later and there is no guarantee your BCO will be approved.
     - reviewer status from "in-review" to "approved"
     - reviewer_comment from "Reviewed by BioCompute technical assistant, approval pending modification by author" to "Reviewed and approved by BioCompute technical assistant."
 
-### Do not submit to the pFDA challenge until you have received the "BCO approved comment" from either @jpat1546 or @kee007ney. Please note: whoever provides you with this approval comment must then be listed as a  reviewer in the provenance domain with the review status as "approved". (i.e. if @kee007ney provides you with the BCO approval, your provenance domain should list him as a reviewer with the "approved" status.
+### Do not submit to the pFDA challenge until you have received the "BCO approved comment" from either @jpat1546 or @kee007ney. Please note: whoever provides you with this approval comment must then be listed as a  reviewer in the provenance domain with the review status as "approved". (i.e. if @kee007ney provides you with the BCO approval, your provenance domain should list him as a reviewer with the "approved" status)
 
 
 
