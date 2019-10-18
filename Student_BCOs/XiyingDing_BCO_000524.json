@@ -1,27 +1,79 @@
 {
     "bco_id": "http://biocomputeobject.org/BCO_000524",
-    "checksum": "893227528679a28274e102aa60ef67b64dbab5f8e064060edc5ba9f6fa4b464d",
+    "checksum": "18ba0128bf0e79405419828fb948b34b27c6db1effd0c06cf213635786a25070",
     "bco_spec_version": "1.3.0",
     "provenance_domain": {
-        "name": "TAP: a targeted clinical genomics pipeline for detecting transcript variants using RNA-seq data",
+        "name": "Detection of transcript variation by analysis of RNA-seq data using targeted clinical genomics pipeline TAP",
         "version": "0.4.2",
         "license": "http://creativecommons.org/licenses/by/4.0/",
         "created": "2019-10-07T22:19:18.384004",
-        "modified": "",
+        "modified": "2019-10-18T02:29:31.360979",
+        "review": [
+            {
+                "status": "in-review",
+                "reviewer_comment": "Reviewed by BioCompute technical assistant, approval pending modification by author",
+                "reviewer": {
+                    "orcid": "",
+                    "affiliation": "George Washington University",
+                    "contribution": [
+                        "curatedBy"
+                    ],
+                    "name": "XiyingDing",
+                    "email": "xzd@gwu.edu"
+                },
+                "date": "10/17/2019"
+            }
+        ],
         "contributors": [
             {
-                "name": "",
+                "name": "Xiying Ding",
                 "orcid": "",
-                "affiliation": "",
+                "affiliation": "George Washington University",
                 "contribution": [
                     "createdBy"
                 ],
                 "email": "xzd@gwu.edu"
+            },
+            {
+                "name": "Readman Chiu",
+                "orcid": "https://orcid.org/0000-0002-2215-5535",
+                "affiliation": "Canada’s Michael Smith Genome Sciences Centre, BC Cancer Agency",
+                "contribution": [
+                    "authoredBy"
+                ],
+                "email": ""
+            },
+            {
+                "name": "Ka Ming Nip",
+                "orcid": "",
+                "affiliation": "Canada’s Michael Smith Genome Sciences Centre, BC Cancer Agency",
+                "contribution": [
+                    "authoredBy"
+                ],
+                "email": ""
+            },
+            {
+                "name": "Justin Chu",
+                "orcid": "",
+                "affiliation": "Canada’s Michael Smith Genome Sciences Centre, BC Cancer Agency",
+                "contribution": [],
+                "email": ""
+            },
+            {
+                "name": "Inanc Birol",
+                "orcid": "",
+                "affiliation": "Canada’s Michael Smith Genome Sciences Centre, BC Cancer Agency and Department of Medical Genetics, The University of British Columbia",
+                "contribution": [
+                    "authoredBy"
+                ],
+                "email": ""
             }
         ]
     },
     "usability_domain": [
-        "TAP is a fast and robust RNA-seq variant detection pipeline. Using the Leucegene acute myeloid leukemia (AML) RNA-seq data and a set of 580 COSMIC target genes, TAP identified a wide range of hallmark molecular anomalies including gene fusions, tandem duplications, insertions and deletions in agreement with published literature results. Moreover, also in this dataset, TAP captured AML-specific splicing variants such as skipped exons and novel splice sites reported in studies elsewhere. Running time of TAP on 100–150 million read pairs and a 580-gene set is one to 2 hours on a 48-core machine."
+        "TAP is an RNAseq data analysis pipeline that is superior in speed and accuracy. It uses four steps to classify and reorganize reads from data and detect the structural and splicing variants. By analyzing open data from the published researches, TAP's result is not only consistent with researches, but also has new discoveries, proving that it is a powerful pipeline.",
+        "Chiu, R., Nip, K. M., Chu, J., & Birol, I. (2018, September 10). TAP: a targeted clinical genomics pipeline for detecting transcript variants using RNA-seq data. Faculty Research and Publications. A, BioMed Central.",
+        "Retrieved October 17, 2019, from https://open.library.ubc.ca/collections/facultyresearchandpublications/52383/items/1.0372014"
     ],
     "extension_domain": {},
     "description_domain": {
@@ -39,10 +91,29 @@
                 "name": "BioBloomTools (BBT)",
                 "version": "2.1.0",
                 "step_number": 1,
-                "input_list": [],
+                "input_list": [
+                    {
+                        "access_time": "9/10/2018",
+                        "uri": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE62190",
+                        "sha1_checksum": "BCO_000524checksum",
+                        "filename": "Leucegene: AML sequencing (part 3)"
+                    },
+                    {
+                        "access_time": "9/10/2018",
+                        "uri": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE66917",
+                        "sha1_checksum": "BCO_000524checksum",
+                        "filename": "Leucegene: AML sequencing (part 4)"
+                    },
+                    {
+                        "access_time": "9/10/2018",
+                        "uri": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE67039",
+                        "sha1_checksum": "BCO_000524checksum",
+                        "filename": "Leucegene: AML sequencing (part 5)"
+                    }
+                ],
                 "output_list": [],
                 "prerequisite": [],
-                "description": "alignment-free genelevel classification of RNA-seq reads using BioBloomTools,  The first step of TAP is to classify and segregate whole-sample RNA-seq reads into bins corresponding to specific gene targets. The inputs to this sequence extraction step are RNA-seq read pairs and transcript sequences of a list of target genes."
+                "description": "Both RNA-seq reads and transcript sequences with target genes are classfied and segregated into bins according to specific gene targets."
             },
             {
                 "name": "Trans-ABySS",
@@ -51,7 +122,7 @@
                 "input_list": [],
                 "output_list": [],
                 "prerequisite": [],
-                "description": "Bins of read pairs belonging to individual genes are assembled independently in parallel. Reconstruct transcripts with a range of expression levels and sequence complexity."
+                "description": "By using Trans-ABySS, bins of read pairs generated from BBT are de novo assembled basing on individual genes."
             },
             {
                 "name": "Genomic Mapping and Alignment Program for mRNA and EST Sequences (GMAP)",
@@ -60,7 +131,7 @@
                 "input_list": [],
                 "output_list": [],
                 "prerequisite": [],
-                "description": "Assembled contig sequences are aligned to the reference genome and the reference transcriptome using GMAP and the BWA-MEM algorithm of the BWA package, respectively. Concurrently, extracted reads are aligned to the assembled contigs to provide support evidence and read counts of SV calls."
+                "description": "Alignments of assembled contig sequences from Trans-ABySS to reference genome, reference transcriptome and extracted reads are generated simultaneously."
             },
             {
                 "name": "Burrow-Wheeler Aligner for short-read alignment (BWA-MEM)",
@@ -69,7 +140,7 @@
                 "input_list": [],
                 "output_list": [],
                 "prerequisite": [],
-                "description": "Assembled contig sequences are aligned to the reference genome and the reference transcriptome using GMAP and the BWA-MEM algorithm of the BWA package, respectively. Concurrently, extracted reads are aligned to the assembled contigs to provide support evidence and read counts of SV calls."
+                "description": "Alignments of assembled contig sequences from Trans-ABySS to reference genome, reference transcriptome and extracted reads are generated simultaneously."
             },
             {
                 "name": "Post Assembly Variant Finder (PAVFinder)",
@@ -78,15 +149,76 @@
                 "input_list": [],
                 "output_list": [],
                 "prerequisite": [],
-                "description": "Deduce variants from the split or gapped alignments of contigs to the references. Reports novel splicing events, such as exon skipping, novel exons, novel introns, retained introns, and novel splice donor and acceptor sites by comparing contig-to-genome alignments to reference gene models."
+                "description": " Structural and splicing variants are deduced by analyzing the gap and split from alignments made by step 3. "
             }
         ]
     },
     "execution_domain": {
         "external_data_endpoints": [],
         "environment_variables": {},
-        "script_driver": "",
-        "software_prerequisites": [],
+        "script_driver": "Python 2.7",
+        "software_prerequisites": [
+            {
+                "name": "Linux",
+                "version": "",
+                "uri": {
+                    "access_time": "",
+                    "uri": "https://www.linux.org/",
+                    "sha1_checksum": "BCO_000524checksum",
+                    "filename": ""
+                }
+            },
+            {
+                "name": "BioBloomTools (BBT)",
+                "version": "2.1.0",
+                "uri": {
+                    "access_time": "9/10/2018",
+                    "uri": "https://github.com/bcgsc/biobloom",
+                    "sha1_checksum": "BCO_000524checksum",
+                    "filename": ""
+                }
+            },
+            {
+                "name": "Trans-ABySS",
+                "version": "1.5.4",
+                "uri": {
+                    "access_time": "9/10/2018",
+                    "uri": "https://github.com/bcgsc/transabyss",
+                    "sha1_checksum": "BCO_000524checksum",
+                    "filename": ""
+                }
+            },
+            {
+                "name": "Genomic Mapping and Alignment Program for mRNA and EST Sequences (GMAP)",
+                "version": "2014-12-28",
+                "uri": {
+                    "access_time": "9/10/2018",
+                    "uri": "http://research-pub.gene.com/gmap/",
+                    "sha1_checksum": "BCO_000524checksum",
+                    "filename": ""
+                }
+            },
+            {
+                "name": "Burrow-Wheeler Aligner for short-read alignment (BWA-MEM)",
+                "version": "0.7.12",
+                "uri": {
+                    "access_time": "9/10/2018",
+                    "uri": "https://github.com/lh3/bwa",
+                    "sha1_checksum": "BCO_000524checksum",
+                    "filename": ""
+                }
+            },
+            {
+                "name": "Post Assembly Variant Finder (PAVFinder)",
+                "version": "0.4.2",
+                "uri": {
+                    "access_time": "9/10/2018",
+                    "uri": "http://www.bcgsc.ca/platform/bioinfo/software/pavfinder",
+                    "sha1_checksum": "BCO_000524checksum",
+                    "filename": ""
+                }
+            }
+        ],
         "script": []
     },
     "parametric_domain": [
@@ -97,8 +229,43 @@
         }
     ],
     "io_domain": {
-        "input_subdomain": [],
-        "output_subdomain": []
+        "input_subdomain": [
+            {
+                "uri": {
+                    "access_time": "9/10/2018",
+                    "uri": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE62190",
+                    "sha1_checksum": "BCO_000524checksum",
+                    "filename": "Leucegene: AML sequencing (part 3)"
+                }
+            },
+            {
+                "uri": {
+                    "access_time": "9/10/2018",
+                    "uri": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE66917",
+                    "sha1_checksum": "BCO_000524checksum",
+                    "filename": "Leucegene: AML sequencing (part 4)"
+                }
+            },
+            {
+                "uri": {
+                    "access_time": "9/10/2018",
+                    "uri": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE67039",
+                    "sha1_checksum": "BCO_000524checksum",
+                    "filename": "Leucegene: AML sequencing (part 5)"
+                }
+            }
+        ],
+        "output_subdomain": [
+            {
+                "mediatype": "text/csv",
+                "uri": {
+                    "access_time": "9/10/2018",
+                    "uri": "http://example.com/data/49642/detected_sv.csv",
+                    "sha1_checksum": "BCO_000524checksum",
+                    "filename": "example output for demonstration, no actual meaning"
+                }
+            }
+        ]
     },
     "error_domain": {}
 }
