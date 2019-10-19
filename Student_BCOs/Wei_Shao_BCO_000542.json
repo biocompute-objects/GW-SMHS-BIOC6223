@@ -11,8 +11,8 @@
         "modified": "2019-10-17T19:58:35.246773",
         "review": [
             {
-                "status": "in-review",
-                "reviewer_comment": "Reviewed by BioCompute technical assistant, approval pending modification by author",
+                "status": "approved",
+                "reviewer_comment": "Reviewed and approved by BioCompute technical assistant",
                 "reviewer": {
                     "orcid": "https://orcid.org/0000-0002-8824-4637",
                     "affiliation": "George Washington University",
