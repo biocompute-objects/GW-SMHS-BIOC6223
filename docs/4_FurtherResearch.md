@@ -22,14 +22,20 @@ HIVE Sign-up *Only one individual per group needs to come for the HIVE portion o
 Times:
 Wednesday 10/9 1-5pm ;
 Thursday 10/10 9-5pm ;
-Friday 10/11 9-4pm 
-
+Friday 10/11 9-4pm  
 Location: Ross Hall 559
 
 Note: Since only one individual is required to come in and search HIVE for the tools, I highly recommend that individual comes with the list of tools in your pipeline. Next to each tool, indicate whether or not the tool was found in HIVE. If not, write an equivalent tool that was found in HIVE.As a group, follow the same steps for CGC and create 1 paragraph (template at the bottom of this page)
 
-
-### Instructions
+  
+    
+      
+      
+  
+  
+    
+  
+  ### Instructions
   
 1. Create the document (Either locally or on Github)    
     Local: Save on your computer in txt format (Name it "Group#_FurtherResearch"). Upload the document to the [Further research documents folder](https://github.com/biocompute-objects/GW-SMHS-BIOC6223)          
