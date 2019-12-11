@@ -62,6 +62,10 @@ Two deliverables for this assignment: 1 paragraph document + 2 separate emails t
 
 ------      
 
+
+
+
+
 ### Paragraph Template:   
 Only for reference- this should not be a direct copy/paste     
 " Our publication utilized 6 tools:  TopHat in Step 1,  [Tool2] in Step 2, [Tool3] in Step 3, [Tool4] in Step 4, [Tool5]in Step 5, [Tool6] in Step 6. Tool 1's purpose was to align [X] reads to [X] genomes. Tool 1 was found in the CGC, but was not found in the HIVE Platform. An equivalent tool found in the HIVE platform was HIVE Hexagon..... Tool 2's purpose was ____ ....not found either CGC or HIVE.... 
