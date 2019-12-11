@@ -18,14 +18,12 @@ Once the assigment (with both parts- HIVE and CGC) is complete, submit to [Furth
 ## Groups/ times
 The group and times for this assignment are below. These instructions can be found in [4_FurtherResearch.md](https://github.com/biocompute-objects/GW-SMHS-BIOC6223/blob/master/docs/4_FurtherResearch.md)
 
-HIVE Sign-up *Only one individual per group needs to come for the HIVE portion of this assignment. It will not take more than 20 minutes.
+HIVE Sign-up *Only one individual per group needs to come for the HIVE portion of this assignment. It will not take more than 20 minutes. Please email janishapatel@gwu.edu to reserve your time and please state your group # Thank you!
 
-Please email janishapatel@gwu.edu to reserve your time and please state your group # Thank you!
-
-Times
-Wednesday 10/9 1-5pm
-Thursday 10/10 9-5pm
-Friday 10/11 9-4pm
+Times:
+Wednesday 10/9 1-5pm ;
+Thursday 10/10 9-5pm ;
+Friday 10/11 9-4pm 
 
 Location
 Ross Hall Rm559
@@ -50,10 +48,7 @@ Note: Since only one individual is required to come in and search HIVE for the t
        
 Note: only one team member needs to do this:    
 
-2.  If there were tools not found in HIVE or CGC, draft individual emails to them respectively with this information. Template email can be found below.  
-  *Points of contact*      
-  for CGC: Dave Robertson <david.roberson@sbgenomics.com>       
-  For HIVE: HIVE <gwu.hive.team@gmail.com>      
+2.  If there were tools not found in HIVE or CGC, draft individual emails to them respectively with this information. Template email can be found below. Points of Contact for HIVE and CGC will be provided directly to the groups.    
  
 
 # Deliverables
@@ -61,6 +56,22 @@ Two deliverables for this assignment: 1 paragraph document + 2 separate emails t
 ## Due: 10/13
 
 ------      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
