@@ -2,7 +2,6 @@ Further Research: Connecting platforms, pipelines, and tools
 ===================================
 10/8-10/13
 
-
 For the 2 platforms- [CGC](http://cgc.sbgenomics.com) & [HIVE](https://hive.biochemistry.gwu.edu/dna.cgi?cmd=home) shown to you in class: 
 
 In groups of 3, students will produce 1 paragraph detailing
@@ -25,16 +24,13 @@ Wednesday 10/9 1-5pm ;
 Thursday 10/10 9-5pm ;
 Friday 10/11 9-4pm 
 
-Location
-Ross Hall Rm559
-
+Location: Ross Hall 559
 
 Note: Since only one individual is required to come in and search HIVE for the tools, I highly recommend that individual comes with the list of tools in your pipeline. Next to each tool, indicate whether or not the tool was found in HIVE. If not, write an equivalent tool that was found in HIVE.As a group, follow the same steps for CGC and create 1 paragraph (template at the bottom of this page)
 
 ## Instructions
   
 1. Create the document (Either locally or on Github)    
-
     Local: Save on your computer in txt format (Name it "Group#_FurtherResearch"). Upload the document to the [Further research documents folder](https://github.com/biocompute-objects/GW-SMHS-BIOC6223)          
    OR       
    Github: create a new file ("Group#_FurtherResearch.md) in the [Further research documents folder](https://github.com/biocompute-objects/GW-SMHS-BIOC6223) and write the paragraph there.
@@ -44,13 +40,10 @@ Note: Since only one individual is required to come in and search HIVE for the t
       * **assignee**: "Janisha Patel"
       * **milestone**: "Further Research"
   
-      
-       
 Note: only one team member needs to do this:    
 
 2.  If there were tools not found in HIVE or CGC, draft individual emails to them respectively with this information. Template email can be found below. Points of Contact for HIVE and CGC will be provided directly to the groups.    
  
-
 # Deliverables
 Two deliverables for this assignment: 1 paragraph document + 2 separate emails to the HIVE and CGC contact. (To clarify: each team must send 1 email to HIVE and 1 email to CGC)
 ## Due: 10/13
