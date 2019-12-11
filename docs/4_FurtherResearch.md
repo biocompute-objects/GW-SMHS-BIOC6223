@@ -28,6 +28,7 @@ Location: Ross Hall 559
 
 Note: Since only one individual is required to come in and search HIVE for the tools, I highly recommend that individual comes with the list of tools in your pipeline. Next to each tool, indicate whether or not the tool was found in HIVE. If not, write an equivalent tool that was found in HIVE.As a group, follow the same steps for CGC and create 1 paragraph (template at the bottom of this page)
 
+
 ### Instructions
   
 1. Create the document (Either locally or on Github)    
