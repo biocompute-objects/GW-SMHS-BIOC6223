@@ -45,31 +45,9 @@ Note: only one team member needs to do this:
 2.  If there were tools not found in HIVE or CGC, draft individual emails to them respectively with this information. Template email can be found below. Points of Contact for HIVE and CGC will be provided directly to the groups.    
  
 # Deliverables
-Two deliverables for this assignment: 1 paragraph document + 2 separate emails to the HIVE and CGC contact. (To clarify: each team must send 1 email to HIVE and 1 email to CGC)
-## Due: 10/13
+Two deliverables for this assignment: 1 paragraph document + 2 separate emails to the HIVE and CGC contact. (To clarify: each team must send 1 email to HIVE and 1 email to CGC). Due: 10/13
 
 ------      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### Paragraph Template:   
 Only for reference- this should not be a direct copy/paste     
 " Our publication utilized 6 tools:  TopHat in Step 1,  [Tool2] in Step 2, [Tool3] in Step 3, [Tool4] in Step 4, [Tool5]in Step 5, [Tool6] in Step 6. Tool 1's purpose was to align [X] reads to [X] genomes. Tool 1 was found in the CGC, but was not found in the HIVE Platform. An equivalent tool found in the HIVE platform was HIVE Hexagon..... Tool 2's purpose was ____ ....not found either CGC or HIVE.... 
