@@ -14,7 +14,7 @@ In groups of 3, students will produce 1 paragraph detailing
 
 Once the assigment (with both parts- HIVE and CGC) is complete, submit to [Further research documents folder](https://github.com/biocompute-objects/GW-SMHS-BIOC6223).   
 
-## Groups/ times
+### Groups/ times
 The group and times for this assignment are below. These instructions can be found in [4_FurtherResearch.md](https://github.com/biocompute-objects/GW-SMHS-BIOC6223/blob/master/docs/4_FurtherResearch.md)
 
 HIVE Sign-up *Only one individual per group needs to come for the HIVE portion of this assignment. It will not take more than 20 minutes. Please email janishapatel@gwu.edu to reserve your time and please state your group # Thank you!
@@ -28,7 +28,7 @@ Location: Ross Hall 559
 
 Note: Since only one individual is required to come in and search HIVE for the tools, I highly recommend that individual comes with the list of tools in your pipeline. Next to each tool, indicate whether or not the tool was found in HIVE. If not, write an equivalent tool that was found in HIVE.As a group, follow the same steps for CGC and create 1 paragraph (template at the bottom of this page)
 
-## Instructions
+### Instructions
   
 1. Create the document (Either locally or on Github)    
     Local: Save on your computer in txt format (Name it "Group#_FurtherResearch"). Upload the document to the [Further research documents folder](https://github.com/biocompute-objects/GW-SMHS-BIOC6223)          
@@ -44,7 +44,7 @@ Note: only one team member needs to do this:
 
 2.  If there were tools not found in HIVE or CGC, draft individual emails to them respectively with this information. Template email can be found below. Points of Contact for HIVE and CGC will be provided directly to the groups.    
  
-# Deliverables
+## Deliverables
 Two deliverables for this assignment: 1 paragraph document + 2 separate emails to the HIVE and CGC contact. (To clarify: each team must send 1 email to HIVE and 1 email to CGC). Due: 10/13
 
 ------      
